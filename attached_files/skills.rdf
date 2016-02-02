@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+xmlns="http://linkedin_project.com/profile.rdfs#"
+xml:base="http://linkedin_project.com/profile.rdfs-instances/Skill/#">
+
+
+<Skill rdf:about="http://linkedin_project.com/profile.rdfs-instances/Skill/#Java">
+	<hasName>Java</hasName>
+	<firstAppeared>23 mai 1995</firstAppeared>
+	<hasParadigm>Multi-paradigm: object-oriented (class-based), structured, imperative, generic, reflective, concurrent</hasParadigm>
+	<lastVersion>Version 8 Update 71</lastVersion>
+	<designedBy>Sun Microsystems</designedBy>
+	<hasDeveloper>Oracle Corporation</hasDeveloper>
+	<hasLicense>GNU GPL</hasLicense>
+	<hasWebsite>http://www.java.com/fr/</hasWebsite>
+</Skill>
+
+<Skill rdf:about="http://linkedin_project.com/profile.rdfs-instances/Skill/#C++">
+	<hasName>C++</hasName>
+	<firstAppeared>1983</firstAppeared>
+	<hasParadigm>Multi-paradigm: procedural, functional, object-oriented, generic</hasParadigm>
+	<lastVersion>ISO/IEC TS 19217:2015</lastVersion>
+	<designedBy>Bjarne Stroustrup</designedBy>
+	<hasDeveloper>ISO/IEC JTC 1/SC 22</hasDeveloper>
+	<hasLicense>GPL</hasLicense>
+	<hasWebsite>https://isocpp.org/</hasWebsite>
+</Skill>
+ 
+<Skill rdf:about="http://linkedin_project.com/profile.rdfs-instances/Skill/#JavaScript">
+	<hasName>JavaScript</hasName>
+	<firstAppeared>May 1995</firstAppeared>
+	<hasParadigm>Multi-paradigm: scripting, object-oriented (prototype-based), imperative, functional</hasParadigm>
+	<lastVersion>ECMAScript 6</lastVersion>
+	<designedBy>Brendan Eich</designedBy>
+	<hasDeveloper>Netscape Communications Corporation, Mozilla Foundation, Ecma International</hasDeveloper>
+	<hasLicense></hasLicense>
+	<hasWebsite>https://developer.mozilla.org/fr/docs/Web/JavaScript</hasWebsite>
+</Skill>
+
+
+<Skill rdf:about="http://linkedin_project.com/profile.rdfs-instances/Skill/#PHP">
+	<hasName>PHP</hasName>
+	<firstAppeared>1994</firstAppeared>
+	<hasParadigm>Imperative, functional, object-oriented, procedural, reflective</hasParadigm>
+	<lastVersion>7.0.1</lastVersion>
+	<designedBy>Rasmus Lerdorf</designedBy>
+	<hasDeveloper>Zend Technologies</hasDeveloper>
+	<hasLicense>PHP License</hasLicense>
+	<hasWebsite>https://secure.php.net/</hasWebsite>
+</Skill>
+
+<Skill rdf:about="http://linkedin_project.com/profile.rdfs-instances/Skill/#Java Enterprise Edition">
+	<hasName>Java Enterprise Edition</hasName>
+	<firstAppeared>December 12, 1999</firstAppeared>
+	<hasParadigm>Java EE</hasParadigm>
+	<lastVersion>Java EE 8</lastVersion>
+	<designedBy>Sun Microsystems</designedBy>
+	<hasDeveloper>Oracle Corporation</hasDeveloper>
+	<hasLicense></hasLicense>
+	<hasWebsite>http://www.oracle.com/technetwork/java/javaee/overview/index.html</hasWebsite>
+</Skill>
+
+
+<Skill rdf:about="http://linkedin_project.com/profile.rdfs-instances/Skill/#Linux">
+	<hasName>Linux</hasName>
+	<firstAppeared>5 October 1991</firstAppeared>
+	<hasParadigm>OS family: Unix-like</hasParadigm>
+	<lastVersion>Core 4.3</lastVersion>
+	<designedBy>Linus Torvalds</designedBy>
+	<hasDeveloper>Community</hasDeveloper>
+	<hasLicense>GPLv2</hasLicense>
+	<hasWebsite>http://www.linux.org/</hasWebsite>
+</Skill>
+
+<Skill rdf:about="http://linkedin_project.com/profile.rdfs-instances/Skill/#SolidWorks">
+	<hasName>SolidWorks</hasName>
+	<firstAppeared>1995</firstAppeared>
+	<hasParadigm></hasParadigm>
+	<lastVersion>SolidWorks 2016 SP1</lastVersion>
+	<designedBy>Jon Hirschtick</designedBy>
+	<hasDeveloper>Dassault Systèmes SolidWorks Corp.</hasDeveloper>
+	<hasLicense>Proprietary</hasLicense>
+	<hasWebsite>http://www.solidworks.com/</hasWebsite>
+</Skill>
+
+
+<Skill rdf:about="http://linkedin_project.com/profile.rdfs-instances/Skill/#UML">
+	<hasName>UML</hasName>
+	<firstAppeared>1997</firstAppeared>
+	<hasParadigm>Modeling language</hasParadigm>
+	<lastVersion>2.5</lastVersion>
+	<designedBy>Grady Booch, James Rumbaugh and Ivar Jacobson</designedBy>
+	<hasDeveloper>Object Management Group</hasDeveloper>
+	<hasLicense></hasLicense>
+	<hasWebsite>http://www.uml.org/</hasWebsite>
+</Skill>
+
+
+<Skill rdf:about="http://linkedin_project.com/profile.rdfs-instances/Skill/#C">
+	<hasName>C</hasName>
+	<firstAppeared>1972</firstAppeared>
+	<hasParadigm>Imperative (procedural), structured</hasParadigm>
+	<lastVersion>C11</lastVersion>
+	<designedBy>Dennis Ritchie</designedBy>
+	<hasDeveloper>Bell Labs</hasDeveloper>
+	<hasLicense></hasLicense>
+	<hasWebsite>http://www.open-std.org/jtc1/sc22/wg14/</hasWebsite>
+</Skill>
+
+
+<Skill rdf:about="http://linkedin_project.com/profile.rdfs-instances/Skill/#Python">
+	<hasName>Python</hasName>
+	<firstAppeared>1991</firstAppeared>
+	<hasParadigm>Multi-paradigm: object-oriented, imperative, functional, procedural, reflective</hasParadigm>
+	<lastVersion>3.5.1</lastVersion>
+	<designedBy>Guido van Rossum</designedBy>
+	<hasDeveloper>Python Software Foundation</hasDeveloper>
+	<hasLicense>Python Software Foundation License</hasLicense>
+	<hasWebsite>https://www.python.org/</hasWebsite>
+</Skill>
+
+
+<Skill rdf:about="http://linkedin_project.com/profile.rdfs-instances/Skill/#HTML5">
+	<hasName>HTML5</hasName>
+	<firstAppeared>28 October 2014</firstAppeared>
+	<hasParadigm></hasParadigm>
+	<lastVersion>HTML 5.1</lastVersion>
+	<designedBy>World Wide Web Consortium and WHATWG</designedBy>
+	<hasDeveloper>World Wide Web Consortium and WHATWG</hasDeveloper>
+	<hasLicense></hasLicense>
+	<hasWebsite>https://www.w3.org/</hasWebsite>
+</Skill>
+
+<Skill rdf:about="http://linkedin_project.com/profile.rdfs-instances/Skill/#MySQL">
+	<hasName>MySQL</hasName>
+	<firstAppeared>23 May 1995</firstAppeared>
+	<hasParadigm></hasParadigm>
+	<lastVersion>5.7.10</lastVersion>
+	<designedBy>MySQL AB</designedBy>
+	<hasDeveloper>Oracle Corporation</hasDeveloper>
+	<hasLicense>GPLv2</hasLicense>
+	<hasWebsite>http://www.mysql.com/</hasWebsite>
+</Skill>
+
+<Skill rdf:about="http://linkedin_project.com/profile.rdfs-instances/Skill/#SQL">
+	<hasName>SQL</hasName>
+	<firstAppeared>1974</firstAppeared>
+	<hasParadigm>Multi-paradigm: declarative, procedural</hasParadigm>
+	<lastVersion>SQL:2011</lastVersion>
+	<designedBy>Donald D. Chamberlin and Raymond F. Boyce</designedBy>
+	<hasDeveloper>ISO/IEC</hasDeveloper>
+	<hasLicense></hasLicense>
+	<hasWebsite></hasWebsite>
+</Skill>
+
+</rdf:RDF>

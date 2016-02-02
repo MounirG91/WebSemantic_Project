@@ -1,0 +1,247 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:lp="http://linkedin_project.com/profile.rdfs#">
+  
+<rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Professional/#Ahmed REBAI">
+    <lp:title>Ingénieur RandD chez Valeo PTS</lp:title>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Fabrication de métaux"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Project Management"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Apec - La communauté des cadres et des managers">
+        <lp:hasLink>https://fr.linkedin.com/groups?gid=70714&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Apec - La communauté des cadres et des managers</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Génie mécanique"/>
+    <lp:hasPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Ahmed REBAI/#Ingénieur RandD">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#Valeo PTS">
+            <lp:hasEffective>10,001+ employees</lp:hasEffective>
+            <lp:hasType>Public Company</lp:hasType>
+            <lp:hasWebsite>http://www.valeo.com</lp:hasWebsite>
+            <lp:hasAdress>43 rue Bayen  Paris,  75017 France</lp:hasAdress>
+            <lp:lineOfBusiness>Automotive</lp:lineOfBusiness>
+            <lp:foundedIn>1923</lp:foundedIn>
+            <lp:linkedinUrl>https://www.linkedin.com/company/valeo?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>Valeo PTS</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:duration>4 mois</lp:duration>
+        <lp:hasTitle>Ingénieur RandD</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#RandDEngineer</rdf:type>
+      </rdf:Description>
+    </lp:hasPosition>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Engineering"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Ahmed REBAI/#Marc Brussieux">
+        <lp:linkedinUrl>https://fr.linkedin.com/in/marc-brussieux-2011a916?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Fondateur,</lp:title>
+        <lp:name>Marc Brussieux</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:lastName>REBAI</lp:lastName>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Amélioration continue"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Bureau Veritas Group">
+        <lp:hasLink>https://fr.linkedin.com/groups?gid=1655847&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Bureau Veritas Group</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Ahmed REBAI/#Zrigui Wassim">
+        <lp:linkedinUrl>https://fr.linkedin.com/in/zrigui-wassim-05240125?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Senior Backend Developer chez Kisura GmbH</lp:title>
+        <lp:name>Zrigui Wassim</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Capteurs"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Voir moins"/>
+    <lp:name>Ahmed REBAI</lp:name>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#RandD"/>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#English"/>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#French"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#C++"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Ahmed REBAI/#Oussama Riahi">
+        <lp:linkedinUrl>https://fr.linkedin.com/in/oussama-riahi-82a79a46?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>ingénieur calcul chez segula technologies tunisie</lp:title>
+        <lp:name>Oussama Riahi</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:location>Région de Paris</lp:location>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Simulations"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Matlab"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Université Blaise Pascal">
+        <lp:hasLink>https://fr.linkedin.com/groups?gid=4285547&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Université Blaise Pascal</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Ahmed REBAI/#Fabien GAIHIER">
+        <lp:linkedinUrl>https://fr.linkedin.com/in/fabien-gaihier-3203b8106?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Ingénieur Matériaux en recherche d'emploi</lp:title>
+        <lp:name>Fabien GAIHIER</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Ahmed REBAI/#alvin christine">
+        <lp:linkedinUrl>https://fr.linkedin.com/in/alvin-christine-8b7a49b1?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Étudiant à l'UFR PhITEM (UJF)</lp:title>
+        <lp:name>alvin christine</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Java"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Intégration"/>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Ahmed REBAI/#Stagiaire2">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#AMS Tunisie">
+            <lp:hasName>AMS Tunisie</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:duration>1 mois</lp:duration>
+        <lp:hasTitle>Stagiaire2</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Trainee</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Ahmed REBAI/#Ingénieur RandD mécatronique">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#Roboplanet">
+            <lp:hasHeadQuarters>6 rue DIENG KUNTZ NANTES, 44300 France</lp:hasHeadQuarters>
+            <lp:hasEffective>1-10 employees</lp:hasEffective>
+            <lp:hasType>Privately Held</lp:hasType>
+            <lp:hasWebsite>http://www.roboplanet.fr</lp:hasWebsite>
+            <lp:hasAdress>6 rue DIENG KUNTZ  NANTES,  44300 France</lp:hasAdress>
+            <lp:lineOfBusiness>Business Supplies and Equipment</lp:lineOfBusiness>
+            <lp:foundedIn>2000</lp:foundedIn>
+            <lp:linkedinUrl>https://www.linkedin.com/company/roboplanet?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>Roboplanet</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:description>Ingénieur RandD :-Conception et développement mécanique des robots d’inspection.-Dimensionnement, calcul, validation de l’architecture et choix technique des solutions ( moteurs, transmissions, ombilical...).-Analyse fonctionnelle, analyse des cahiers des charges et gestion de projet.-Réalisation des nomenclatures et des dossiers techniques.-Tests de fonctionnement et validation (laboratoire et chantiers). -Intégration électronique et mécatronique (cartes, connecteurs, capteurs …)-Pilotage des fournisseurs et des sous-traitants.-Veille technologique et amélioration des produits.</lp:description>
+        <lp:duration>1 an 4 mois</lp:duration>
+        <lp:hasTitle>Ingénieur RandD mécatronique</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#RandDEngineer</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:hasEducation>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Ahmed REBAI/#Ecole nationale d'ingénieurs de Sousse">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#engineeringStudies</rdf:type>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#Ecole nationale d'ingénieurs de Sousse"/>
+        <lp:description>Diplôme d'ingénieur, Mécatronique</lp:description>
+        <lp:duration>2011 – 2013</lp:duration>
+        <lp:endDate>2013</lp:endDate>
+        <lp:startDate>2011</lp:startDate>
+        <lp:hasTitle>Ecole nationale d'ingénieurs de Sousse</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasEducation>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Ahmed REBAI/#Stagiaire">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#Centrax Tunisie">
+            <lp:hasName>Centrax Tunisie</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:duration>2 mois</lp:duration>
+        <lp:hasTitle>Stagiaire</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Trainee</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Ahmed REBAI/#Flore PINCHAULT">
+        <lp:linkedinUrl>https://fr.linkedin.com/in/florepinchault?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Responsable administrative et financière chez Roboplanet</lp:title>
+        <lp:name>Flore PINCHAULT</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:linkedinUrl>https://fr.linkedin.com/in/ahmed-rebai-37015785</lp:linkedinUrl>
+    <lp:hasEducation>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Ahmed REBAI/#Institut Préparatoire aux Etudes d'Ingénieurs el Manar">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#preparatoryCycle</rdf:type>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#Institut Préparatoire aux Etudes d'Ingénieurs el Manar"/>
+        <lp:description></lp:description>
+        <lp:hasTitle>Institut Préparatoire aux Etudes d'Ingénieurs el Manar</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasEducation>
+    <lp:hasEducation>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Ahmed REBAI/#Institut Français de Mécanique Avancée">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#engineeringStudies</rdf:type>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#Institut Français de Mécanique Avancée"/>
+        <lp:description>Diplome d'ingénieur, Pôle Machines, Mécanismes et Systèmes; Spécialisation Mécatronique</lp:description>
+        <lp:duration>2013 – 2014</lp:duration>
+        <lp:endDate>2014</lp:endDate>
+        <lp:startDate>2013</lp:startDate>
+        <lp:hasTitle>Institut Français de Mécanique Avancée</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasEducation>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Lean Manufacturing"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#RFID">
+        <lp:hasLink>https://fr.linkedin.com/groups?gid=48706&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>RFID</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#SolidWorks"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Ahmed REBAI/#Kaouther Bouguerra">
+        <lp:linkedinUrl>https://fr.linkedin.com/in/kaouther-bouguerra-54079a61?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Ingénieur Informatique chez CAPTechnologies</lp:title>
+        <lp:name>Kaouther Bouguerra</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Manufacturing"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Électronique"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Français"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#C"/>
+    <lp:country rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Country/#France"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Microsoft Office"/>
+    <lp:picture>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/4/005/045/3c8/36f0651.jpg</lp:picture>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#CATIA"/>
+    <rdf:type>http://linkedin_project.com/profile.rdfs#Professional</rdf:type>
+    <lp:numberOfConnections>168</lp:numberOfConnections>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#CAD"/>
+    <lp:hasEducation>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Ahmed REBAI/#Université Blaise Pascal (Clermont-II) - Clermont-Ferrand">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#masterDegreeStudies</rdf:type>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#Université Blaise Pascal (Clermont-II) - Clermont-Ferrand"/>
+        <lp:description>M2, Robotique</lp:description>
+        <lp:duration>2013 – 2014</lp:duration>
+        <lp:endDate>2014</lp:endDate>
+        <lp:startDate>2013</lp:startDate>
+        <lp:hasTitle>Université Blaise Pascal (Clermont-II) - Clermont-Ferrand</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasEducation>
+    <lp:industry>Ingénierie mécanique ou industrielle</lp:industry>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Microsoft Excel"/>
+    <lp:firstName>Ahmed</lp:firstName>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Ahmed REBAI/#Giuseppe Vietri">
+        <lp:linkedinUrl>https://fr.linkedin.com/in/giuseppe-vietri-5b4561a6?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:name>Giuseppe Vietri</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Projet Microsoft"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Ahmed REBAI/#Jean-Marie Brussieux">
+        <lp:linkedinUrl>https://fr.linkedin.com/in/jean-marie-brussieux-737ba418?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Gérant, Roboplanet SARL.</lp:title>
+        <lp:name>Jean-Marie Brussieux</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Ahmed REBAI/#Ali GOUMBARK">
+        <lp:linkedinUrl>https://fr.linkedin.com/in/ali-goumbark-6b932569?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Ingénieur RandD électronique chez ROBOPLANET</lp:title>
+        <lp:name>Ali GOUMBARK</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Mechanical Engineering"/>
+    <lp:hasFriend rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Jomaa Farouk"/>
+</rdf:Description>
+
+</rdf:RDF>

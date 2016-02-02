@@ -1,0 +1,313 @@
+{
+  "name": "Yassin Ben Naceur",
+  "first_name": "Yassin",
+  "last_name": "Ben Naceur",
+  "title": "Freelancer",
+  "location": "München und Umgebung",
+  "number_of_connections": "500",
+  "country": "Deutschland",
+  "industry": "Computer-Software",
+  "summary": null,
+  "picture": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/3/000/25e/293/2d5fbd6.jpg",
+  "projects": [
+    {
+      "title": "Internet of Things : Remote Control Platform of Smart House",
+      "link": "https://docs.google.com/file/d/0B8Sgq5vNQLwqT2JyXzdTTlJWMWs/edit",
+      "start_date": null,
+      "end_date": null,
+      "description": "The idea of the project was a result of a brainstorming in an international Event : RoboSense (http://www.robosense.org). I was among the 101 participants (Tunisia, Italy, Portugal, Czech Republic, France, Sweden). The main subjects of the brainstorming was about creating a prototype of a platform capable of controlling the house via Internet from all over the world.The platform contains mainly 3 projects :1- The UI on a Samsung Galaxy Tab : the application offers a Super High UI allowing the users to Turn On/Off the light, Open or Close the door. Activate or Deactivate the Alarm System and finally check the Temperature of the house. It allow also a hole administration of the users : Add, Delete, Grant Control Actions.2- The Server Side : a Web Server managing all the data. We used a Data Base in order to make it easier to store, edit, delete or fetch all the data about the house.3- The hardware side : in this project we built an electronic system based on an open source electronic Italian platform named ARDUINO. Also, we built a special communication system based on an ANDROID mobile phone. this phone is used as a router (Google Cloud Messaging based GateWay)",
+      "associates": null
+    },
+    {
+      "title": "Online Shared Agenda",
+      "link": "https://www.dropbox.com/s/e2ni0jtcpnki2se/rapport_final.pdf?dl=0",
+      "start_date": null,
+      "end_date": null,
+      "description": "The idea came from Google Agenda but with much more simpler way to use. You can sign up, sign in then create, view or manage your to do list. We added some specific description for the event (We added types such as : exams, presentation, coffee break, dinner, cinema ... ). The application works only on Android Mobile Platforms with a charming orange design. More over, we thought of using the Cloud Technology offered by Google Company the GAE (Google App Engine Cloud Service). It was a challenging choice, the aim of it was to give for the end user the possibility to sign in from any android device and fetch his events as fast as it could get to the new device. Another important option we had developed was the notification service. Before 24 hours of each planned event your mobile phone will vibrate or ring showing you a notification at the status bar of your device.",
+      "associates": [
+        "Yassin Ben Naceur",
+        "Alaeddine Bouattour"
+      ]
+    },
+    {
+      "title": "Wireless Temperature Sensor network supervision Platform",
+      "link": "https://www.dropbox.com/s/88uxc3x1o56xnw0/Pr%C3%A9sentation%20Finale.pdf?dl=0",
+      "start_date": null,
+      "end_date": null,
+      "description": "The project is all about Internet of Things. Using existing sophisticated technologies we succeeded to create a platform for gathering the temperature values from the different department of the campus \"Univ Lille 1\". We used FlyPort from the OpenPicus company. It is a micro-controller with a Wireless (Wifi G) communication and including an EnOcean (Sans pile Sans File) frequency Transceiver. ",
+      "associates": [
+        "Yassin Ben Naceur"
+      ]
+    },
+    {
+      "title": "Open Source Solution for a Local Area Network",
+      "link": "https://drive.google.com/file/d/0B4iPDj7pS1lcUHlHTlUtNExoSzQ/edit?usp=sharing",
+      "start_date": null,
+      "end_date": null,
+      "description": "Since the establishment of the ?rst network in the world, security is a major concern for Companies.To ensure this, a company involves various software tools and hardware components. In this context, our project consists of con?guring and deploying a centralized and secured company network using open source tools.Key words : Centralized Management, Data Security, Network Security,Network monitoring.",
+      "associates": [
+        "Yassin Ben Naceur",
+        "Nabil Ben Nasrallah",
+        "Jomaa Farouk"
+      ]
+    }
+  ],
+  "linkedin_url": "https://de.linkedin.com/in/yassin-ben-naceur-73003226",
+  "education": [
+    {
+      "name": "Ecole centrale de Lille",
+      "description": "Master's degree, Systèmes, machines autonomes et Réseaux de Terrains",
+      "degree": null,
+      "major": null,
+      "period": "2013 – 2014",
+      "start_date": "2013",
+      "end_date": "2014"
+    },
+    {
+      "name": "ENSI",
+      "description": "Engineer's degree, Network and System Administration/Administrator",
+      "degree": null,
+      "major": null,
+      "period": "2011 – 2014",
+      "start_date": "2011",
+      "end_date": "2014"
+    },
+    {
+      "name": "Université de Monastir",
+      "description": "Licence en Système informatique et programmation, Computer Science",
+      "degree": null,
+      "major": null,
+      "period": "2008 – 2011",
+      "start_date": "2008",
+      "end_date": "2011"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Iomote - IoT Arena",
+      "link": "https://de.linkedin.com/groups?gid=3258176&trk=prof-groups-membership-name"
+    },
+    {
+      "name": "Software QA Testing Jobs",
+      "link": "https://de.linkedin.com/groups?gid=2852569&trk=prof-groups-membership-name"
+    },
+    {
+      "name": "Software Testing Club - the online software testing community",
+      "link": "https://de.linkedin.com/groups?gid=25412&trk=prof-groups-membership-name"
+    },
+    {
+      "name": "Jobs: Software Quality Assurance and Testing Automation",
+      "link": "https://de.linkedin.com/groups?gid=3660957&trk=prof-groups-membership-name"
+    },
+    {
+      "name": "ENSI Junior Enterprise",
+      "link": "https://de.linkedin.com/groups?gid=3952064&trk=prof-groups-membership-name"
+    }
+  ],
+  "websites": [
+   "web1",
+   "web2"
+  ],
+  "languages": [
+   "Arabe", 
+   "French"
+  ],
+  "skills": [
+    "Java",
+    "Android",
+    "C",
+    "Java Enterprise Edition",
+    "UML",
+    "C++",
+    "MySQL",
+    "XML",
+    "PHP",
+    "Android Development",
+    "SQL",
+    "Linux",
+    "HTML",
+    "Eclipse",
+    "Unix",
+    "11+ anzeigen",
+    "Software Engineering",
+    "Software Development",
+    "PL/SQL",
+    "Programming",
+    "Shell Scripting",
+    "Computer Science",
+    "Unix Shell Scripting",
+    "Python",
+    "Socket Programming",
+    "contiki OS",
+    "PhoneGap",
+    "Weniger anzeigen"
+  ],
+  "certifications": [
+  { "title":"TOEIC",
+    "score":"75"
+  }
+  ],
+  "organizations": [
+	{
+      "name": "test1",
+      "link": "lien1"
+    },
+	 {
+      "name": "test2",
+      "link": "lien2"
+    }
+  ],
+  "past_companies": [
+    {
+      "title": "Embedded Software Engineer",
+      "company": "tado° GmbH",
+      "duration": "1 Jahr",
+      "start_date": "2015-11-01",
+      "linkedin_company_url": "https://www.linkedin.com/company/tado%C2%B0-gmbh?trk=ppro_cprof",
+      "url": "http://www.tado.com",
+      "website": "http://www.tado.com",
+      "industry": "Renewables & Environment",
+      "type": "Privately Held",
+      "company_size": "51-200 employees",
+      "founded": "2011"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "EnOcean",
+      "description": "Re-factoring a previous project and adding new functionality. The project tasks include documentation, implementation, test and release of the final product.",
+      "duration": "3 Monate",
+      "start_date": "2014-11-03",
+      "linkedin_company_url": "https://www.linkedin.com/company/enocean?trk=ppro_cprof",
+      "url": "http://www.enocean.com",
+      "website": "http://www.enocean.com",
+      "industry": "Wireless",
+      "type": "Privately Held",
+      "company_size": "51-200 employees",
+      "founded": "2001"
+    },
+    {
+      "title": "Intern at software department",
+      "company": "EnOcean",
+      "description": "My task was to renew a WhiteBox test platform.",
+      "duration": "7 Monate",
+      "start_date": "2014-08-07",
+      "linkedin_company_url": "https://www.linkedin.com/company/enocean?trk=ppro_cprof",
+      "url": "http://www.enocean.com",
+      "website": "http://www.enocean.com",
+      "industry": "Wireless",
+      "type": "Privately Held",
+      "company_size": "51-200 employees",
+      "founded": "2001"
+    },
+    {
+      "title": "Vice President",
+      "company": "ENSI Junior Entreprise",
+      "duration": "9 Monate",
+      "start_date": null
+    },
+    {
+      "title": "Internship",
+      "company": "TEKonsult",
+      "description": "The Corporate Networks are nowadays more and more sophisticated and need well elaborated solution to prevent all kind of data loss. Based up on this idea, our internship consists on configuring and testing an Open Source Solution for a Local Area Network.The platform contains 4 parts :1- The proxy : PFsense proxy : DMZ, Captive portal, HTTP/HTTPS Filter2- The Domain Controller : The Samba : DNS Server, Active Directory3- The Data Loss Prevention : MyDLP : HTTP/HTTPS Filter4- Network and System Supervisor : Nagios : check ping, TCP, DNS, CPU, HTTP,FTP, DHCP",
+      "duration": "2 Monate",
+      "start_date": "2013-08-02",
+      "linkedin_company_url": "https://www.linkedin.com/company/tekonsult?trk=ppro_cprof",
+      "url": "http://www.tekonsult.de",
+      "website": "http://www.tekonsult.de",
+      "industry": "Telecommunications",
+      "type": "Privately Held",
+      "headquarters": "Wilhelm Busch Str. 12 nMünchen, Bavaria 81477 Germany",
+      "company_size": "51-200 employees",
+      "founded": "2000",
+      "address": "Wilhelm Busch Str. 12  München, Bavaria 81477 Germany"
+    },
+    {
+      "title": "Project Manager",
+      "company": "Junior Entreprise ENSI",
+      "duration": "11 Monate",
+      "start_date": "2013-02-11"
+    }
+  ],
+  "current_companies": [
+
+  ],
+  "recommended_visitors": [
+    {
+      "link": "https://de.linkedin.com/in/mohamed-labidi-allagui-72193878?trk=pub-pbmap",
+      "name": "Mohamed Labidi Allagui",
+      "title": "Ingénieur Génie Logiciel et Systèmes d'Informations",
+      "company": null
+    },
+    {
+      "link": "https://de.linkedin.com/in/nabil-ben-nasrallah-b4570153?trk=pub-pbmap",
+      "name": "Nabil Ben Nasrallah",
+      "title": "OPS and IT support Engineer",
+      "company": "Predictix"
+    },
+    {
+      "link": "https://de.linkedin.com/in/ahmed-souilem-9942bb9b?trk=pub-pbmap",
+      "name": "Ahmed Souilem",
+      "title": "Embedded Systems & Software Engineer",
+      "company": "Looking for an Internship"
+    },
+    {
+      "link": "https://de.linkedin.com/in/nesrineabidi?trk=pub-pbmap",
+      "name": "Nesrine Abidi",
+      "title": "Datacenter Solution Professional",
+      "company": "Microsoft"
+    },
+    {
+      "link": "https://de.linkedin.com/in/achrafaouadi?trk=pub-pbmap",
+      "name": "Achraf Aouadi",
+      "title": "Technical Sales Engineer",
+      "company": "Bosch"
+    },
+    {
+      "link": "https://de.linkedin.com/in/sawadski?trk=pub-pbmap",
+      "name": "Valentin Sawadski",
+      "title": "Co-Founder / Head of Embedded Development",
+      "company": "tado° GmbH"
+    },
+    {
+      "link": "https://de.linkedin.com/in/timowmueller?trk=pub-pbmap",
+      "name": "Timo Müller",
+      "title": "Software Engineer bei tado° GmbH",
+      "company": null
+    },
+    {
+      "link": "https://de.linkedin.com/in/wissem-mazgou-ba296b52?trk=pub-pbmap",
+      "name": "Wissem Mazgou",
+      "title": "DevOps Engineer",
+      "company": "FIS"
+    },
+    {
+      "link": "https://de.linkedin.com/in/amani-ben-dhiab-b63a9544?trk=pub-pbmap",
+      "name": "Amani BEN DHIAB",
+      "title": "ingénieur test et validation chez Focus & Focus International",
+      "company": null
+    },
+    {
+      "link": "https://de.linkedin.com/in/rim-frikha-ab60a453?trk=pub-pbmap",
+      "name": "Rim Frikha",
+      "title": "Software Engineer chez Lyance",
+      "company": null
+    }
+  ],
+
+"friends": [
+{
+"name": "test1"
+},
+{
+"name": "test2"
+},
+{
+"name": "test3"
+},
+{
+"name": "test4"
+}
+  ]  
+  
+  
+}

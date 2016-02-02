@@ -1,0 +1,348 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:lp="http://linkedin_project.com/profile.rdfs#">
+
+<rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Professional/#Yassin Ben Naceur">
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Software Development"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Yassin Ben Naceur/#Mohamed Labidi Allagui">
+        <lp:linkedinUrl>https://de.linkedin.com/in/mohamed-labidi-allagui-72193878?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Ingénieur Génie Logiciel et Systèmes d'Informations</lp:title>
+        <lp:name>Mohamed Labidi Allagui</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasEducation>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Yassin Ben Naceur/#École centrale de Lille">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#masterDegreeStudies</rdf:type>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#École centrale de Lille"/>
+        <lp:description>Master's degree, Systèmes, machines autonomes et Réseaux de Terrains</lp:description>
+        <lp:duration>2013 – 2014</lp:duration>
+        <lp:endDate>2014</lp:endDate>
+        <lp:startDate>2013</lp:startDate>
+        <lp:hasTitle>École centrale de Lille</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasEducation>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#MySQL"/>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Yassin Ben Naceur/#Software Engineer">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#EnOcean">
+            <lp:hasEffective>51-200 employees</lp:hasEffective>
+            <lp:hasType>Privately Held</lp:hasType>
+            <lp:hasWebsite>http://www.enocean.com</lp:hasWebsite>
+            <lp:lineOfBusiness>Wireless</lp:lineOfBusiness>
+            <lp:foundedIn>2001</lp:foundedIn>
+            <lp:linkedinUrl>https://www.linkedin.com/company/enocean?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>EnOcean</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:description>Re-factoring a previous project and adding new functionality. The project tasks include documentation, implementation, test and release of the final product.</lp:description>
+        <lp:duration>3 Monate</lp:duration>
+        <lp:startDate>2014-11-03</lp:startDate>
+        <lp:hasTitle>Software Engineer</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#softwareEngineer</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#PL/SQL"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Android"/>
+    <lp:linkedinUrl>https://de.linkedin.com/in/yassin-ben-naceur-73003226</lp:linkedinUrl>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Unix Shell Scripting"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Java"/>
+    <lp:lastName>Ben Naceur</lp:lastName>
+    <lp:name>Yassin Ben Naceur</lp:name>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#Arabic"/>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#French"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#ENSI Junior Enterprise">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=3952064&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>ENSI Junior Enterprise</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Jobs: Software Quality Assurance and Testing Automation">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=3660957&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Jobs: Software Quality Assurance and Testing Automation</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasFriend rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Ramzi Zayene"/>
+    <lp:didProject>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Project/Yassin Ben Naceur/#Open Source Solution for a Local Area Network">
+        <lp:hasAssociates rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Jomaa Farouk"/>
+        <lp:hasAssociates rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Nabil Ben Nasrallah"/>
+        <lp:hasAssociates rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Yassin Ben Naceur"/>
+        <lp:hasLink>https://drive.google.com/file/d/0B4iPDj7pS1lcUHlHTlUtNExoSzQ/edit?usp=sharing</lp:hasLink>
+        <lp:description>Since the establishment of the ?rst network in the world, security is a major concern for Companies.To ensure this, a company involves various software tools and hardware components. In this context, our project consists of con?guring and deploying a centralized and secured company network using open source tools.Key words : Centralized Management, Data Security, Network Security,Network monitoring.</lp:description>
+        <lp:hasTitle>Open Source Solution for a Local Area Network</lp:hasTitle>
+      </rdf:Description>
+    </lp:didProject>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#HTML"/>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Yassin Ben Naceur/#Vice President">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#ENSI Junior Entreprise">
+            <lp:hasName>ENSI Junior Entreprise</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:duration>9 Monate</lp:duration>
+        <lp:hasTitle>Vice President</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Post</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:hasEducation>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Yassin Ben Naceur/#Université de Monastir">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#licenceDegreeStudies</rdf:type>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#Université de Monastir"/>
+        <lp:description>Licence en Système informatique et programmation, Computer Science</lp:description>
+        <lp:duration>2008 – 2011</lp:duration>
+        <lp:endDate>2011</lp:endDate>
+        <lp:startDate>2008</lp:startDate>
+        <lp:hasTitle>Université de Monastir</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasEducation>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Eclipse"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Yassin Ben Naceur/#Timo Müller">
+        <lp:linkedinUrl>https://de.linkedin.com/in/timowmueller?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Software Engineer bei tado° GmbH</lp:title>
+        <lp:name>Timo Müller</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#German"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Iomote - IoT Arena">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=3258176&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Iomote - IoT Arena</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasCertification>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Certification/Yassin Ben Naceur/#Certificat d'Internet et d'Informatique">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#ITCertification</rdf:type>
+        <lp:hasInfoBox rdf:resource="http://linkedin_project.com/profile.rdfs-instances/certificationInfoBox/#Certificat d'Internet et d'Informatique"/>
+        <lp:hasScore></lp:hasScore>
+        <lp:hasTitle>Certificat d'Internet et d'Informatique</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasCertification>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Yassin Ben Naceur/#Intern at software department">
+        <lp:tookPlaceIn rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Company/#EnOcean"/>
+        <lp:description>My task was to renew a WhiteBox test platform.</lp:description>
+        <lp:duration>7 Monate</lp:duration>
+        <lp:startDate>2014-08-07</lp:startDate>
+        <lp:hasTitle>Intern at software department</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Trainee</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Yassin Ben Naceur/#Nesrine Abidi">
+        <lp:company rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Company/#Microsoft"/>
+        <lp:linkedinUrl>https://de.linkedin.com/in/nesrineabidi?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Datacenter Solution Professional</lp:title>
+        <lp:name>Nesrine Abidi</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasCertification>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Certification/Yassin Ben Naceur/#TOEIC">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#languageCertification</rdf:type>
+        <lp:hasInfoBox rdf:resource="http://linkedin_project.com/profile.rdfs-instances/certificationInfoBox/#TOEIC"/>
+        <lp:hasScore>920</lp:hasScore>
+        <lp:hasTitle>TOEIC</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasCertification>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Yassin Ben Naceur/#Project Manager">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#Junior Entreprise ENSI">
+            <lp:hasName>Junior Entreprise ENSI</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:duration>11 Monate</lp:duration>
+        <lp:startDate>2013-02-11</lp:startDate>
+        <lp:hasTitle>Project Manager</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Post</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Unix"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Shell Scripting"/>
+    <lp:industry>Computer-Software</lp:industry>
+    <lp:hasFriend rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Syrine Tlili, PhD"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Software Engineering"/>
+    <rdf:type>http://linkedin_project.com/profile.rdfs#Professional</rdf:type>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#C++"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Software QA Testing Jobs">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=2852569&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Software QA Testing Jobs</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#contiki OS"/>
+    <lp:title>Freelancer</lp:title>
+    <lp:firstName>Yassin</lp:firstName>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Weniger anzeigen"/>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#English"/>
+    <lp:numberOfConnections>500</lp:numberOfConnections>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Linux"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#SQL"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Android Development"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Socket Programming"/>
+    <lp:didProject>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Project/Yassin Ben Naceur/#Internet of Things : Remote Control Platform of Smart House">
+        <lp:hasLink>https://docs.google.com/file/d/0B8Sgq5vNQLwqT2JyXzdTTlJWMWs/edit</lp:hasLink>
+        <lp:description>The idea of the project was a result of a brainstorming in an international Event : RoboSense (http://www.robosense.org). I was among the 101 participants (Tunisia, Italy, Portugal, Czech Republic, France, Sweden). The main subjects of the brainstorming was about creating a prototype of a platform capable of controlling the house via Internet from all over the world.The platform contains mainly 3 projects :1- The UI on a Samsung Galaxy Tab : the application offers a Super High UI allowing the users to Turn On/Off the light, Open or Close the door. Activate or Deactivate the Alarm System and finally check the Temperature of the house. It allow also a hole administration of the users : Add, Delete, Grant Control Actions.2- The Server Side : a Web Server managing all the data. We used a Data Base in order to make it easier to store, edit, delete or fetch all the data about the house.3- The hardware side : in this project we built an electronic system based on an open source electronic Italian platform named ARDUINO. Also, we built a special communication system based on an ANDROID mobile phone. this phone is used as a router (Google Cloud Messaging based GateWay)</lp:description>
+        <lp:hasTitle>Internet of Things : Remote Control Platform of Smart House</lp:hasTitle>
+      </rdf:Description>
+    </lp:didProject>
+    <lp:hasFriend rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Jomaa Farouk"/>
+    <lp:didProject>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Project/Yassin Ben Naceur/#Online Shared Agenda">
+        <lp:hasAssociates rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Alaeddine Bouattour"/>
+        <lp:hasAssociates rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Yassin Ben Naceur"/>
+        <lp:hasLink>https://www.dropbox.com/s/e2ni0jtcpnki2se/rapport_final.pdf?dl=0</lp:hasLink>
+        <lp:description>The idea came from Google Agenda but with much more simpler way to use. You can sign up, sign in then create, view or manage your to do list. We added some specific description for the event (We added types such as : exams, presentation, coffee break, dinner, cinema ... ). The application works only on Android Mobile Platforms with a charming orange design. More over, we thought of using the Cloud Technology offered by Google Company the GAE (Google App Engine Cloud Service). It was a challenging choice, the aim of it was to give for the end user the possibility to sign in from any android device and fetch his events as fast as it could get to the new device. Another important option we had developed was the notification service. Before 24 hours of each planned event your mobile phone will vibrate or ring showing you a notification at the status bar of your device.</lp:description>
+        <lp:hasTitle>Online Shared Agenda</lp:hasTitle>
+      </rdf:Description>
+    </lp:didProject>
+    <lp:location>München und Umgebung</lp:location>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#PhoneGap"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Programming"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#C"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Yassin Ben Naceur/#Ahmed Souilem">
+        <lp:company rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Company/#Looking for an Internship"/>
+        <lp:linkedinUrl>https://de.linkedin.com/in/ahmed-souilem-9942bb9b?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Embedded Systems and Software Engineer</lp:title>
+        <lp:name>Ahmed Souilem</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Software Testing Club - the online software testing community">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=25412&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Software Testing Club - the online software testing community</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Java Enterprise Edition"/>
+    <lp:hasPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Yassin Ben Naceur/#Embedded Software Engineer">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#tado° GmbH">
+            <lp:hasEffective>51-200 employees</lp:hasEffective>
+            <lp:hasType>Privately Held</lp:hasType>
+            <lp:hasWebsite>http://www.tado.com</lp:hasWebsite>
+            <lp:lineOfBusiness>Renewables and Environment</lp:lineOfBusiness>
+            <lp:foundedIn>2011</lp:foundedIn>
+            <lp:linkedinUrl>https://www.linkedin.com/company/tado%C2%B0-gmbh?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>tado° GmbH</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:duration>1 Jahr</lp:duration>
+        <lp:startDate>2015-11-01</lp:startDate>
+        <lp:hasTitle>Embedded Software Engineer</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#softwareEngineer</rdf:type>
+      </rdf:Description>
+    </lp:hasPosition>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Yassin Ben Naceur/#Valentin Sawadski">
+        <lp:company rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Company/#tado° GmbH"/>
+        <lp:linkedinUrl>https://de.linkedin.com/in/sawadski?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Co-Founder / Head of Embedded Development</lp:title>
+        <lp:name>Valentin Sawadski</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#UML"/>
+    <lp:picture>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/3/000/25e/293/2d5fbd6.jpg</lp:picture>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Yassin Ben Naceur/#Nabil Ben Nasrallah">
+        <lp:company rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Company/#Predictix"/>
+        <lp:linkedinUrl>https://de.linkedin.com/in/nabil-ben-nasrallah-b4570153?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>OPS and IT support Engineer</lp:title>
+        <lp:name>Nabil Ben Nasrallah</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#PHP"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#XML"/>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Yassin Ben Naceur/#Internship">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#TEKonsult">
+            <lp:hasHeadQuarters>Wilhelm Busch Str. 12 München, Bavaria 81477 Germany</lp:hasHeadQuarters>
+            <lp:hasEffective>51-200 employees</lp:hasEffective>
+            <lp:hasType>Privately Held</lp:hasType>
+            <lp:hasWebsite>http://www.tekonsult.de</lp:hasWebsite>
+            <lp:hasAdress>Wilhelm Busch Str. 12  München, Bavaria 81477 Germany</lp:hasAdress>
+            <lp:lineOfBusiness>Telecommunications</lp:lineOfBusiness>
+            <lp:foundedIn>2000</lp:foundedIn>
+            <lp:linkedinUrl>https://www.linkedin.com/company/tekonsult?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>TEKonsult</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:description>The Corporate Networks are nowadays more and more sophisticated and need well elaborated solution to prevent all kind of data loss. Based up on this idea, our internship consists on configuring and testing an Open Source Solution for a Local Area Network.The platform contains 4 parts :1- The proxy : PFsense proxy : DMZ, Captive portal, HTTP/HTTPS Filter2- The Domain Controller : The Samba : DNS Server, Active Directory3- The Data Loss Prevention : MyDLP : HTTP/HTTPS Filter4- Network and System Supervisor : Nagios : check ping, TCP, DNS, CPU, HTTP,FTP, DHCP</lp:description>
+        <lp:duration>2 Monate</lp:duration>
+        <lp:startDate>2013-08-02</lp:startDate>
+        <lp:hasTitle>Internship</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Trainee</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Yassin Ben Naceur/#Achraf Aouadi">
+        <lp:company rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Company/#Bosch"/>
+        <lp:linkedinUrl>https://de.linkedin.com/in/achrafaouadi?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Technical Sales Engineer</lp:title>
+        <lp:name>Achraf Aouadi</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Yassin Ben Naceur/#Amani BEN DHIAB">
+        <lp:linkedinUrl>https://de.linkedin.com/in/amani-ben-dhiab-b63a9544?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>ingénieur test et validation chez Focus and Focus International</lp:title>
+        <lp:name>Amani BEN DHIAB</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Computer Science"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Yassin Ben Naceur/#Wissem Mazgou">
+        <lp:company rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Company/#FIS"/>
+        <lp:linkedinUrl>https://de.linkedin.com/in/wissem-mazgou-ba296b52?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>DevOps Engineer</lp:title>
+        <lp:name>Wissem Mazgou</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:didProject>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Project/Yassin Ben Naceur/#Wireless Temperature Sensor network supervision Platform">
+        <lp:hasAssociates rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Yassin Ben Naceur"/>
+        <lp:hasLink>https://www.dropbox.com/s/88uxc3x1o56xnw0/Pr%C3%A9sentation%20Finale.pdf?dl=0</lp:hasLink>
+        <lp:description>The project is all about Internet of Things. Using existing sophisticated technologies we succeeded to create a platform for gathering the temperature values from the different department of the campus "Univ Lille 1". We used FlyPort from the OpenPicus company. It is a micro-controller with a Wireless (Wifi G) communication and including an EnOcean (Sans pile Sans File) frequency Transceiver. </lp:description>
+        <lp:hasTitle>Wireless Temperature Sensor network supervision Platform</lp:hasTitle>
+      </rdf:Description>
+    </lp:didProject>
+    <lp:hasEducation>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Yassin Ben Naceur/#ENSI">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#engineeringStudies</rdf:type>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#ENSI"/>
+        <lp:description>Engineer's degree, Network and System Administration/Administrator</lp:description>
+        <lp:duration>2011 – 2014</lp:duration>
+        <lp:endDate>2014</lp:endDate>
+        <lp:startDate>2011</lp:startDate>
+        <lp:hasTitle>ENSI</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasEducation>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Python"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Yassin Ben Naceur/#Rim Frikha">
+        <lp:linkedinUrl>https://de.linkedin.com/in/rim-frikha-ab60a453?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Software Engineer chez Lyance</lp:title>
+        <lp:name>Rim Frikha</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasCertification>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Certification/Yassin Ben Naceur/#SCJP">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#ITCertification</rdf:type>
+        <lp:hasInfoBox rdf:resource="http://linkedin_project.com/profile.rdfs-instances/certificationInfoBox/#SCJP"/>
+        <lp:hasScore>95</lp:hasScore>
+        <lp:hasTitle>SCJP</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasCertification>
+    <lp:country rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Country/#Deutschland"/>
+</rdf:Description>
+
+</rdf:RDF>

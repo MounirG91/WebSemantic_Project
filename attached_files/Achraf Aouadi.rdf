@@ -1,0 +1,398 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:lp="http://linkedin_project.com/profile.rdfs#">
+	
+<rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Professional/#Achraf Aouadi">
+    <lp:hasCertification>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Certification/Achraf Aouadi/#TOEFL">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#languageCertification</rdf:type>
+        <lp:hasInfoBox rdf:resource="http://linkedin_project.com/profile.rdfs-instances/certificationInfoBox/#TOEFL"/>
+        <lp:hasScore>97</lp:hasScore>
+        <lp:hasTitle>TOEFL</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasCertification>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Java Enterprise Edition"/>
+    <rdf:type>http://linkedin_project.com/profile.rdfs#Professional</rdf:type>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#ENSI Microsoft Club">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=3957361&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>ENSI Microsoft Club</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Achraf Aouadi/#Rihab Ben Rhouma">
+        <lp:company rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Company/#PITERION Group"/>
+        <lp:linkedinUrl>https://de.linkedin.com/in/rihab-ben-rhouma-98322233?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Junior PLM Consultant</lp:title>
+        <lp:name>Rihab Ben Rhouma</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#MySQL"/>
+    <lp:hasCertification>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Certification/Achraf Aouadi/#B2 Certification in German Language">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#languageCertification</rdf:type>
+        <lp:hasInfoBox rdf:resource="http://linkedin_project.com/profile.rdfs-instances/certificationInfoBox/#B2 Certification in German Language"/>
+        <lp:hasScore>87</lp:hasScore>
+        <lp:hasTitle>B2 Certification in German Language</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasCertification>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Perl"/>
+    <lp:numberOfConnections>500</lp:numberOfConnections>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Achraf Aouadi/#Yassin Ben Naceur">
+        <lp:linkedinUrl>https://de.linkedin.com/in/yassin-ben-naceur-73003226?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Freelancer</lp:title>
+        <lp:name>Yassin Ben Naceur</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:picture>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/8/000/243/17b/39e7389.jpg</lp:picture>
+    <lp:hasCertification>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Certification/Achraf Aouadi/#Inter-Cultural 1-week training for international Engineers">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#ITCertification</rdf:type>
+        <lp:hasInfoBox rdf:resource="http://linkedin_project.com/profile.rdfs-instances/certificationInfoBox/#Inter-Cultural 1-week training for international Engineers"/>
+        <lp:hasScore></lp:hasScore>
+        <lp:hasTitle>Inter-Cultural 1-week training for international Engineers</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasCertification>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Achraf Aouadi/#Farouk Mezghich">
+        <lp:company rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Company/#Microsoft"/>
+        <lp:linkedinUrl>https://de.linkedin.com/in/farkao?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Corporate Territory Manager</lp:title>
+        <lp:name>Farouk Mezghich</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Achraf Aouadi/#Khaled TOUEL">
+        <lp:linkedinUrl>https://de.linkedin.com/in/ktouel?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Développeur chez Alliance Group</lp:title>
+        <lp:name>Khaled TOUEL</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Software Development"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Dubai Recruitment">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=102696&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Dubai Recruitment</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#C++"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#OOP"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Project Coordination"/>
+    <lp:hasPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Achraf Aouadi/#Technical Sales Engineer">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#Bosch">
+            <lp:hasEffective>10,001+ employees</lp:hasEffective>
+            <lp:hasType>Privately Held</lp:hasType>
+            <lp:hasWebsite>http://www.bosch.com</lp:hasWebsite>
+            <lp:lineOfBusiness>Mechanical or Industrial Engineering</lp:lineOfBusiness>
+            <lp:foundedIn>1886</lp:foundedIn>
+            <lp:linkedinUrl>https://www.linkedin.com/company/bosch?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>Bosch</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:description>Gasoline Systems - Air ManagementWorldwide Connectors Sales - OEMsLow-poler Car Connectors</lp:description>
+        <lp:duration>7 mois</lp:duration>
+        <lp:hasTitle>Technical Sales Engineer</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Engineer</rdf:type>
+      </rdf:Description>
+    </lp:hasPosition>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Android"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Careers International Network">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=161313&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Careers International Network</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#Arabic"/>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Achraf Aouadi/#Automotive Software Engineer">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#Valeo">
+            <lp:hasHeadQuarters>43 rue Bayen Paris, 75017 France</lp:hasHeadQuarters>
+            <lp:hasEffective>10,001+ employees</lp:hasEffective>
+            <lp:hasType>Public Company</lp:hasType>
+            <lp:hasWebsite>http://www.valeo.com</lp:hasWebsite>
+            <lp:hasAdress>43 rue Bayen  Paris,  75017 France</lp:hasAdress>
+            <lp:lineOfBusiness>Automotive</lp:lineOfBusiness>
+            <lp:foundedIn>1923</lp:foundedIn>
+            <lp:linkedinUrl>https://www.linkedin.com/company/valeo?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>Valeo</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:description>Business Group: Comfort &amp; Advanced Driving Assistance SystemsProduct Group: Driving AssistanceUltrasonic Sensors-based Automotive Software for Automotive Leaders OEMs.Developing software according to AUTOSAR architecture for:- Ultrasonic Park Assist - UPA- Blind Spot Detection - BSD- Emergency Breaking and Drive Control.</lp:description>
+        <lp:duration>1 an 10 mois</lp:duration>
+        <lp:hasTitle>Automotive Software Engineer</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#softwareEngineer</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Achraf Aouadi/#Engineer Diploma Thesis">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#Robert BOSCH GmbH">
+            <lp:hasEffective>10,001+ employees</lp:hasEffective>
+            <lp:hasType>Privately Held</lp:hasType>
+            <lp:hasWebsite>http://www.bosch.com</lp:hasWebsite>
+            <lp:lineOfBusiness>Mechanical or Industrial Engineering</lp:lineOfBusiness>
+            <lp:foundedIn>1886</lp:foundedIn>
+            <lp:linkedinUrl>https://www.linkedin.com/company/bosch?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>Robert BOSCH GmbH</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:description>Business Group: Gasoline SystemsDivision: Electric Vehicle and Hybrid Technology- Thesis Topic: Multitasking, monitoring and processes scheduling in a real-time automotive embedded operating systemMain Task: Implementation of a process-execution and scheduling monitoring solution, integration and testing in the Testbench, offline computing tool development</lp:description>
+        <lp:duration>8 mois</lp:duration>
+        <lp:startDate>2012-10-08</lp:startDate>
+        <lp:hasTitle>Engineer Diploma Thesis</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#softwareEngineer</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Tunisian engineers">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=63505&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Tunisian engineers</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Achraf Aouadi/#Voluntary Internship">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#One TECH Development">
+            <lp:hasHeadQuarters>16, rue des Entrepreneurs - Z.I. Charguia II B.P. 300 Tunis Belvédère, 1002 Tunisia</lp:hasHeadQuarters>
+            <lp:hasEffective>11-50 employees</lp:hasEffective>
+            <lp:hasType>Privately Held</lp:hasType>
+            <lp:hasWebsite>http://www.onetech-dev.com</lp:hasWebsite>
+            <lp:hasAdress>16, rue des Entrepreneurs - Z.I. Charguia II B.P. 300 Tunis Belvédère, 1002 Tunisia</lp:hasAdress>
+            <lp:lineOfBusiness>Telecommunications</lp:lineOfBusiness>
+            <lp:linkedinUrl>https://www.linkedin.com/company/one-tech-development?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>One TECH Development</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:description>- Topic: Set up and deployment of network monitoring and administration system (Nagios).- Description: Monitoring, controlling &amp; configuring network equipments (switches, routers, servers)- Used technologies and Keywords: Linux, Cisco, SNMP, Nagios</lp:description>
+        <lp:duration>2 mois</lp:duration>
+        <lp:startDate>2010-09-02</lp:startDate>
+        <lp:hasTitle>Voluntary Internship</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Trainee</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:country rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Country/#Allemagne"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Achraf Aouadi/#Anis Chihi">
+        <lp:linkedinUrl>https://de.linkedin.com/in/anis-chihi-243a9a83?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Werkstudent bei Munich Consulting Group GmbH</lp:title>
+        <lp:name>Anis Chihi</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Sparx Enterprise Architect"/>
+    <lp:linkedinUrl>https://de.linkedin.com/in/achrafaouadi/fr</lp:linkedinUrl>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Android Developer Group">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=86481&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Android Developer Group</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Leadership"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Real Time"/>
+    <lp:name>Achraf Aouadi</lp:name>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Achraf Aouadi/#Sabri Mtibaa, Dr.-Ing.">
+        <lp:company rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Company/#Sofrecom Tunisia"/>
+        <lp:linkedinUrl>https://de.linkedin.com/in/smtibaa?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Technical Manager</lp:title>
+        <lp:name>Sabri Mtibaa, Dr.-Ing.</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Achraf Aouadi/#Amin Sakka">
+        <lp:linkedinUrl>https://de.linkedin.com/in/amin-sakka-6b202279?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Research Assistant bei TUM CREATE</lp:title>
+        <lp:name>Amin Sakka</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Achraf Aouadi/#Nesrine Abidi">
+        <lp:company rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Company/#Microsoft"/>
+        <lp:linkedinUrl>https://de.linkedin.com/in/nesrineabidi?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Datacenter Solution Professional</lp:title>
+        <lp:name>Nesrine Abidi</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Linux"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#UML"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Intercultural Communication"/>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#English"/>
+    <lp:location>Région de Stuttgart</lp:location>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Achraf Aouadi/#Internship">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#Cynapsys It Hotspot">
+            <lp:hasHeadQuarters>Parc Technlogique Ghazela Ariana, 2088 Tunisia</lp:hasHeadQuarters>
+            <lp:hasEffective>51-200 employees</lp:hasEffective>
+            <lp:hasType>Privately Held</lp:hasType>
+            <lp:hasWebsite>http://www.cynapsys.de</lp:hasWebsite>
+            <lp:hasAdress>Parc Technlogique Ghazela  Ariana,  2088 Tunisia</lp:hasAdress>
+            <lp:lineOfBusiness>Computer Software</lp:lineOfBusiness>
+            <lp:foundedIn>2004</lp:foundedIn>
+            <lp:linkedinUrl>https://www.linkedin.com/company/cynapsys-it-hotspot?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>Cynapsys It Hotspot</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:description>- Topic: Development of a Human-Computer Interface to command an LCD screen of an electronic card.- Description: Design of a graphical user interface which sends commands to be displayed on an LCD screen- Used technologies and Keywords: Linux, C, VIPER, SDL graphical library</lp:description>
+        <lp:duration>3 mois</lp:duration>
+        <lp:hasTitle>Internship</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Trainee</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Automotive"/>
+    <lp:lastName>Aouadi</lp:lastName>
+    <lp:hasEducation>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Achraf Aouadi/#Preparatory Institute of Engineering Studies of Tunis">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#preparatoryCycle</rdf:type>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#Preparatory Institute of Engineering Studies of Tunis"/>
+        <lp:description>First Cycle of University Studies Diploma, Maths - Physics</lp:description>
+        <lp:duration>2007 – 2009</lp:duration>
+        <lp:endDate>2009</lp:endDate>
+        <lp:startDate>2007</lp:startDate>
+        <lp:hasTitle>Preparatory Institute of Engineering Studies of Tunis</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasEducation>
+    <lp:hasCertification>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Certification/Achraf Aouadi/#TOEIC">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#languageCertification</rdf:type>
+        <lp:hasInfoBox rdf:resource="http://linkedin_project.com/profile.rdfs-instances/certificationInfoBox/#TOEIC"/>
+        <lp:hasScore>910</lp:hasScore>
+        <lp:hasTitle>TOEIC</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasCertification>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Achraf Aouadi/#Rym Bourguiba">
+        <lp:linkedinUrl>https://de.linkedin.com/in/rymbourguiba?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Automotive Software Engineer chez Valeo</lp:title>
+        <lp:name>Rym Bourguiba</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#JADE and JEs Alumni">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=747&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>JADE and JEs Alumni</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Java"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Business opportunities in Tunisia">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=4411543&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Business opportunities in Tunisia</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#IT, Technology, Engineering and Science Jobs and Careers">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=2881349&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>IT, Technology, Engineering and Science Jobs and Careers</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Communication"/>
+    <lp:hasWebsite>http://achin15.wordpress.com</lp:hasWebsite>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Achraf Aouadi/#Participant in the Pilot Project: Promotion of Highly-skilled Tunisian Young Engineers">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH">
+            <lp:hasEffective>10,001+ employees</lp:hasEffective>
+            <lp:hasType>Government Agency</lp:hasType>
+            <lp:hasWebsite>http://www.giz.de</lp:hasWebsite>
+            <lp:lineOfBusiness>International Trade and Development</lp:lineOfBusiness>
+            <lp:linkedinUrl>https://www.linkedin.com/company/deutsche-gesellschaft-f-r-internationale-zusammenarbeit-giz-gmbh?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:description>Tunisian-German Cooperation Program (GIZ &amp; German Ministry of Foreign Affairs)A 5-month phase of intensive German learning (professional &amp; everyday-life German) and a traineship to active and cross-cultural life.A 6-month internship in Continental Automotive GmbH.</lp:description>
+        <lp:duration>3 ans 1 mois</lp:duration>
+        <lp:hasTitle>Participant in the Pilot Project: Promotion of Highly-skilled Tunisian Young Engineers</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Trainee</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Tunesische Akademiker Gesellschaft">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=3979546&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Tunesische Akademiker Gesellschaft</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#AUTOSAR"/>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Achraf Aouadi/#Project Internship">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#Continental">
+            <lp:hasHeadQuarters>Vahrenwalder Str. 9, Hannover, D-30165 Germany</lp:hasHeadQuarters>
+            <lp:hasEffective>10,001+ employees</lp:hasEffective>
+            <lp:hasType>Public Company</lp:hasType>
+            <lp:hasWebsite>http://www.continental-corporation.com</lp:hasWebsite>
+            <lp:hasAdress>Vahrenwalder Str. 9,  Hannover,  D-30165 Germany</lp:hasAdress>
+            <lp:lineOfBusiness>Automotive</lp:lineOfBusiness>
+            <lp:foundedIn>1871</lp:foundedIn>
+            <lp:linkedinUrl>https://www.linkedin.com/company/continental?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>Continental</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:description>Commercial Vehicles - Digital tachograph- Tachograph software development.- Security handling in driver-related data transfer and geographic data storage.</lp:description>
+        <lp:duration>2 mois</lp:duration>
+        <lp:hasTitle>Project Internship</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Trainee</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#French"/>
+    <lp:industry>Industrie automobile</lp:industry>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Software Design"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#C"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Networking"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Automotive Electronics and Embedded Software">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=1474397&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Automotive Electronics and Embedded Software</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#beginner embedded engineering">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=4409200&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>beginner embedded engineering</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:summary>- Computer Science Engineer with a main focus on Automotive Embedded and Real Time Systems.- "Addicted" to volunteering and extra-curricular work with Associations and NGOs.- Good technical background in software design, architecture and development.- Strong teamwork, collaboration and leadership skills developed throughout several national and international extra-curricular activities and responsibilities.- Software developer fascinated with automotive and aeronautic cutting-edge technologies with a continuous will to enrich my knowledge in such fields.- Key fields:Advanced Driving Assistance Systems (ADAS) - AutomotiveScheduling in Real Time Embedded Operating SystemsTechnology-Applied Computer Science EngineeringHigh-Level Object-Oriented ProgrammingCommunication, Networks &amp; Protocols</lp:summary>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#German"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Achraf Aouadi/#Sanjay Yaluguli">
+        <lp:company rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Company/#Valeo"/>
+        <lp:linkedinUrl>https://de.linkedin.com/in/sanjay-yaluguli-1a58772a?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Software Engineer</lp:title>
+        <lp:name>Sanjay Yaluguli</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Embedded Systems"/>
+    <lp:hasEducation>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Achraf Aouadi/#École Nationale des Sciences de l'Informatique">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#engineeringStudies</rdf:type>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#École Nationale des Sciences de l'Informatique"/>
+        <lp:description>Engineering Degree, Comptuer Science Engineering, Good</lp:description>
+        <lp:duration>2009 – 2012</lp:duration>
+        <lp:endDate>2012</lp:endDate>
+        <lp:startDate>2009</lp:startDate>
+        <lp:hasTitle>École Nationale des Sciences de l'Informatique</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasEducation>
+    <lp:title>Technical Sales Engineer at Bosch</lp:title>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Testing"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Automotive Embedded Professionals">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=2727020&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Automotive Embedded Professionals</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Network of English-Speaking Tunisians (NEST)">
+        <lp:hasLink>https://de.linkedin.com/groups?gid=1949974&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Network of English-Speaking Tunisians (NEST)</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:firstName>Achraf</lp:firstName>
+</rdf:Description>
+
+</rdf:RDF>

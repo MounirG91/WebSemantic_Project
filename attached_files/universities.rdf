@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+xmlns="http://linkedin_project.com/profile.rdfs#"
+xml:base="http://linkedin_project.com/profile.rdfs-instances/University/#">
+
+
+<University rdf:about="http://linkedin_project.com/profile.rdfs-instances/University/#ENSI">
+	<hasName>École Nationale des Sciences de l'Informatique</hasName>
+	<foundedIn>1984</foundedIn>
+	<hasType>Engineering School</hasType>
+	<hasWebsite>http://www.ensi.rnu.tn/</hasWebsite>
+	<hasDirector>Faouzi GHORBEL</hasDirector>
+	<hasNumberOfStudents>1200</hasNumberOfStudents>
+	<hasNumberOfTeachers>90</hasNumberOfTeachers>
+	<hasLanguageRegime>French and English</hasLanguageRegime>
+	<hasAdress>Campus Universitaire de la Manouba, Manouba 2010, Tunisie</hasAdress>
+</University>
+
+<University rdf:about="http://linkedin_project.com/profile.rdfs-instances/University/#National Engineering School of Sfax">
+	<hasName>National Engineering School of Sfax</hasName>
+	<foundedIn>1983</foundedIn>
+	<hasType>Engineering School</hasType>
+	<hasWebsite>http://www.enis.rnu.tn/</hasWebsite>
+	<hasDirector>Mohamed Jmail</hasDirector>
+	<hasNumberOfStudents>1200</hasNumberOfStudents>
+	<hasNumberOfTeachers></hasNumberOfTeachers>
+	<hasLanguageRegime>French and English</hasLanguageRegime>
+	<hasAdress>Sfax 3038, Tunisie</hasAdress>
+</University>
+
+<University rdf:about="http://linkedin_project.com/profile.rdfs-instances/University/#Polytech Nice-Sophia">
+	<hasName>Polytech Nice-Sophia</hasName>
+	<foundedIn>2005</foundedIn>
+	<hasType>Engineering School</hasType>
+	<hasWebsite>http://www.polytechnice.fr/</hasWebsite>
+	<hasDirector>Philippe Gourbesville</hasDirector>
+	<hasNumberOfStudents>1100</hasNumberOfStudents>
+	<hasNumberOfTeachers>92</hasNumberOfTeachers>
+	<hasLanguageRegime>French</hasLanguageRegime>
+	<hasAdress>930 Route des Colles, 06410 Biot</hasAdress>
+</University>
+
+<University rdf:about="http://linkedin_project.com/profile.rdfs-instances/University/#École centrale de Lille">
+	<hasName>École centrale de Lille</hasName>
+	<foundedIn>1854 - 1872</foundedIn>
+	<hasType>Engineering School</hasType>
+	<hasWebsite>http://www.ec-lille.fr/</hasWebsite>
+	<hasDirector>Emmanuel Duflos</hasDirector>
+	<hasNumberOfStudents>1500</hasNumberOfStudents>
+	<hasNumberOfTeachers></hasNumberOfTeachers>
+	<hasLanguageRegime>French</hasLanguageRegime>
+	<hasAdress>Cité Scientifique, 59651 Villeneuve-d'Ascq</hasAdress>
+</University>
+
+<University rdf:about="http://linkedin_project.com/profile.rdfs-instances/University/#Université Pierre et Marie Curie (Paris VI)">
+	<hasName>Université Pierre et Marie Curie (Paris VI)</hasName>
+	<foundedIn>1er janvier 1971</foundedIn>
+	<hasType>Public University</hasType>
+	<hasWebsite>http://www.upmc.fr/</hasWebsite>
+	<hasDirector>Jean Chambaz</hasDirector>
+	<hasNumberOfStudents>32000</hasNumberOfStudents>
+	<hasNumberOfTeachers>2483</hasNumberOfTeachers>
+	<hasLanguageRegime>French</hasLanguageRegime>
+	<hasAdress>4 Place Jussieu, 75005 Paris</hasAdress>
+</University>
+
+<University rdf:about="http://linkedin_project.com/profile.rdfs-instances/University/#Université Blaise Pascal (Clermont-II) - Clermont-Ferrand">
+	<hasName>Université Blaise Pascal (Clermont-II) - Clermont-Ferrand</hasName>
+	<foundedIn>1976</foundedIn>
+	<hasType>Public University</hasType>
+	<hasWebsite>http://www.univ-bpclermont.fr/</hasWebsite>
+	<hasDirector>Mathias Bernard</hasDirector>
+	<hasNumberOfStudents>16007</hasNumberOfStudents>
+	<hasNumberOfTeachers>1223</hasNumberOfTeachers>
+	<hasLanguageRegime>French</hasLanguageRegime>
+	<hasAdress>24 Avenue des Landais, 63170 Aubière</hasAdress>
+</University>
+ 
+<University rdf:about="http://linkedin_project.com/profile.rdfs-instances/University/#Preparatory Institute of Engineering Studies of Tunis">
+	<hasName>Preparatory Institute of Engineering Studies of Tunis</hasName>
+	<foundedIn>24 avril 1995</foundedIn>
+	<hasType>Preparatory cycle for engineering schools</hasType>
+	<hasWebsite>http://www.ipeit.rnu.tn/</hasWebsite>
+	<hasDirector></hasDirector>
+	<hasNumberOfStudents></hasNumberOfStudents>
+	<hasNumberOfTeachers></hasNumberOfTeachers>
+	<hasLanguageRegime>French</hasLanguageRegime>
+	<hasAdress>Montfleury, Tunisie</hasAdress>
+</University>
+
+<University rdf:about="http://linkedin_project.com/profile.rdfs-instances/University/#École Nationale des Sciences de l'Informatique">
+	<hasName>École Nationale des Sciences de l'Informatique</hasName>
+	<foundedIn>1984</foundedIn>
+	<hasType>Engineering School</hasType>
+	<hasWebsite>http://www.ensi.rnu.tn/</hasWebsite>
+	<hasDirector>Faouzi GHORBEL</hasDirector>
+	<hasNumberOfStudents>1200</hasNumberOfStudents>
+	<hasNumberOfTeachers>90</hasNumberOfTeachers>
+	<hasLanguageRegime>French and English</hasLanguageRegime>
+	<hasAdress>Campus Universitaire de la Manouba, Manouba 2010, Tunisie</hasAdress>
+</University>
+
+<University rdf:about="http://linkedin_project.com/profile.rdfs-instances/University/#Sup'Com">
+	<hasName>École supérieure des communications de Tunis</hasName>
+	<foundedIn>1998</foundedIn>
+	<hasType>Engineering School</hasType>
+	<hasWebsite>http://www.supcom.mincom.tn/</hasWebsite>
+	<hasDirector>Mounir Frikha</hasDirector>
+	<hasNumberOfStudents></hasNumberOfStudents>
+	<hasNumberOfTeachers></hasNumberOfTeachers>
+	<hasLanguageRegime>French and English</hasLanguageRegime>
+	<hasAdress>Technopôle El Gazala, Tunisie</hasAdress>
+</University>
+
+<University rdf:about="http://linkedin_project.com/profile.rdfs-instances/University/#Institut Préparatoire aux Etudes d'Ingénieurs el Manar">
+	<hasName>Institut Préparatoire aux Etudes d'Ingénieurs el Manar</hasName>
+	<foundedIn>17 août 2001</foundedIn>
+	<hasType>Preparatory cycle for engineering schools</hasType>
+	<hasWebsite>http://www.ipeiem.rnu.tn/</hasWebsite>
+	<hasDirector>Jamil Zinoubi</hasDirector>
+	<hasNumberOfStudents>1251</hasNumberOfStudents>
+	<hasNumberOfTeachers>150</hasNumberOfTeachers>
+	<hasLanguageRegime>French</hasLanguageRegime>
+	<hasAdress>B.P 244, Tunis 2092, Tunisie</hasAdress>
+</University>
+
+<University rdf:about="http://linkedin_project.com/profile.rdfs-instances/University/#Technische Universität München">
+	<hasName>Technische Universität München</hasName>
+	<foundedIn>1868</foundedIn>
+	<hasType>Public University</hasType>
+	<hasWebsite>http://www.tum.de/</hasWebsite>
+	<hasDirector>Wolfgang A. Herrmann</hasDirector>
+	<hasNumberOfStudents>38000</hasNumberOfStudents>
+	<hasNumberOfTeachers>501</hasNumberOfTeachers>
+	<hasLanguageRegime>German</hasLanguageRegime>
+	<hasAdress>Arcisstraße 21, 80333 München, Allemagne</hasAdress>
+</University>
+
+<University rdf:about="http://linkedin_project.com/profile.rdfs-instances/University/#Ecole Nationale Supérieure d'Informatique et de Mathématiques Appliquées de Grenoble">
+	<hasName>Ecole Nationale Supérieure d'Informatique et de Mathématiques Appliquées de Grenoble</hasName>
+	<foundedIn>1960</foundedIn>
+	<hasType>Engineering School</hasType>
+	<hasWebsite>http://ensimag.grenoble-inp.fr/</hasWebsite>
+	<hasDirector>Yves Denneulin</hasDirector>
+	<hasNumberOfStudents>740</hasNumberOfStudents>
+	<hasNumberOfTeachers>257</hasNumberOfTeachers>
+	<hasLanguageRegime>French</hasLanguageRegime>
+	<hasAdress>681 Rue de la Passerelle, 38400 Saint-Martin-d'Hères</hasAdress>
+</University>
+
+</rdf:RDF>

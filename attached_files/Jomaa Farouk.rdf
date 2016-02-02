@@ -1,0 +1,222 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:lp="http://linkedin_project.com/profile.rdfs#">
+
+<rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Professional/#Jomaa Farouk">
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Jomaa Farouk/#Rim Frikha">
+        <lp:linkedinUrl>https://tn.linkedin.com/in/rim-frikha-ab60a453?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Software Engineer chez Lyance</lp:title>
+        <lp:name>Rim Frikha</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:name>Jomaa Farouk</lp:name>
+    <lp:hasPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Jomaa Farouk/#SAP ABAP Developer">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#Focus and Focus International">
+            <lp:hasEffective>201-500 employees</lp:hasEffective>
+            <lp:hasType>Privately Held</lp:hasType>
+            <lp:hasWebsite>http://www.focus-corporation.com</lp:hasWebsite>
+            <lp:lineOfBusiness>Information Technology and Services</lp:lineOfBusiness>
+            <lp:foundedIn>2003</lp:foundedIn>
+            <lp:linkedinUrl>https://www.linkedin.com/company/focus-&amp;-focus-international?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>Focus and Focus International</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:duration>1 year and 3 months</lp:duration>
+        <lp:hasTitle>SAP ABAP Developer</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#softwareEngineer</rdf:type>
+      </rdf:Description>
+    </lp:hasPosition>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Jomaa Farouk/#Mohamed Mezhoud">
+        <lp:linkedinUrl>https://tn.linkedin.com/in/mohamed-mezhoud-78b437a5?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Computer Science Engineer chez Focus</lp:title>
+        <lp:name>Mohamed Mezhoud</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Jomaa Farouk/#ELyes Chetoui">
+        <lp:linkedinUrl>https://tn.linkedin.com/in/elyes-chetoui-43781277?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>RSSI chez Banque de Tunisie et des Emirats</lp:title>
+        <lp:name>ELyes Chetoui</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:industry>Computer Software</lp:industry>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#L'école nationale des sciences de l'informatiques (ENSI)">
+        <lp:hasLink>https://tn.linkedin.com/groups?gid=5088440&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>L'école nationale des sciences de l'informatiques (ENSI)</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Jomaa Farouk/#Trainee">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#TEkonsult">
+            <lp:hasHeadQuarters>Wilhelm Busch Str. 12 München, Bavaria 81477 Germany</lp:hasHeadQuarters>
+            <lp:hasEffective>51-200 employees</lp:hasEffective>
+            <lp:hasType>Privately Held</lp:hasType>
+            <lp:hasWebsite>http://www.tekonsult.de</lp:hasWebsite>
+            <lp:hasAdress>Wilhelm Busch Str. 12  München, Bavaria 81477 Germany</lp:hasAdress>
+            <lp:lineOfBusiness>Telecommunications</lp:lineOfBusiness>
+            <lp:foundedIn>2000</lp:foundedIn>
+            <lp:linkedinUrl>https://www.linkedin.com/company/tekonsult?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>TEKonsult</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:duration>3 months</lp:duration>
+        <lp:hasTitle>Trainee</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Trainee</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:hasFriend rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Yassin Ben Naceur"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Jomaa Farouk/#Ketata Jawhar">
+        <lp:company rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Company/#Iliade Consulting"/>
+        <lp:linkedinUrl>https://tn.linkedin.com/in/ketata-jawhar-00302531?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Consultant Technique SAP</lp:title>
+        <lp:name>Ketata Jawhar</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:picture>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/3/005/046/066/3aa5033.jpg</lp:picture>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Jomaa Farouk/#Graduation internship">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#CSTB">
+            <lp:hasHeadQuarters>84 Avenue Jean Jaurès Champs-sur-Marne MARNE-LA-VALLEE Cedex 2, Seine et Marne 77447 France</lp:hasHeadQuarters>
+            <lp:hasEffective>501-1000 employees</lp:hasEffective>
+            <lp:hasType>Nonprofit</lp:hasType>
+            <lp:hasWebsite>http://www.cstb.fr/</lp:hasWebsite>
+            <lp:hasAdress>84 Avenue Jean Jaurès Champs-sur-Marne MARNE-LA-VALLEE Cedex 2, Seine et Marne 77447 France</lp:hasAdress>
+            <lp:lineOfBusiness>Renewables and Environment</lp:lineOfBusiness>
+            <lp:foundedIn>1947</lp:foundedIn>
+            <lp:linkedinUrl>https://www.linkedin.com/company/cstb?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>CSTB</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:duration>6 months</lp:duration>
+        <lp:hasTitle>Graduation internship</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Trainee</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Python"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Arduino"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#ABAP"/>
+    <lp:linkedinUrl>https://tn.linkedin.com/in/jomaa-farouk-1b44967a</lp:linkedinUrl>
+    <rdf:type>http://linkedin_project.com/profile.rdfs#Professional</rdf:type>
+    <lp:numberOfConnections>268</lp:numberOfConnections>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Jomaa Farouk/#Sirine Melki">
+        <lp:linkedinUrl>https://tn.linkedin.com/in/sirine-melki-65b01250?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:name>Sirine Melki</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Java Enterprise Edition"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Django"/>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#English"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Jomaa Farouk/#Jihed Mestiri">
+        <lp:linkedinUrl>https://tn.linkedin.com/in/jihedmestiri?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Software Engineer, ABAP Dev. Interested in Artificial Intelligence</lp:title>
+        <lp:name>Jihed Mestiri</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#SAP Community">
+        <lp:hasLink>https://tn.linkedin.com/groups?gid=36867&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>SAP Community</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasFriend rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Ramzi Zayene"/>
+    <lp:lastName>Farouk</lp:lastName>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Jomaa Farouk/#Miriam Dahmoun">
+        <lp:linkedinUrl>https://tn.linkedin.com/in/miriam-dahmoun-44aa212?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:name>Miriam Dahmoun</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:country rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Country/#Tunisia"/>
+    <lp:hasEducation>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Jomaa Farouk/#Lycée 20 Mars Sousse">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Education</rdf:type>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#Lycée 20 Mars Sousse"/>
+        <lp:description>Bachelor's Degree, Technical Sciences</lp:description>
+        <lp:duration>2008 – 2009</lp:duration>
+        <lp:endDate>2009</lp:endDate>
+        <lp:startDate>2008</lp:startDate>
+        <lp:hasTitle>Lycée 20 Mars Sousse</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasEducation>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#Arabic"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#ABAP Web Dynpro"/>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#German"/>
+    <lp:location>Tunis</lp:location>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Jomaa Farouk/#Mejdi Ben Jelloul">
+        <lp:linkedinUrl>https://tn.linkedin.com/in/mejdi-ben-jelloul-2043751a?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>SAP Consultant chez Focus and Focus International</lp:title>
+        <lp:name>Mejdi Ben Jelloul</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Linux"/>
+    <lp:hasFriend rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Mounir Guizani"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#ABAP-OO"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Android Development"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Jomaa Farouk/#Khaled Boukari">
+        <lp:linkedinUrl>https://tn.linkedin.com/in/khaled-boukari-9631983a?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Ingénieur Développeur SAP chez FOCUS</lp:title>
+        <lp:name>Khaled Boukari</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#DLP"/>
+    <lp:hasEducation>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Jomaa Farouk/#Institut Préparatoire aux Etudes d'Ingénieurs el Manar">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#preparatoryCycle</rdf:type>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#Institut Préparatoire aux Etudes d'Ingénieurs el Manar"/>
+        <lp:description>Physics and Technology</lp:description>
+        <lp:duration>2009 – 2011</lp:duration>
+        <lp:endDate>2011</lp:endDate>
+        <lp:startDate>2009</lp:startDate>
+        <lp:hasTitle>Institut Préparatoire aux Etudes d'Ingénieurs el Manar</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasEducation>
+    <lp:firstName>Jomaa</lp:firstName>
+    <lp:hasEducation>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Jomaa Farouk/#École Nationale des Sciences de l'Informatique">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#engineeringStudies</rdf:type>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#École Nationale des Sciences de l'Informatique"/>
+        <lp:description>Engineer's degree, IT</lp:description>
+        <lp:duration>2011 – 2014</lp:duration>
+        <lp:endDate>2014</lp:endDate>
+        <lp:startDate>2011</lp:startDate>
+        <lp:hasTitle>École Nationale des Sciences de l'Informatique</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasEducation>
+    <lp:hasFriend rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Syrine Tlili, PhD"/>
+    <lp:title>SAP ABAP Developer at Focus and Focus International</lp:title>
+    <lp:hasCertification>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Certification/Jomaa Farouk/#TOEIC">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#languageCertification</rdf:type>
+        <lp:hasInfoBox rdf:resource="http://linkedin_project.com/profile.rdfs-instances/certificationInfoBox/#TOEIC"/>
+        <lp:hasScore>865</lp:hasScore>
+        <lp:hasTitle>TOEIC</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasCertification>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Jomaa Farouk/#Momtez Sebai ISTQB ®">
+        <lp:company rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Company/#FOCUS(SAP)"/>
+        <lp:linkedinUrl>https://tn.linkedin.com/in/momtez-sebai-istqb-%C2%AE-b2574972?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>SAP Quality Assurance and Sofware Development Engineer</lp:title>
+        <lp:name>Momtez Sebai ISTQB ®</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasFriend rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Ahmed REBAI"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Java"/>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#French"/>
+</rdf:Description>
+
+</rdf:RDF>

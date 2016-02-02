@@ -1,0 +1,367 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:lp="http://linkedin_project.com/profile.rdfs#">
+	
+<rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Professional/#Mounir Guizani">
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#OXIA job opportunities">
+        <lp:hasLink>https://tn.linkedin.com/groups?gid=8120794&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>OXIA job opportunities</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#SoapUI"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Mounir Guizani/#Mohamed Amine HAJ ALI">
+        <lp:linkedinUrl>https://tn.linkedin.com/in/hajali?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Ingénieur chez Orange Developer Center</lp:title>
+        <lp:name>Mohamed Amine HAJ ALI</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Mounir Guizani/#Internship">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#Telnet">
+            <lp:hasHeadQuarters>Immeuble Ennour - Centre Urbain Nord, BP 140 - Cedex Tunis, 1082 Tunisia</lp:hasHeadQuarters>
+            <lp:hasEffective>201-500 employees</lp:hasEffective>
+            <lp:hasType>Privately Held</lp:hasType>
+            <lp:hasWebsite>http://www.groupe-telnet.com</lp:hasWebsite>
+            <lp:hasAdress>Immeuble Ennour - Centre Urbain Nord, BP 140 - Cedex  Tunis,  1082 Tunisia</lp:hasAdress>
+            <lp:lineOfBusiness>Outsourcing/Offshoring</lp:lineOfBusiness>
+            <lp:foundedIn>1994</lp:foundedIn>
+            <lp:linkedinUrl>https://www.linkedin.com/company/telnet_2?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>Telnet</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:description>OpenERP customization according to the company's processes by using Python and XML technologies.- Acquiring financial knowledge.</lp:description>
+        <lp:duration>2 months</lp:duration>
+        <lp:hasTitle>Internship</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Trainee</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Mounir Guizani/#Mohamed Emine Laarouchi">
+        <lp:linkedinUrl>https://tn.linkedin.com/in/mohamed-emine-laarouchi-88722310a?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Étudiant(e) (Ecole polytechnique)</lp:title>
+        <lp:name>Mohamed Emine Laarouchi</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Matlab"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Mounir Guizani/#mahmoud mahdi">
+        <lp:linkedinUrl>https://tn.linkedin.com/in/mahmoud-mahdi-14575295?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>JavaEE and Fullstack developer--</lp:title>
+        <lp:name>mahmoud mahdi</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:didProject>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Project/Mounir Guizani/#Tweetalytics">
+        <lp:hasAssociates rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Mounir Guizani"/>
+        <lp:description>- A native cloud application that run periodically analyzes from the public flow twitter. - The application is developed for hosting on the Amazon cloud (via Amazon Elastic Beanstalk).Work environment : MAVEN Java, REST, JSON, DynamoDB, Amazon AWS.</lp:description>
+        <lp:hasTitle>Tweetalytics</lp:hasTitle>
+      </rdf:Description>
+    </lp:didProject>
+    <lp:hasFriend rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Amen Ouali"/>
+    <lp:industry>Research</lp:industry>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Mounir Guizani/#Taher Labidi">
+        <lp:linkedinUrl>https://tn.linkedin.com/in/taher-labidi-6a842225?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>PhD Student</lp:title>
+        <lp:name>Taher Labidi</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Amazon Web Services"/>
+    <lp:country rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Country/#Tunisia"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#SOAP"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Mounir Guizani/#Hela Tajouri">
+        <lp:company rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Company/#Intel Corporation"/>
+        <lp:linkedinUrl>https://tn.linkedin.com/in/helatajouri?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Master Thesis Student</lp:title>
+        <lp:name>Hela Tajouri</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Computer Science"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Spring"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Mounir Guizani/#Bloudeau Cyril">
+        <lp:linkedinUrl>https://tn.linkedin.com/in/bloudeau-cyril-a9945231?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Ingénieur Géomaticien chez MobiGIS</lp:title>
+        <lp:name>Bloudeau Cyril</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#SQL"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Software Performance Management Specialists">
+        <lp:hasLink>https://tn.linkedin.com/groups?gid=1947706&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Software Performance Management Specialists</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Java Enterprise Edition"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#XAMPP"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Mounir Guizani/#Malèk RHOUMA">
+        <lp:linkedinUrl>https://tn.linkedin.com/in/mal%C3%A8k-rhouma-51aa38ab?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>--</lp:title>
+        <lp:name>Malèk RHOUMA</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:name>Mounir Guizani</lp:name>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#XML"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Data Analysis"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Hibernate"/>
+    <lp:hasEducation>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Mounir Guizani/#Polytech Nice-Sophia">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#masterDegreeStudies</rdf:type>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#Polytech Nice-Sophia"/>
+        <lp:description>Undifferentiated Master, Computer, Fundamentals and Engineering</lp:description>
+        <lp:duration>2015 – 2016</lp:duration>
+        <lp:endDate>2016</lp:endDate>
+        <lp:startDate>2015</lp:startDate>
+        <lp:hasTitle>Polytech Nice-Sophia</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasEducation>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#J2EE Application Development"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#C"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Oracle"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#AngularJS Developers">
+        <lp:hasLink>https://tn.linkedin.com/groups?gid=4896676&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>AngularJS Developers</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Linkin Tunisia">
+        <lp:hasLink>https://tn.linkedin.com/groups?gid=118991&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Linkin Tunisia</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#WAMP"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Cynapsys">
+        <lp:hasLink>https://tn.linkedin.com/groups?gid=3520337&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Cynapsys</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasFriend rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Jomaa Farouk"/>
+    <lp:hasPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Mounir Guizani/#End of study Internship">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#Orange Tunisie">
+            <lp:hasEffective>1001-5000 employees</lp:hasEffective>
+            <lp:hasType>Privately Held</lp:hasType>
+            <lp:hasWebsite>http://www.orange.tn/</lp:hasWebsite>
+            <lp:hasAdress>Immeuble Orange, Centre Urbain Nord, 1003 Tunis  Tunis,  1002 Tunisia</lp:hasAdress>
+            <lp:lineOfBusiness>Telecommunications</lp:lineOfBusiness>
+            <lp:linkedinUrl>https://www.linkedin.com/company/orange-tunisie?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>Orange Tunisie</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:description>- Designing and developing a customer care solution and for monitoring of IN/MBC service platforms.- Kyewords : Bootstrap, HTML5 ,JS ,JQuery, Ajax, Spring MVC, Hibernate, JPA, Junit, Spring Security, MySQL, Oracle, Tomcat, XML, Script Shell Linux, Solaris OS, Linux OS, Communication protocols (CCAPI,UCIP,VCIP) .</lp:description>
+        <lp:duration>4 months</lp:duration>
+        <lp:hasTitle>End of study Internship</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Trainee</rdf:type>
+      </rdf:Description>
+    </lp:hasPosition>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#SOA"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#BFI GROUP">
+        <lp:hasLink>https://tn.linkedin.com/groups?gid=2281599&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>BFI GROUP</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Réseau Entreprendre Tunis">
+        <lp:hasLink>https://tn.linkedin.com/groups?gid=2629641&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Réseau Entreprendre Tunis</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Hibernate Jobs">
+        <lp:hasLink>https://tn.linkedin.com/groups?gid=1895314&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Hibernate Jobs</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#HTML 5 and CSS 3">
+        <lp:hasLink>https://tn.linkedin.com/groups?gid=3768826&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>HTML 5 and CSS 3</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Algorithmes"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Bilingual Professionals (French and English)">
+        <lp:hasLink>https://tn.linkedin.com/groups?gid=1798622&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Bilingual Professionals (French and English)</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#EJB"/>
+    <lp:hasFriend rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Hela Tajouri"/>
+    <lp:linkedinUrl>https://tn.linkedin.com/in/mounirguizani</lp:linkedinUrl>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Mounir Guizani/#Imane Farhane">
+        <lp:linkedinUrl>https://tn.linkedin.com/in/imane-farhane-2504495a?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Product Manager chez Lucie Labs</lp:title>
+        <lp:name>Imane Farhane</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:didProject>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Project/Mounir Guizani/#Efficient computing of k nearest neighbors over CAN structured">
+        <lp:hasAssociates rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Mounir Guizani"/>
+        <lp:description>The k nearest neighbors (kNN) is an operation that, for a given point in a data space, finds its k closest points in a set of points S. The k nearest neighbors join is a costly operation in the sense that, for every point in a set R, all the points in S have to be checked against a distance metric to find close points. To be efficient and scale to large sets R and S, one have to compute this operation in a distributed environment, such as a cluster or a cloud. In order to organize data in distributed environments, structured overlays featuring distributed hastables (such as Chord, Pastry, Kademlia, Cassandra and Content Addressable Network), propose a hash-based dissemination of data held by peers, which guarantees a faster retrievability.The objective of this project is to come with an efficient implementation of kNN over Content Addressable Network (CAN). More precisely, thisproject has three steps: - The first step is to implement a basic, not optimal, kNN over CAN.- The second step is to design an optimized kNN algorithm to make the best use of the CAN structure. - The last step would be eventually to perform a benchmark of the solution in a distributed setting (on a given computing grid).Keywords : Java, ability to integrate new algorithms and new programming paradigms.</lp:description>
+        <lp:hasTitle>Efficient computing of k nearest neighbors over CAN structured</lp:hasTitle>
+      </rdf:Description>
+    </lp:didProject>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#French"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#C++"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Algorithms"/>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#Arabic"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#HTML5"/>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Mounir Guizani/#Salma BENAZZOUZ">
+        <lp:linkedinUrl>https://tn.linkedin.com/in/salma-benazzouz-a9859762?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Ingénieur Systèmes and Réseaux Manager agile</lp:title>
+        <lp:name>Salma BENAZZOUZ</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Java"/>
+    <lp:hasEducation>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Mounir Guizani/#El Canal high school, Bizerta, Tunisia">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Education</rdf:type>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#El Canal high school, Bizerta, Tunisia"/>
+        <lp:description>Baccalaureate, Computer Sciences, Honors</lp:description>
+        <lp:duration>2006 – 2010</lp:duration>
+        <lp:endDate>2010</lp:endDate>
+        <lp:startDate>2006</lp:startDate>
+        <lp:hasTitle>El Canal high school, Bizerta, Tunisia</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasEducation>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Informatique"/>
+    <lp:didProject>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Project/Mounir Guizani/#Management interface based on Java">
+        <lp:hasAssociates rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Mounir Guizani"/>
+        <lp:description>- Designing and developing a desktop management application. - Keywords : Java (GUI SWING), Orcale, Design Patterns.</lp:description>
+        <lp:hasTitle>Management interface based on Java</lp:hasTitle>
+      </rdf:Description>
+    </lp:didProject>
+    <lp:didProject>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Project/Mounir Guizani/#An HTML5 multi track player">
+        <lp:hasAssociates rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Mounir Guizani"/>
+        <lp:description>- A web application which is based on : - NodeJS, ExpressJS, Mocha JS, MongoDB (Back-end).- Angular JS (Controller).- Object Oriented JS, HTML5, Web API Audio, CSS3 (Front-end).</lp:description>
+        <lp:hasTitle>An HTML5 multi track player</lp:hasTitle>
+      </rdf:Description>
+    </lp:didProject>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#IEEE Computational Intelligence Society (IEEE CIS)">
+        <lp:hasLink>https://tn.linkedin.com/groups?gid=75152&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>IEEE Computational Intelligence Society (IEEE CIS)</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:numberOfConnections>132</lp:numberOfConnections>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#Spanish"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Bootstrap"/>
+    <lp:location>France</lp:location>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#Angularjs">
+        <lp:hasLink>https://tn.linkedin.com/groups?gid=5010991&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>Angularjs</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#English"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Spring Security"/>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Mounir Guizani/#End of year Internship">
+        <lp:tookPlaceIn>
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#adhoc International">
+            <lp:hasHeadQuarters>Schützengraben 7 Basel, 4051 Switzerland</lp:hasHeadQuarters>
+            <lp:hasEffective>51-200 employees</lp:hasEffective>
+            <lp:hasType>Public Company</lp:hasType>
+            <lp:hasWebsite>http://www.sword-performance.com/</lp:hasWebsite>
+            <lp:hasAdress>Schützengraben 7  Basel,  4051 Switzerland</lp:hasAdress>
+            <lp:lineOfBusiness>Information Technology and Services</lp:lineOfBusiness>
+            <lp:foundedIn>2002</lp:foundedIn>
+            <lp:linkedinUrl>https://www.linkedin.com/company/adhoc-international?trk=ppro_cprof</lp:linkedinUrl>
+            <lp:hasName>adhoc International</lp:hasName>
+          </rdf:Description>
+        </lp:tookPlaceIn>
+        <lp:description>- Implementing a web interface for stock managing.- Keywords: JEE (JPA, Hibernate, Junit, Servlets, JSP), Oracle, UML.</lp:description>
+        <lp:duration>4 months</lp:duration>
+        <lp:hasTitle>End of year Internship</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Trainee</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:hasRecommandedVisitor>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Mounir Guizani/#Olfa Jallouli">
+        <lp:company rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Company/#ENIS"/>
+        <lp:linkedinUrl>https://tn.linkedin.com/in/olfa-jallouli-8087a0bb?trk=pub-pbmap</lp:linkedinUrl>
+        <lp:title>Engineering student</lp:title>
+        <lp:name>Olfa Jallouli</lp:name>
+      </rdf:Description>
+    </lp:hasRecommandedVisitor>
+    <lp:didProject>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Project/Mounir Guizani/#Management application based on Java Entreprise Edition">
+        <lp:hasAssociates rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Mounir Guizani"/>
+        <lp:description>- Implementing a bank account management system.- Keywords : JEE (JPA, Hibernate, Junit, EJB 3.0, JSF, PrimeFaces), MySQL, UML.</lp:description>
+        <lp:hasTitle>Management application based on Java Entreprise Edition</lp:hasTitle>
+      </rdf:Description>
+    </lp:didProject>
+    <lp:hadPosition>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Mounir Guizani/#Internship2">
+        <lp:tookPlaceIn rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Company/#adhoc International"/>
+        <lp:description>Developing a website using HTML5, CSS3, JS.</lp:description>
+        <lp:duration>2 months</lp:duration>
+        <lp:hasTitle>Internship2</lp:hasTitle>
+        <rdf:type>http://linkedin_project.com/profile.rdfs#Trainee</rdf:type>
+      </rdf:Description>
+    </lp:hadPosition>
+    <lp:hasEducation>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Mounir Guizani/#National Engineering School of Sfax">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#engineeringStudies</rdf:type>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#National Engineering School of Sfax"/>
+        <lp:description>Engineering, Computer Engineering</lp:description>
+        <lp:duration>2012 – 2015</lp:duration>
+        <lp:endDate>2015</lp:endDate>
+        <lp:startDate>2012</lp:startDate>
+        <lp:hasTitle>National Engineering School of Sfax</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasEducation>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#HTML 5"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#JavaSc"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#MySQL"/>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#PHP Tunisie">
+        <lp:hasLink>https://tn.linkedin.com/groups?gid=3247005&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>PHP Tunisie</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:belongToGroup>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Group/#IEEE CIS GOLD -- Computational Intelligence Society Graduates of the Last Decade">
+        <lp:hasLink>https://tn.linkedin.com/groups?gid=3142116&amp;trk=prof-groups-membership-name</lp:hasLink>
+        <lp:hasName>IEEE CIS GOLD -- Computational Intelligence Society Graduates of the Last Decade</lp:hasName>
+      </rdf:Description>
+    </lp:belongToGroup>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#JavaScript"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Python"/>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#REST"/>
+    <lp:firstName>Mounir</lp:firstName>
+    <lp:hasEducation>
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Mounir Guizani/#Preparatory Institute of Engineering Studies of Tunis">
+        <rdf:type>http://linkedin_project.com/profile.rdfs#preparatoryCycle</rdf:type>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#Preparatory Institute of Engineering Studies of Tunis"/>
+        <lp:description>, Mathematics Physics Specialization (MP)</lp:description>
+        <lp:duration>2010 – 2012</lp:duration>
+        <lp:endDate>2012</lp:endDate>
+        <lp:startDate>2010</lp:startDate>
+        <lp:hasTitle>Preparatory Institute of Engineering Studies of Tunis</lp:hasTitle>
+      </rdf:Description>
+    </lp:hasEducation>
+    <rdf:type>http://linkedin_project.com/profile.rdfs#Professional</rdf:type>
+    <lp:lastName>Guizani</lp:lastName>
+    <lp:picture>https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAVHAAAAJDVhY2IyNTMxLTUyYTQtNDFiNy1iYjhkLWU2MjYyYjBkMWUwMQ.jpg</lp:picture>
+    <lp:hasFriend rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Khaled Ben Driss"/>
+    <lp:title>Master final-year student - Java/Jee Engineer</lp:title>
+    <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Programming"/>
+</rdf:Description>
+
+</rdf:RDF>
