@@ -354,7 +354,7 @@
 			
 								<div class="col-xs-12">		
 								
-								<c:forEach items="${allEducations}" var="ed">
+								<c:forEach items="${allEducations}" var="ed"  varStatus="univ">
                                              
 								
 								<form class="form-horizontal">
@@ -363,9 +363,11 @@
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Establishment name </label>
 
 												<div class="col-sm-9">
-										<textarea class="form-control" rows="3" disabled>${ed.name}</textarea>
-										</div>
-</div>
+										<input id="form-field-1" type="text" value="${ed.name}" class="col-xs-10 col-sm-5" disabled>
+										 &nbsp;&nbsp;
+									<a href="#" data-toggle="modal" data-target="#${univ.index}"><span	class="href">>>More</span></a>
+												</div>
+</div></div>
 									
 									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1" > Description </label>
@@ -421,7 +423,17 @@
 										</div>
 									</div>
 									
-									<div class="form-group">
+																		
+									
+										<div class="modal fade" id="${univ.index}">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">x</button>
+													</div>
+													<div class="modal-body">
+						
+<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> University founded in </label>
 
 										<div class="col-sm-9">
@@ -485,11 +497,18 @@
 											<input type="text" id="form-field-1" value="${ed.university.adres}" class="col-xs-10 col-sm-5" disabled>
 										</div>
 									</div>
+
+													</div>
+													
+													<div class="modal-footer">
+														<button class="btn btn-info" data-dismiss="modal">Close</button>
+													</div>
+
+												</div>
+											</div>
+										</div>									
 									
-									
-									
-									
-									<br><br><br><br><br><br>
+
 
 									</form>
 								

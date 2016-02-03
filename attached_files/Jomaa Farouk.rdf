@@ -55,7 +55,7 @@
     <lp:hadPosition>
       <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Jomaa Farouk/#Trainee">
         <lp:tookPlaceIn>
-          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#TEkonsult">
+          <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Company/#TEKonsult">
             <lp:hasHeadQuarters>Wilhelm Busch Str. 12 München, Bavaria 81477 Germany</lp:hasHeadQuarters>
             <lp:hasEffective>51-200 employees</lp:hasEffective>
             <lp:hasType>Privately Held</lp:hasType>

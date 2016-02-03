@@ -22,8 +22,8 @@ public class ManagerController {
 	String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
 			+ "\\WebSemProject";
 
-	String fileSource=workingDir+"\\attached_files\\";
-	List<String> names;
+	String fileSource=workingDir+"\\attached_files";
+	List<String> names; 
 	Professional currentProfessional;
 	ParserXML parser = new ParserXML();
 	

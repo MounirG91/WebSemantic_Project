@@ -9,7 +9,7 @@ xml:base="http://linkedin_project.com/profile.rdfs-instances/certificationInfoBo
 
 <certificationInfoBox rdf:about="http://linkedin_project.com/profile.rdfs-instances/certificationInfoBox/#TOEFL">
 	<hasName>Test of English as a Foreign Language</hasName>
-	<relatedSkill>English</relatedSkill>
+	<relatedSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#English" />
 	<createdBy>ETS : Educational Testing Service</createdBy>
 	<administeredBy>ETS : Educational Testing Service</administeredBy>
 	<hasMaximumScore>120</hasMaximumScore>
@@ -18,7 +18,7 @@ xml:base="http://linkedin_project.com/profile.rdfs-instances/certificationInfoBo
 
 <certificationInfoBox rdf:about="http://linkedin_project.com/profile.rdfs-instances/certificationInfoBox/#TOEIC">
 	<hasName>Test of English for International Communication</hasName>
-	<relatedSkill>English</relatedSkill>
+	<relatedSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#English" />
 	<createdBy>ETS : Educational Testing Service</createdBy>
 	<administeredBy>ETS : Educational Testing Service</administeredBy>
 	<hasMaximumScore>990</hasMaximumScore>
@@ -27,7 +27,7 @@ xml:base="http://linkedin_project.com/profile.rdfs-instances/certificationInfoBo
 
 <certificationInfoBox rdf:about="http://linkedin_project.com/profile.rdfs-instances/certificationInfoBox/#SCJP">
 	<hasName>Oracle Certified Professional, Java SE 6 Programmer</hasName>
-	<relatedSkill>Java</relatedSkill>
+	<relatedSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Java" />
 	<createdBy>Oracle</createdBy>
 	<administeredBy>Oracle</administeredBy>
 	<hasMaximumScore>100</hasMaximumScore>
@@ -36,7 +36,7 @@ xml:base="http://linkedin_project.com/profile.rdfs-instances/certificationInfoBo
 
 <certificationInfoBox rdf:about="http://linkedin_project.com/profile.rdfs-instances/certificationInfoBox/#LPIC1">
 	<hasName>LPIC-1 Linux Server Professional</hasName>
-	<relatedSkill>Linux</relatedSkill>
+	<relatedSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Linux" />
 	<createdBy>Linux Professional Institute Inc.</createdBy>
 	<administeredBy>Linux Professional Institute Inc.</administeredBy>
 	<hasMaximumScore>800</hasMaximumScore>

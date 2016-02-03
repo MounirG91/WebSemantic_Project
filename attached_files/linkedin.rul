@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY rul "http://ns.inria.fr/edelweiss/2011/rule#">
+]>
+<rdf:RDF xmlns:rdfs="&rdfs;" xmlns:rdf="&rdf;" xmlns="&rul;">
+
+
+<!-- A rule that find professionals which are not friends but have a common friend -->
+
+<rule>
+<body>
+<![CDATA[
+prefix lp: <http://linkedin_project.com/profile.rdfs#>
+
+construct {
+?x lp:hasSecondDegreeFriend ?z
+}
+where {
+?x lp:hasFriend ?y
+?y lp:hasFriend ?z
+minus { ?x lp:hasFriend ?z }
+.filter (?x != ?z)
+}
+]]>
+
+</body>
+</rule>
+
+
+<!-- A rule that find friends of fiends of a friend of a professional-->
+
+<rule>
+<body>
+<![CDATA[
+prefix lp: <http://linkedin_project.com/profile.rdfs#>
+
+construct {
+?x lp:hasThirdDegreeFriend ?z
+}
+where {
+?x lp:hasFriend ?y
+?y lp:hasSecondDegreeFriend ?z
+minus { ?x lp:hasSecondDegreeFriend ?z }
+minus { ?x lp:hasFriend ?z }
+.filter (?x != ?z)
+}
+]]>
+
+</body>
+</rule>
+
+
+<!-- A rule that find professionals who went to the same university (even in different years) -->
+
+<rule>
+<body>
+<![CDATA[
+ prefix lp: <http://linkedin_project.com/profile.rdfs#>
+
+construct {
+?x lp:wentSameUniversityAs ?y
+}
+where {
+?x lp:hasEducation ?p
+?p lp:doneInUniversity ?z
+?y lp:hasEducation ?q
+?q lp:doneInUniversity ?z
+filter ( ?x != ?y )
+}
+]]>
+
+</body>
+</rule>
+
+<!-- A rule that find professionals who worked in the same company -->
+
+<rule>
+<body>
+<![CDATA[
+ prefix lp: <http://linkedin_project.com/profile.rdfs#>
+
+construct {
+?x lp:workedInSameCompany ?y
+}
+where {
+?x lp:hadPosition ?p
+?p lp:tookPlaceIn ?z
+?y lp:hadPosition ?q
+?q lp:tookPlaceIn ?z
+filter ( ?x != ?y )
+}
+]]>
+
+</body>
+</rule>
+
+
+<!-- A rule that find professionals who are working in the same company -->
+
+<rule>
+<body>
+<![CDATA[
+ prefix lp: <http://linkedin_project.com/profile.rdfs#>
+
+construct {
+?x lp:isColleagueOf ?y
+}
+where {
+?x lp:hasPosition ?p
+?p lp:tookPlaceIn ?z
+?y lp:hasPosition ?q
+?q lp:tookPlaceIn ?z
+filter ( ?x != ?y )
+}
+]]>
+
+</body>
+</rule>
+
+<!-- A rule that find professionals who are fluent in a given language -->
+
+<rule>
+<body>
+<![CDATA[
+ prefix lp: <http://linkedin_project.com/profile.rdfs#>
+ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+construct {
+?x lp:isFluentIn ?y
+}
+where {
+?x lp:speacksLanguage ?y
+?x lp:hasCertification ?z
+?z rdf:type "http://linkedin_project.com/profile.rdfs#languageCertification"
+?z lp:hasScore ?s
+?z lp:hasInfoBox ?t
+?t lp:relatedSkill ?y
+?t lp:hasMaximumScore ?m
+filter (xsd:integer(?s) / xsd:integer(?m) > 0.8)
+}
+]]>
+
+</body>
+</rule>
+
+<!-- A rule that find professionals which have basic communication skills in a given language -->
+
+<rule>
+<body>
+<![CDATA[
+ prefix lp: <http://linkedin_project.com/profile.rdfs#>
+ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+construct {
+?x lp:hasBasicCommunicationSkillsIn ?y
+}
+where {
+?x lp:speacksLanguage ?y
+?x lp:hasCertification ?z
+?z rdf:type "http://linkedin_project.com/profile.rdfs#languageCertification"
+?z lp:hasScore ?s
+?z lp:hasInfoBox ?t
+?t lp:relatedSkill ?y
+?t lp:hasMaximumScore ?m
+filter (xsd:integer(?s) / xsd:integer(?m) < 0.6)
+}
+]]>
+
+</body>
+</rule>
+
+<!-- A rule that find professionals which are expert in a given skill -->
+
+<rule>
+<body>
+<![CDATA[
+ prefix lp: <http://linkedin_project.com/profile.rdfs#>
+ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+construct {
+?x lp:isExpertIn ?y
+}
+where {
+?x lp:hasSkill ?y
+?x lp:hasCertification ?z
+?z rdf:type "http://linkedin_project.com/profile.rdfs#ITCertification"
+?z lp:hasScore ?s
+?z lp:hasInfoBox ?t
+?t lp:relatedSkill ?y
+?t lp:hasMaximumScore ?m
+filter (xsd:integer(?s) / xsd:integer(?m) > 0.8)
+}
+]]>
+
+</body>
+</rule>
+
+
+<!-- A rule that find professionals which are not graduated yet -->
+
+<rule>
+<body>
+<![CDATA[
+ prefix lp: <http://linkedin_project.com/profile.rdfs#>
+ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+construct {
+?x lp:isStillStudentAt ?z
+}
+where {
+?x lp:hasEducation ?y
+?y lp:doneInUniversity ?z
+?y lp:endDate ?t
+filter ( xsd:integer(?t) >= 2016)
+}
+]]>
+
+</body>
+</rule>
+
+<!-- A rule that find professionals which are already graduated  -->
+
+<rule>
+<body>
+<![CDATA[
+ prefix lp: <http://linkedin_project.com/profile.rdfs#>
+ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+construct {
+?x lp:isGraduated "true"
+}
+where {
+?x rdf:type "http://linkedin_project.com/profile.rdfs#Professional"
+minus { ?x lp:isStillStudentAt ?y }
+}
+]]>
+
+</body>
+</rule>
+
+</rdf:RDF>

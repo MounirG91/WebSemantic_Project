@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf [
+   <!ENTITY linkedin_profile   "http://linkedin_project.com/profile.rdfs"> 
+   <!ENTITY rdfs     "http://www.w3.org/2000/01/rdf-schema">
+    ]>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+         xmlns="http://www.w3.org/2000/01/rdf-schema#" 
+         xml:base="http://linkedin_project.com/profile.rdfs">
+		 
+		 
+<!--- Classes -->
+
+<Class rdf:ID="Person">
+  <subClassOf rdf:resource="#Animal"/>
+</Class>
+
+<Class rdf:ID="Professional">
+  <subClassOf rdf:resource="#Person"/>
+  <comment xml:lang="en">a professional with a linkedin profile</comment>
+  <comment xml:lang="fr">une personne avec un profil linkedin</comment>
+</Class>
+
+<Class rdf:ID="Education">
+  <comment xml:lang="en">a professional training made by a professional</comment>
+  <comment xml:lang="fr">une formation professionnalisante faite par une personne</comment>
+</Class>
+
+<Class rdf:ID="preparatoryCycle">
+  <subClassOf rdf:resource="#Education"/>
+</Class>
+
+<Class rdf:ID="engineeringStudies">
+  <subClassOf rdf:resource="#Education"/>
+</Class>
+
+<Class rdf:ID="masterDegreeStudies">
+  <subClassOf rdf:resource="#Education"/>
+</Class>
+
+<Class rdf:ID="licenceDegreeStudies">
+  <subClassOf rdf:resource="#Education"/>
+</Class>
+
+<Class rdf:ID="PhD">
+  <subClassOf rdf:resource="#Education"/>
+</Class>
+
+<Class rdf:ID="Post">
+  <comment xml:lang="en">a position held by a professional </comment>
+  <comment xml:lang="fr">une poste occupée par un professionnel</comment>
+</Class>
+
+<Class rdf:ID="Engineer">
+  <subClassOf rdf:resource="#Post"/>
+</Class>
+
+<Class rdf:ID="softwareEngineer">
+  <subClassOf rdf:resource="#Engineer"/>
+</Class>
+
+<Class rdf:ID="RandDEngineer">
+  <subClassOf rdf:resource="#Engineer"/>
+</Class>
+
+<Class rdf:ID="securityEngineer">
+  <subClassOf rdf:resource="#Engineer"/>
+</Class>
+
+<Class rdf:ID="Teacher">
+  <subClassOf rdf:resource="#Post"/>
+</Class>
+
+<Class rdf:ID="Trainee">
+  <subClassOf rdf:resource="#Post"/>
+</Class>
+
+<Class rdf:ID="Language">
+  <comment xml:lang="en">a spoken language</comment>
+  <comment xml:lang="fr">une langue vivante</comment>
+</Class>
+
+<Class rdf:ID="Skill">
+  <comment xml:lang="en">a professional skill</comment>
+  <comment xml:lang="fr">une compétence</comment>
+</Class>
+
+<Class rdf:ID="Project">
+  <comment xml:lang="en">an academic project</comment>
+  <comment xml:lang="fr">un projet académique</comment>
+</Class>
+
+<Class rdf:ID="Certification">
+  <comment xml:lang="en">a professional certification</comment>
+  <comment xml:lang="fr">une certification professionnelle</comment>
+</Class>
+
+<Class rdf:ID="languageCertification">
+  <subClassOf rdf:resource="#Certification"/>
+</Class>
+
+<Class rdf:ID="ITCertification">
+  <subClassOf rdf:resource="#Certification"/>
+</Class>
+
+<Class rdf:ID="certificationInfoBox">
+  <comment xml:lang="en">informations about a certification</comment>
+  <comment xml:lang="fr">details d'une certification</comment>
+</Class>
+
+<Class rdf:ID="Group">
+  <comment xml:lang="en">a group of people who share a common center of interest</comment>
+  <comment xml:lang="fr">un groupe de personnes qui partagent un centre d'intérêt</comment>
+</Class>
+
+<Class rdf:ID="Organization">
+  <comment xml:lang="en">an association</comment>
+  <comment xml:lang="fr">une association</comment>
+</Class>
+
+<Class rdf:ID="Company">
+  <comment xml:lang="en">a company</comment>
+  <comment xml:lang="fr">une entreprise</comment>
+</Class>
+
+<Class rdf:ID="University">
+  <comment xml:lang="en">a higher education institution</comment>
+  <comment xml:lang="fr">un établissement d'enseignement supérieur</comment>
+</Class>
+
+<Class rdf:ID="Country">
+  <comment xml:lang="en">a country</comment>
+  <comment xml:lang="fr">un pays</comment>
+</Class>
+
+<Class rdf:ID="recommandedVisitor">
+  <subClassOf rdf:resource="#Professional"/>
+  <comment xml:lang="en">a similar linkedin profile</comment>
+  <comment xml:lang="fr">un professionel avec un profil semblable</comment>
+</Class>
+
+<!--- Propriétés -->
+
+<!--- Propriétés d'un Professional -->
+
+<rdf:Property rdf:ID="name">
+  <domain rdf:resource="#Professional"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="firstName">
+  <domain rdf:resource="#Professional"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="lastName">
+  <domain rdf:resource="#Professional"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="title">
+  <domain rdf:resource="#Professional"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="summary">
+  <domain rdf:resource="#Professional"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="location">
+  <domain rdf:resource="#Professional"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="numberOfConnections">
+  <domain rdf:resource="#Professional"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="country">
+  <domain rdf:resource="#Professional"/>
+  <range rdf:resource="#Country"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="industry">
+  <domain rdf:resource="#Professional"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="picture">
+  <domain rdf:resource="#Professional"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasSkill">
+  <domain rdf:resource="#Professional"/>
+  <range rdf:resource="#Skill"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="didProject">
+  <domain rdf:resource="#Professional"/>
+  <range rdf:resource="#Project"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="belongToGroup">
+  <domain rdf:resource="#Professional"/>
+  <range rdf:resource="#Group"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasEducation">
+  <domain rdf:resource="#Professional"/>
+  <range rdf:resource="#Education"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasCertification">
+  <domain rdf:resource="#Professional"/>
+  <range rdf:resource="#Certification"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="speacksLanguage">
+  <domain rdf:resource="#Professional"/>
+  <range rdf:resource="#Language"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="joinOrganization">
+  <domain rdf:resource="#Professional"/>
+  <range rdf:resource="#Organization"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hadPosition">
+  <domain rdf:resource="#Professional"/>
+  <range rdf:resource="#Post"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasPosition">
+  <domain rdf:resource="#Professional"/>
+  <range rdf:resource="#Post"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasFriend">
+  <domain rdf:resource="#Professional"/>
+  <range rdf:resource="#Professional"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasRecommandedVisitor">
+  <subPropertyOf rdf:resource="#hasFriend"/>
+  <range rdf:resource="#recommandedVisitor"/>
+</rdf:Property>
+
+
+<!--- Propriété commune au Professional, Group et Company-->
+
+<rdf:Property rdf:ID="linkedinUrl">
+</rdf:Property>
+
+
+<!--- Propriété commune au Education, Post, Project, Certification-->
+
+<rdf:Property rdf:ID="hasTitle">
+</rdf:Property>
+
+
+<!--- Propriété commune au Organization, Group, University, Company, Language, Skill et certificationInfoBox-->
+
+<rdf:Property rdf:ID="hasName">
+</rdf:Property>
+
+
+<!--- Propriétés commune au Education, Post, Project -->
+
+<rdf:Property rdf:ID="startDate">
+</rdf:Property>
+
+<rdf:Property rdf:ID="description">
+</rdf:Property>
+
+
+<!--- Propriétés commune au Education, Project -->
+
+<rdf:Property rdf:ID="endDate">
+</rdf:Property>
+
+
+<!--- Propriétés d'une Education -->
+
+<rdf:Property rdf:ID="doneInUniversity">
+  <domain rdf:resource="#Education"/>
+  <range rdf:resource="#University"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasMajor">
+  <domain rdf:resource="#Education"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasDegree">
+  <domain rdf:resource="#Education"/>
+</rdf:Property>
+
+
+<!--- Propriété d'une Post -->
+
+<rdf:Property rdf:ID="tookPlaceIn">
+  <domain rdf:resource="#Post"/>
+  <range rdf:resource="#Company"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="duration">
+  <domain rdf:resource="#Post"/>
+</rdf:Property>
+
+
+<!--- Propriétés commune au University, Company, Skill et certificationInfoBox-->
+
+<rdf:Property rdf:ID="hasWebsite">
+</rdf:Property>
+
+
+<!--- Propriété commune au Project, Organization-->
+
+<rdf:Property rdf:ID="hasLink">
+</rdf:Property>
+
+
+<!--- Propriété d'un Project-->
+
+<rdf:Property rdf:ID="hasAssociate">
+  <domain rdf:resource="#Project"/>
+  <range rdf:resource="#Professional"/>
+</rdf:Property>
+
+
+<!--- Propriétés commune au University et Company-->
+
+<rdf:Property rdf:ID="foundedIn">
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasType">
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasAdress">
+</rdf:Property>
+
+
+<!--- Propriétés d'une Company-->
+
+<rdf:Property rdf:ID="lineOfBusiness">
+  <domain rdf:resource="#Company"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasEffective">
+  <domain rdf:resource="#Company"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasHeadquarters">
+  <domain rdf:resource="#Company"/>
+</rdf:Property>
+
+
+<!--- Propriétés d'une University-->
+
+<rdf:Property rdf:ID="hasDirector">
+  <domain rdf:resource="#University"/>
+  <range rdf:resource="#Pesron"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasNumberOfStudents">
+  <domain rdf:resource="#University"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasNumberOfTeachers">
+  <domain rdf:resource="#University"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasLanguageRegime">
+  <domain rdf:resource="#University"/>
+</rdf:Property>
+
+
+<!--- Propriété du classe Skill -->
+
+<rdf:Property rdf:ID="firstAppeared">
+  <domain rdf:resource="#Skill"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasParadigm">
+  <domain rdf:resource="#Skill"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="lastVersion">
+  <domain rdf:resource="#Skill"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="designedBy">
+  <domain rdf:resource="#Skill"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasDeveloper">
+  <domain rdf:resource="#Skill"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasLicense">
+  <domain rdf:resource="#Skill"/>
+</rdf:Property>
+
+
+<!--- Propriétés du classe Certification -->
+
+<rdf:Property rdf:ID="hasScore">
+  <domain rdf:resource="#Certification"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasInfoBox">
+  <domain rdf:resource="#Certification"/>
+  <range rdf:resource="#certificationInfoBox"/>
+</rdf:Property>
+
+<!--- Propriétés du classe certificationInfoBox -->
+
+<rdf:Property rdf:ID="relatedSkill">
+  <domain rdf:resource="#certificationInfoBox"/>
+  <range rdf:resource="#Skill"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="createdBy">
+  <domain rdf:resource="#certificationInfoBox"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="administeredBy">
+  <domain rdf:resource="#certificationInfoBox"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasMaximumScore">
+  <domain rdf:resource="#certificationInfoBox"/>
+</rdf:Property>
+
+
+<!--- Propriétés du classe recommandedVisitor -->
+
+<rdf:Property rdf:ID="company">
+  <domain rdf:resource="#recommandedVisitor"/>
+  <range rdf:resource="#Company"/>
+</rdf:Property>
+
+</rdf:RDF>
