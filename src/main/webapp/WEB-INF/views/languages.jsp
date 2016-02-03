@@ -253,7 +253,11 @@
 													href="<%=request.getContextPath()%>/skills"> <i
 														class="menu-icon fa fa-caret-right"></i> Skills
 												</a> <b class="arrow"></b></li>
-
+												
+												<li class="hover"><a
+													href="<%=request.getContextPath()%>/languages"> <i
+														class="menu-icon fa fa-caret-right"></i> Languages
+												</a> <b class="arrow"></b></li>
 
 												<li class="hover"><a
 													href="<%=request.getContextPath()%>/currentPosts"> <i

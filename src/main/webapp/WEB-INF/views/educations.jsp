@@ -421,6 +421,73 @@
 										</div>
 									</div>
 									
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> University founded in </label>
+
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" value="${ed.university.foundedIn}" class="col-xs-10 col-sm-5" disabled>
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> University type </label>
+
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" value="${ed.university.type}" class="col-xs-10 col-sm-5" disabled>
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> University website </label>
+
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" value="${ed.university.website}" class="col-xs-10 col-sm-5" disabled>
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> University director </label>
+
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" value="${ed.university.director}" class="col-xs-10 col-sm-5" disabled>
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> University number of students </label>
+
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" value="${ed.university.numberOfStudents}" class="col-xs-10 col-sm-5" disabled>
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> University number of teachers </label>
+
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" value="${ed.university.numberOfTeachers}" class="col-xs-10 col-sm-5" disabled>
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> University language regime </label>
+
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" value="${ed.university.languageRegime}" class="col-xs-10 col-sm-5" disabled>
+										</div>
+									</div>
+									
+									
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> University address </label>
+
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" value="${ed.university.adres}" class="col-xs-10 col-sm-5" disabled>
+										</div>
+									</div>
+									
+									
+									
 									
 									<br><br><br><br><br><br>
 
