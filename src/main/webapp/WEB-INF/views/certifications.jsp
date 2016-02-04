@@ -2,6 +2,8 @@
 	pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="f"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -354,7 +356,7 @@
 								<div class="col-xs-12">		
 								
 								
-								<c:forEach items="${allCertifications}" var="cr">
+								<c:forEach items="${allCertifications}" var="cr" varStatus="certif">
 								<form class="form-horizontal">
 									<!-- #section:elements.form -->
 									<div class="form-group">
@@ -364,6 +366,18 @@
 
 										<div class="col-sm-9">
 											<input type="text" id="form-field-1" value="${cr.title}" class="col-xs-10 col-sm-5" disabled>
+										<c:if test="${not empty cr.relatedSkill}">
+
+											 &nbsp;&nbsp;
+											<a href="#" data-toggle="modal" data-target="#${certif.index}"><span class="href">>>More</span></a>
+											
+										</c:if>
+											<style>
+													.href {
+													background-color: linen;
+														}
+													</style>
+
 										</div>
 									</div>
 
@@ -375,12 +389,23 @@
 											<input type="text" id="form-field-1" value="${cr.score}" class="col-xs-10 col-sm-5" disabled>
 										</div>
 									</div>
-									
+								</form>	
+
+									<br><br><br><br><br><br>
+
+										<div class="modal fade" id="${certif.index}">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">x</button><br>
+													</div>
+													<div class="modal-body">
+																<form class="form-horizontal">
 									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Related skill </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="${cr.relatedSkill}" class="col-xs-10 col-sm-5" disabled>
+											<input type="text" id="form-field-1" value="${fn:substringAfter(cr.relatedSkill, '#')}" class="col-xs-10 col-sm-8" disabled>
 										</div>
 									</div>
 									
@@ -388,7 +413,7 @@
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Created by </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="${cr.createdBy}" class="col-xs-10 col-sm-5" disabled>
+											<input type="text" id="form-field-1" value="${cr.createdBy}" class="col-xs-10 col-sm-8" disabled>
 										</div>
 									</div>
 									
@@ -398,7 +423,7 @@
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Administred by </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="${cr.administredBy}" class="col-xs-10 col-sm-5" disabled>
+											<input type="text" id="form-field-1" value="${cr.administredBy}" class="col-xs-10 col-sm-8" disabled>
 										</div>
 									</div>
 									
@@ -407,7 +432,7 @@
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Website </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="${cr.website}" class="col-xs-10 col-sm-5" disabled>
+											<input type="text" id="form-field-1" value="${cr.website}" class="col-xs-10 col-sm-8" disabled>
 										</div>
 									</div>
 									
@@ -416,13 +441,21 @@
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Maximum score </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="${cr.maximumScore}" class="col-xs-10 col-sm-5" disabled>
+											<input type="text" id="form-field-1" value="${cr.maximumScore}" class="col-xs-10 col-sm-8" disabled>
 										</div>
 									</div>
 									
-
 									</form>
-									<br><br><br><br><br><br>
+											</div>
+													
+													<div class="modal-footer">
+														<button class="btn btn-info" data-dismiss="modal">Close</button>
+													</div>
+
+												</div>
+											</div>
+										</div>			
+
 								</c:forEach>
 								
 

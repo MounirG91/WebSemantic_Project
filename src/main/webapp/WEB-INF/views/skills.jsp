@@ -327,7 +327,9 @@
 												<div class="col-sm-9">
 													<input type="text" id="form-field-1" value="${sk.name}"
 														class="col-xs-10 col-sm-5" disabled> &nbsp;&nbsp;
-													<a href="#" data-toggle="modal" data-target="#${skill.index}"><span
+														
+														<c:if test="${not empty sk.firstAppeared}">
+														<a href="#" data-toggle="modal" data-target="#${skill.index}"><span
 														class="href">>>More</span></a>
 
 													<style>
@@ -335,6 +337,7 @@
 													background-color: linen;
 														}
 													</style>
+													</c:if>
 
 												</div>
 											</div>
@@ -346,7 +349,7 @@
 											<div class="modal-dialog">
 												<div class="modal-content">
 													<div class="modal-header">
-														<button type="button" class="close" data-dismiss="modal">x</button>
+														<button type="button" class="close" data-dismiss="modal">x</button><br>
 													</div>
 													<div class="modal-body">
 
@@ -357,7 +360,7 @@
 
 															<div class="col-sm-9">
 																<input type="text" id="form-field-1"
-																	value="${sk.firstAppeared}" class="col-xs-10 col-sm-5"
+																	value="${sk.firstAppeared}" class="col-xs-10 col-sm-8"
 																	disabled>
 															</div>
 														</div>
@@ -370,7 +373,7 @@
 
 															<div class="col-sm-9">
 																<input type="text" id="form-field-1"
-																	value="${sk.lastVersion}" class="col-xs-10 col-sm-5"
+																	value="${sk.lastVersion}" class="col-xs-10 col-sm-8"
 																	disabled>
 															</div>
 														</div>
@@ -381,7 +384,7 @@
 
 															<div class="col-sm-9">
 																<input type="text" id="form-field-1"
-																	value="${sk.designedBy}" class="col-xs-10 col-sm-5"
+																	value="${sk.designedBy}" class="col-xs-10 col-sm-8"
 																	disabled>
 															</div>
 														</div>
@@ -394,7 +397,7 @@
 
 															<div class="col-sm-9">
 																<input type="text" id="form-field-1"
-																	value="${sk.developer}" class="col-xs-10 col-sm-5"
+																	value="${sk.developer}" class="col-xs-10 col-sm-8"
 																	disabled>
 															</div>
 														</div>
@@ -405,7 +408,7 @@
 
 															<div class="col-sm-9">
 																<input type="text" id="form-field-1"
-																	value="${sk.licence}" class="col-xs-10 col-sm-5"
+																	value="${sk.licence}" class="col-xs-10 col-sm-8"
 																	disabled>
 															</div>
 														</div>
@@ -416,7 +419,7 @@
 
 															<div class="col-sm-9">
 																<input type="text" id="form-field-1"
-																	value="${sk.website}" class="col-xs-10 col-sm-5"
+																	value="${sk.website}" class="col-xs-10 col-sm-8"
 																	disabled>
 															</div>
 														</div>

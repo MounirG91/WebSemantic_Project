@@ -416,15 +416,7 @@
 										</div>
 									</div>
 									
-									
-										<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Post URL </label>
-
-										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="${ps.url}" class="col-xs-10 col-sm-5" disabled>
-										</div>
-									</div>
-									
+																		
 								
 									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Website </label>
@@ -467,7 +459,7 @@
 									</div>
 									
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Founder </label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Founded </label>
 
 										<div class="col-sm-9">
 											<input type="text" id="form-field-1" value="${ps.founded}" class="col-xs-10 col-sm-5" disabled>

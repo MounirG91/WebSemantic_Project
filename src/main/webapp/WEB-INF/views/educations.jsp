@@ -2,6 +2,8 @@
 	pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="f"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -359,29 +361,41 @@
 								
 								<form class="form-horizontal">
 									<!-- #section:elements.form -->
+
 									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Establishment name </label>
 
 												<div class="col-sm-9">
-										<input id="form-field-1" type="text" value="${ed.name}" class="col-xs-10 col-sm-5" disabled>
+										<input id="form-field-1" type="text" value="${ed.name}" class="col-xs-10 col-sm-5" disabled/>
+
+									<c:if test="${not empty ed.university.foundedIn}">
+
 										 &nbsp;&nbsp;
 									<a href="#" data-toggle="modal" data-target="#${univ.index}"><span	class="href">>>More</span></a>
+											
+											<style>
+													.href {
+													background-color: linen;
+														}
+													</style>
+										</c:if>
+
 												</div>
-</div></div>
+										</div>
 									
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1" > Description </label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-2" > Description </label>
 
 									<div class="col-sm-9">
-										<textarea class="form-control" rows="3" disabled>${ed.description}</textarea>
+										<textarea class="form-control" id="form-field-2" rows="3" disabled>${ed.description}</textarea>
 										</div>
 </div>
 									
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Degree </label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-3"> Degree </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="${ed.degree}" class="col-xs-10 col-sm-5" disabled>
+											<input type="text" id="form-field-3" value="${ed.degree}" class="col-xs-10 col-sm-5" disabled/>
 										</div>
 									</div>
 									
@@ -419,85 +433,86 @@
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Period </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="${ed.period}" class="col-xs-10 col-sm-5" disabled>
+									   <input type="text" id="form-field-1" value="${fn:replace(ed.period,fn:substring(ed.period, 5, 6), '-')}" class="col-xs-10 col-sm-5" disabled>
 										</div>
 									</div>
-									
-																		
+									<br><br><br><br>
+										</form>								
 									
 										<div class="modal fade" id="${univ.index}">
 											<div class="modal-dialog">
 												<div class="modal-content">
 													<div class="modal-header">
-														<button type="button" class="close" data-dismiss="modal">x</button>
+														<button type="button" class="close" data-dismiss="modal">x</button><br>
 													</div>
 													<div class="modal-body">
-						
-<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> University founded in </label>
+																	<form class="form-horizontal">
+											
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Founded in </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="${ed.university.foundedIn}" class="col-xs-10 col-sm-5" disabled>
+											<input type="text" id="form-field-1" value="${ed.university.foundedIn}" class="col-xs-10 col-sm-8" disabled>
 										</div>
 									</div>
 									
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> University type </label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Type </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="${ed.university.type}" class="col-xs-10 col-sm-5" disabled>
+											<input type="text" id="form-field-1" value="${ed.university.type}" class="col-xs-10 col-sm-8" disabled>
 										</div>
 									</div>
 									
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> University website </label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Website </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="${ed.university.website}" class="col-xs-10 col-sm-5" disabled>
+											<input type="text" id="form-field-1" value="${ed.university.website}" class="col-xs-10 col-sm-8" disabled>
 										</div>
 									</div>
 									
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> University director </label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Director </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="${ed.university.director}" class="col-xs-10 col-sm-5" disabled>
+											<input type="text" id="form-field-1" value="${ed.university.director}" class="col-xs-10 col-sm-8" disabled>
 										</div>
 									</div>
 									
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> University number of students </label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Number of students </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="${ed.university.numberOfStudents}" class="col-xs-10 col-sm-5" disabled>
+											<input type="text" id="form-field-1" value="${ed.university.numberOfStudents}" class="col-xs-10 col-sm-8" disabled>
 										</div>
 									</div>
 									
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> University number of teachers </label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Number of teachers </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="${ed.university.numberOfTeachers}" class="col-xs-10 col-sm-5" disabled>
+											<input type="text" id="form-field-1" value="${ed.university.numberOfTeachers}" class="col-xs-10 col-sm-8" disabled>
 										</div>
 									</div>
 									
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> University language regime </label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Language regime </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="${ed.university.languageRegime}" class="col-xs-10 col-sm-5" disabled>
+											<input type="text" id="form-field-1" value="${ed.university.languageRegime}" class="col-xs-10 col-sm-8" disabled>
 										</div>
 									</div>
 									
 									
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> University address </label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Address </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="${ed.university.adres}" class="col-xs-10 col-sm-5" disabled>
+											<input type="text" id="form-field-1" value="${ed.university.adres}" class="col-xs-10 col-sm-8" disabled>
 										</div>
 									</div>
-
+										</form>
 													</div>
 													
 													<div class="modal-footer">
@@ -510,7 +525,7 @@
 									
 
 
-									</form>
+									
 								
 								</c:forEach>   
 

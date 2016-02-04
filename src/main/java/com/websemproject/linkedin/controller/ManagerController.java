@@ -19,22 +19,19 @@ import com.websemproject.linkedin.parser.ParserXML;
  */
 @Controller
 public class ManagerController {
-	String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
-			+ "\\WebSemProject";
 
+//	String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
+//			+ "\\WebSemProject";
+
+	String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop" + "\\Cours" + "\\web semantique"
+			+ "\\WebSemantic_Project";
+	
 	String fileSource=workingDir+"\\attached_files";
+	
 	List<String> names; 
 	Professional currentProfessional;
 	ParserXML parser = new ParserXML();
 	
-public static String main(String[] args) throws NullPointerException, ParseException, IOException {
-		
-		String workingDir = System.getProperty("user.dir");
-		System.out.println("Current working directory : " + workingDir);
-		
-		return workingDir + "\\attached_files";
-		}
-
 	public void putNames() {
 		names = new ArrayList<String>();
 		names.add("Mounir Guizani");
