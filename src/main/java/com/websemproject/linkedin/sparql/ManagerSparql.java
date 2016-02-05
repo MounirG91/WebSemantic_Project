@@ -7,14 +7,13 @@ import java.util.List;
 import com.websemproject.linkedin.model.Professional;
 
 import fr.inria.acacia.corese.api.IDatatype;
-import fr.inria.acacia.corese.exceptions.EngineException;
 import fr.inria.edelweiss.kgram.core.Mapping;
 import fr.inria.edelweiss.kgram.core.Mappings;
-import fr.inria.edelweiss.kgraph.core.*;
+import fr.inria.edelweiss.kgraph.core.Graph;
 import fr.inria.edelweiss.kgraph.query.QueryProcess;
 import fr.inria.edelweiss.kgraph.rule.RuleEngine;
 import fr.inria.edelweiss.kgtool.load.Load;
-import fr.inria.edelweiss.kgtool.load.LoadException;
+
 
 public class ManagerSparql {
 
@@ -37,9 +36,13 @@ public class ManagerSparql {
 
 	public void initiate(ProfessionalDetails professionalDetails) {
 
-		String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
-				+ "\\WebSemantic_Project";
+//		String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
+//				+ "\\WebSemantic_Project";
 		
+		 String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop" +
+		 "\\Cours" + "\\web semantique"
+		 + "\\WebSemantic_Project";	
+		 
 		String fileSource = workingDir + "\\attached_files";
 		
 		gr = Graph.create(true);
@@ -62,7 +65,7 @@ public class ManagerSparql {
 			ld.loadWE(fileSource+"\\Ramzi Zayene.rdf");
 			ld.loadWE(fileSource+"\\Syrine Tlili, PhD.rdf");
 			ld.loadWE(fileSource+"\\Yassin Ben Naceur.rdf");
-		} catch (LoadException e) {
+		} catch (Exception e) {
 		}
 
 		RuleEngine re = ld.getRuleEngine();
@@ -120,7 +123,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (EngineException e) {
+		} catch (Exception e) {
 		}
 
 		for (Mapping m : map) {
@@ -145,7 +148,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (EngineException e) {
+		} catch (Exception e) {
 		}
 
 		for (Mapping m : map) {
@@ -170,7 +173,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (EngineException e) {
+		} catch (Exception e) {
 		}
 
 		for (Mapping m : map) {
@@ -195,7 +198,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (EngineException e) {
+		} catch (Exception e) {
 		}
 
 		for (Mapping m : map) {
@@ -220,7 +223,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (EngineException e) {
+		} catch (Exception e) {
 		}
 
 		for (Mapping m : map) {
@@ -245,7 +248,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (EngineException e) {
+		} catch (Exception e) {
 		}
 
 		for (Mapping m : map) {
@@ -270,7 +273,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (EngineException e) {
+		} catch (Exception e) {
 		}
 
 		for (Mapping m : map) {
@@ -295,7 +298,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (EngineException e) {
+		} catch (Exception e) {
 		}
 
 		for (Mapping m : map) {
@@ -320,7 +323,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (EngineException e) {
+		} catch (Exception e) {
 		}
 
 		for (Mapping m : map) {
@@ -345,7 +348,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (EngineException e) {
+		} catch (Exception e) {
 		}
 
 		for (Mapping m : map) {
