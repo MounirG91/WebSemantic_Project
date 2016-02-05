@@ -1,7 +1,7 @@
 package com.websemproject.linkedin.test;
 
 import com.websemproject.linkedin.model.Professional;
-import com.websemproject.linkedin.parser.ParserXML;
+import com.websemproject.linkedin.parser.ParserRDF;
 
 public class ParserTest {
 	public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class ParserTest {
 
 		String fileSource = workingDir + "\\attached_files";
 
-		ParserXML parser = new ParserXML();
+		ParserRDF parser = new ParserRDF();
 
 		Professional professional = parser.fromRdfFileToProfessional(fileSource,
 				"Jomaa Farouk");

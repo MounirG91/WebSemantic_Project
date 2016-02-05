@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Professional {
 	private String name, first_name, last_name, title, location, number_of_connections, country, industry, summary,
-			picture, linkedin_url, link;
+			picture, linkedin_url, link, graduated;
 	private List<String> websites, skills, languages;
 	private List<JobCompany> past_companies, current_companies;
 	private List<Organization> organizations;
@@ -52,6 +52,42 @@ public class Professional {
 		this.certifications = certifications;
 		this.education = education;
 		this.projects = projects;
+	}
+
+	public Professional(String name, String first_name, String last_name, String title, String location,
+			String number_of_connections, String country, String industry, String summary, String picture,
+			String linkedin_url, String link, String graduated, List<String> websites, List<String> skills,
+			List<String> languages, List<JobCompany> past_companies, List<JobCompany> current_companies,
+			List<Organization> organizations, List<Friend> friends, List<RecommandedVisitor> recommended_visitors,
+			List<Group> groups, List<Certification> certifications, List<Education> education, List<Project> projects,
+			List<Skill> skillsAll) {
+		super();
+		this.name = name;
+		this.first_name = first_name;
+		this.last_name = last_name;
+		this.title = title;
+		this.location = location;
+		this.number_of_connections = number_of_connections;
+		this.country = country;
+		this.industry = industry;
+		this.summary = summary;
+		this.picture = picture;
+		this.linkedin_url = linkedin_url;
+		this.link = link;
+		this.graduated = graduated;
+		this.websites = websites;
+		this.skills = skills;
+		this.languages = languages;
+		this.past_companies = past_companies;
+		this.current_companies = current_companies;
+		this.organizations = organizations;
+		this.friends = friends;
+		this.recommended_visitors = recommended_visitors;
+		this.groups = groups;
+		this.certifications = certifications;
+		this.education = education;
+		this.projects = projects;
+		this.skillsAll = skillsAll;
 	}
 
 	@Override
@@ -254,6 +290,14 @@ public class Professional {
 
 	public void setRecommended_visitors(List<RecommandedVisitor> recommended_visitors) {
 		this.recommended_visitors = recommended_visitors;
+	}
+	
+	public String getGraduated() {
+		return graduated;
+	}
+
+	public void setGraduated(String graduated) {
+		this.graduated = graduated;
 	}
 
 	public void showAllFriends(List<Friend> friends) {

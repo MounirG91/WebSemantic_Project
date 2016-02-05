@@ -22,7 +22,7 @@ import com.websemproject.linkedin.model.RecommandedVisitor;
 import com.websemproject.linkedin.model.Skill;
 import com.websemproject.linkedin.model.University;
 
-public class ParserXML {
+public class ParserRDF {
 
 	public Professional fromRdfFileToProfessional(String fileLocation, String profileName) throws NullPointerException {
 

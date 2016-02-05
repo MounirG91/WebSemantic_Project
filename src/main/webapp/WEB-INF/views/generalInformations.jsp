@@ -129,69 +129,22 @@
 				</script>
 
 			<div class="sidebar-shortcuts" id="sidebar-shortcuts">
-				<br> <img width=150 height=150 style=""
+				<br> <img width=150 height=150 
 					src="${linkedinPicture}" /> <br>
-				<br>
-				<button type="button" class="btn btn-white btn-primary" disabled>
+				
+				<c:forEach items="${mentionedProfessionals}" var="mp"> 
+                    <br>
+					<font color="blue" size="2">${mp.name} ${mp.degree}
+						</font>
+						<br>
+						<br>
+						<br>
+						<br>
+					
+						
+				</c:forEach>
 
-					<font color="black">Farouk Jomma &nbsp &nbsp &nbsp &nbsp
-						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</font>
-				</button>
-
-				<button type="button" class="btn btn-white btn-primary" disabled>
-
-					<font color="black">Khaled Ben Driss &nbsp &nbsp &nbsp &nbsp
-						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</font>
-				</button>
-
-				<button type="button" class="btn btn-white btn-primary" disabled>
-
-					<font color="black">Yassine Ben Naceur &nbsp &nbsp &nbsp
-						&nbsp &nbsp</font>
-				</button>
-
-				<button type="button" class="btn btn-white btn-primary" disabled>
-
-					<font color="black">Farouk Jomma &nbsp &nbsp &nbsp &nbsp
-						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</font>
-				</button>
-
-				<button type="button" class="btn btn-white btn-primary" disabled>
-
-					<font color="black">Khaled Ben Driss &nbsp &nbsp &nbsp &nbsp
-						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</font>
-				</button>
-				<button type="button" class="btn btn-white btn-primary" disabled>
-
-					<font color="black">Yassine Ben Naceur &nbsp &nbsp &nbsp
-						&nbsp &nbsp</font>
-				</button>
-
-				<button type="button" class="btn btn-white btn-primary" disabled>
-
-					<font color="black">Farouk Jomma &nbsp &nbsp &nbsp &nbsp
-						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</font>
-				</button>
-
-				<button type="button" class="btn btn-white btn-primary" disabled>
-
-					<font color="black">Khaled Ben Driss &nbsp &nbsp &nbsp &nbsp
-						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</font>
-				</button>
-				<button type="button" class="btn btn-white btn-primary" disabled>
-
-					<font color="black">Yassine Ben Naceur &nbsp &nbsp &nbsp
-						&nbsp &nbsp</font>
-				</button>
-
-
-
-
-				<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
-					<span class="btn btn-success"></span> <span class="btn btn-info"></span>
-
-					<span class="btn btn-warning"></span> <span class="btn btn-danger"></span>
-				</div>
+			
 			</div>
 			<!-- /.sidebar-shortcuts -->
 

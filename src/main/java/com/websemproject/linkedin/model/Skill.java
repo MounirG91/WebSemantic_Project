@@ -2,7 +2,7 @@ package com.websemproject.linkedin.model;
 
 
 public class Skill{
-	private String name, firstAppeared, paradigm, lastVersion, designedBy, developer, licence, website;
+	private String name, firstAppeared, paradigm, lastVersion, designedBy, developer, licence, website,level;
 
 	public Skill() {
 		super();
@@ -20,6 +20,21 @@ public class Skill{
 		this.developer = developer;
 		this.licence = licence;
 		this.website = website;
+	}
+
+	
+	public Skill(String name, String firstAppeared, String paradigm, String lastVersion, String designedBy,
+			String developer, String licence, String website, String level) {
+		super();
+		this.name = name;
+		this.firstAppeared = firstAppeared;
+		this.paradigm = paradigm;
+		this.lastVersion = lastVersion;
+		this.designedBy = designedBy;
+		this.developer = developer;
+		this.licence = licence;
+		this.website = website;
+		this.level = level;
 	}
 
 	public String getName() {
@@ -84,6 +99,15 @@ public class Skill{
 
 	public void setWebsite(String website) {
 		this.website = website;
+	}
+	
+
+	public String getLevel() {
+		return level;
+	}
+
+	public void setLevel(String level) {
+		this.level = level;
 	}
 
 	@Override
