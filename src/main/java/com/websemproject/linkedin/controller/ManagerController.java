@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.lowagie.text.xml.xmp.LangAlt;
 import com.websemproject.linkedin.model.Professional;
 import com.websemproject.linkedin.model.Skill;
 import com.websemproject.linkedin.parser.ParserRDF;
@@ -85,6 +84,7 @@ public class ManagerController {
 		model.addAttribute("industry", currentProfessional.getIndustry());
 		model.addAttribute("summary", currentProfessional.getSummary());
 		model.addAttribute("situation",currentProfessional.getGraduated());
+		model.addAttribute("country",currentProfessional.getCountry());
 		return "generalInformations";
 	}
 
@@ -268,6 +268,7 @@ public class ManagerController {
 		model.addAttribute("industry", currentProfessional.getIndustry());
 		model.addAttribute("summary", currentProfessional.getSummary());
 		model.addAttribute("situation",currentProfessional.getGraduated());
+		model.addAttribute("country",currentProfessional.getCountry());
 		return "generalInformations";
 	}
 

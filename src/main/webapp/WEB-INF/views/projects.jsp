@@ -334,13 +334,7 @@
 									</div>
 									
 									
-													<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1" > Description </label>
-
-									<div class="col-sm-9">
-										<textarea class="form-control" rows="3" disabled>${pr.description}</textarea>
-										</div>
-</div>							
+													
 									
 									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Start date </label>
@@ -368,13 +362,23 @@
 										</div>
 									</div>
 									
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Associates </label>
-
+									
+									
+									
+									
+									
+                           <c:forEach items="${pr.associates}" var="asc">
+                           <div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Associate</label>
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="associate" class="col-xs-10 col-sm-5" disabled>
+											<input type="text" id="form-field-1" value="${asc}" class="col-xs-10 col-sm-5" disabled>
 										</div>
 									</div>
+									</c:forEach>
+									
+									
+									
+													
 									<br><br><br><br><br><br>
 
 									</form>

@@ -14,7 +14,7 @@ public class ParserTest {
 		ParserRDF parser = new ParserRDF();
 
 		Professional professional = parser.fromRdfFileToProfessional(fileSource,
-				"Jomaa Farouk");
+				"Mounir Guizani");
 
 		professional.displayProfessional(professional);
 		

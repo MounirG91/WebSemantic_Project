@@ -48,7 +48,6 @@ public class ParserRDF {
 		Property numberOfConnections = model.getProperty(lp + "numberOfConnections");
 		Property industry = model.getProperty(lp + "industry");
 		Property picture = model.getProperty(lp + "picture");
-		Property country = model.getProperty(lp + "country");
 		Property company = model.getProperty(lp + "company");
 		Property hasLink = model.getProperty(lp + "hasLink");
 		Property hasName = model.getProperty(lp + "hasName");
@@ -105,8 +104,6 @@ public class ParserRDF {
 		professional.setIndustry(resourceProfessional.getProperty(industry).getObject().toString());
 		if (resourceProfessional.getProperty(picture)!=null)
 		professional.setPicture(resourceProfessional.getProperty(picture).getObject().toString());
-		if (resourceProfessional.getProperty(country)!=null)
-		professional.setCountry(resourceProfessional.getProperty(country).getObject().toString());
 		if (resourceProfessional.getProperty(picture)!=null)
 		professional.setPicture(resourceProfessional.getProperty(picture).getObject().toString());
 		if (resourceProfessional.getProperty(location)!=null)
@@ -272,6 +269,14 @@ public class ParserRDF {
 						(s.getObject().toString().length()));
 				languages.add(language);
 			}
+			
+			
+			if ((lp + "country").equals(s.getPredicate().toString())) {
+				int positionOfDiez = s.getObject().toString().indexOf("#");
+				String countryProfessional= s.getObject().toString().substring(positionOfDiez + 1,
+						(s.getObject().toString().length()));
+				professional.setCountry(countryProfessional);
+			}
 
 			if ((lp + "websites").equals(s.getPredicate().toString())) {
 				int positionOfDiez = s.getObject().toString().indexOf("#");
@@ -313,11 +318,13 @@ public class ParserRDF {
 						int positionOfDiez = sa.getObject().toString().indexOf("#");
 						String associate = sa.getObject().toString().substring(positionOfDiez + 1,
 								(sa.getObject().toString().length()));
+						if (!(associate.equals(resourceProfessional.getProperty(name).getObject().toString())))
 						associates.add(associate);
 					}
 				}
 				projects.add(new Project(titleProjet, linkProject, startDateProject, endDateProject, descriptionProject,
 						null, associates));
+				associates=new ArrayList<String>();
 			}
 
 			if ((lp + "hadPosition").equals(s.getPredicate().toString())) {
@@ -330,7 +337,7 @@ public class ParserRDF {
 				if (resourcePosition.getProperty(startDate) != null)
 					startDatePosition = resourcePosition.getProperty(startDate).getObject().toString();
 				String durationPosition = null;
-				if (resourcePosition.getProperty(endDate) != null)
+				if (resourcePosition.getProperty(duration) != null)
 					durationPosition = resourcePosition.getProperty(duration).getObject().toString();
 				String headQuartersCompany = null;
 				String effectiveCompany = null;
@@ -379,7 +386,7 @@ public class ParserRDF {
 				if (resourcePosition.getProperty(startDate) != null)
 					startDatePosition = resourcePosition.getProperty(startDate).getObject().toString();
 				String durationPosition = null;
-				if (resourcePosition.getProperty(endDate) != null)
+				if (resourcePosition.getProperty(duration) != null)
 					durationPosition = resourcePosition.getProperty(duration).getObject().toString();
 				String headQuartersCompany = null;
 				String effectiveCompany = null;
