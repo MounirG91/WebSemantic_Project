@@ -131,6 +131,8 @@
 			<div class="sidebar-shortcuts" id="sidebar-shortcuts">
 				<br> <img width=150 height=150 
 					src="${linkedinPicture}" /> <br>
+					<font color="Green" size="2">${situation}</font>
+					<br>
 					<br>
 					<font color="Black" size="4"><u>Relation with others</u></font>
 				<br>
@@ -278,8 +280,8 @@
 													for="form-field-1"> Name </label>
 
 												<div class="col-sm-9">
-													<input type="text" id="form-field-1" value="${sk.name} ${sk.level}"
-														class="col-xs-10 col-sm-5" disabled> &nbsp;&nbsp;
+													<input type="text" id="form-field-1" value="${sk.name}"
+														class="col-xs-10 col-sm-5" disabled> &nbsp;&nbsp; <font color="Red" >${sk.level}</font>&nbsp;&nbsp;
 														
 														<c:if test="${not empty sk.firstAppeared}">
 														<a href="#" data-toggle="modal" data-target="#${skill.index}"><span

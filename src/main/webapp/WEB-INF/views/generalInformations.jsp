@@ -131,6 +131,8 @@
 			<div class="sidebar-shortcuts" id="sidebar-shortcuts">
 				<br> <img width=150 height=150 
 					src="${linkedinPicture}" /> <br>
+					<font color="Green" size="2">${situation}</font>
+					<br>
 					<br>
 					<font color="Black" size="4"><u>Relation with others</u></font>
 				<br>

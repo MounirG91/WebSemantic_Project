@@ -131,6 +131,8 @@
 				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
 				<br> <img width=150 height=150 
 					src="${linkedinPicture}" /> <br>
+					<font color="Green" size="2">${situation}</font>
+					<br>
 					<br>
 					<font color="Black" size="4"><u>Relation with others</u></font>
 				<br>
@@ -276,8 +278,8 @@
 												for="form-field-1"> Name </label>
 
 											<div class="col-sm-9">
-												<input type="text" id="form-field-1" value="${lg.name} ${lg.fluent} "
-													class="col-xs-10 col-sm-5" disabled>
+												<input type="text" id="form-field-1" value="${lg.name}"
+													class="col-xs-10 col-sm-5" disabled> &nbsp; &nbsp; <font color="Red" >${lg.fluent} </font>
 											</div>
 										</div>
 									</form>

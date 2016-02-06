@@ -84,6 +84,7 @@ public class ManagerController {
 		model.addAttribute("country", currentProfessional.getCountry());
 		model.addAttribute("industry", currentProfessional.getIndustry());
 		model.addAttribute("summary", currentProfessional.getSummary());
+		model.addAttribute("situation",currentProfessional.getGraduated());
 		return "generalInformations";
 	}
 
@@ -106,6 +107,7 @@ public class ManagerController {
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
+		model.addAttribute("situation",currentProfessional.getGraduated());
 		return "certifications";
 	}
 
@@ -120,6 +122,7 @@ public class ManagerController {
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
+		model.addAttribute("situation",currentProfessional.getGraduated());
 		return "currentPosts";
 	}
 
@@ -134,6 +137,7 @@ public class ManagerController {
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
+		model.addAttribute("situation",currentProfessional.getGraduated());
 		return "pastPosts";
 	}
 
@@ -148,6 +152,7 @@ public class ManagerController {
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
+		model.addAttribute("situation",currentProfessional.getGraduated());
 		return "groups";
 	}
 
@@ -162,6 +167,7 @@ public class ManagerController {
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
+		model.addAttribute("situation",currentProfessional.getGraduated());
 		return "educations";
 	}
 
@@ -176,6 +182,7 @@ public class ManagerController {
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
+		model.addAttribute("situation",currentProfessional.getGraduated());
 		return "projects";
 	}
 
@@ -190,6 +197,7 @@ public class ManagerController {
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
+		model.addAttribute("situation",currentProfessional.getGraduated());
 		return "recommandedVisitors";
 	}
 
@@ -204,6 +212,7 @@ public class ManagerController {
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
+		model.addAttribute("situation",currentProfessional.getGraduated());
 		return "skills";
 	}
 
@@ -218,6 +227,7 @@ public class ManagerController {
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
+		model.addAttribute("situation",currentProfessional.getGraduated());
 		return "friends";
 	}
 
@@ -233,6 +243,7 @@ public class ManagerController {
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
+		model.addAttribute("situation",currentProfessional.getGraduated());
 		return "languages";
 	}
 
@@ -256,6 +267,7 @@ public class ManagerController {
 		model.addAttribute("country", currentProfessional.getCountry());
 		model.addAttribute("industry", currentProfessional.getIndustry());
 		model.addAttribute("summary", currentProfessional.getSummary());
+		model.addAttribute("situation",currentProfessional.getGraduated());
 		return "generalInformations";
 	}
 
@@ -303,7 +315,7 @@ public class ManagerController {
 		}
 
 		if (professionalDetails.getIsStillStudentAt().size() != 0) {
-			currentProfessional.setGraduated("(Student at" + professionalDetails.getIsStillStudentAt().get(0) + ")");
+			currentProfessional.setGraduated("(Student at " + professionalDetails.getIsStillStudentAt().get(0) + ")");
 			;
 		}
 
