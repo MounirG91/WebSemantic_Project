@@ -131,20 +131,20 @@
 			<div class="sidebar-shortcuts" id="sidebar-shortcuts">
 				<br> <img width=150 height=150 
 					src="${linkedinPicture}" /> <br>
-				
+					<br>
+					<font color="Black" size="4"><u>Relation with others</u></font>
+				<br>
+				<br>
 				<c:forEach items="${mentionedProfessionals}" var="mp"> 
-                    <br>
-					<font color="blue" size="2">${mp.name} ${mp.degree}
+				<ul>
+					<li><font color="Grey" size="3">${mp.name}</font> <font color="Blue" size="2">${mp.degree}</font><font color="red" size="2"> ${mp.sameUniversity}</font> <font color="red" size="2"> ${mp.workedInSameCompany}</font> </li>
 						</font>
 						<br>
-						<br>
-						<br>
-						<br>
-					
+
+					</ul>
 						
 				</c:forEach>
 
-			
 			</div>
 			<!-- /.sidebar-shortcuts -->
 

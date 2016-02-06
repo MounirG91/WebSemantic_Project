@@ -128,70 +128,23 @@
 					try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
 				</script>
 
-			<div class="sidebar-shortcuts" id="sidebar-shortcuts">
-				<br> <img width=150 height=150 style=""
+				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+				<br> <img width=150 height=150 
 					src="${linkedinPicture}" /> <br>
+					<br>
+					<font color="Black" size="4"><u>Relation with others</u></font>
 				<br>
-				<button type="button" class="btn btn-white btn-primary" disabled>
+				<br>
+				<c:forEach items="${mentionedProfessionals}" var="mp"> 
+				<ul>
+					<li><font color="Grey" size="3">${mp.name}</font> <font color="Blue" size="2">${mp.degree}</font><font color="red" size="2"> ${mp.sameUniversity}</font> <font color="red" size="2"> ${mp.workedInSameCompany}</font> </li>
+						</font>
+						<br>
 
-					<font color="black">Farouk Jomma &nbsp &nbsp &nbsp &nbsp
-						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</font>
-				</button>
+					</ul>
+						
+				</c:forEach>
 
-				<button type="button" class="btn btn-white btn-primary" disabled>
-
-					<font color="black">Khaled Ben Driss &nbsp &nbsp &nbsp &nbsp
-						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</font>
-				</button>
-
-				<button type="button" class="btn btn-white btn-primary" disabled>
-
-					<font color="black">Yassine Ben Naceur &nbsp &nbsp &nbsp
-						&nbsp &nbsp</font>
-				</button>
-
-				<button type="button" class="btn btn-white btn-primary" disabled>
-
-					<font color="black">Farouk Jomma &nbsp &nbsp &nbsp &nbsp
-						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</font>
-				</button>
-
-				<button type="button" class="btn btn-white btn-primary" disabled>
-
-					<font color="black">Khaled Ben Driss &nbsp &nbsp &nbsp &nbsp
-						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</font>
-				</button>
-				<button type="button" class="btn btn-white btn-primary" disabled>
-
-					<font color="black">Yassine Ben Naceur &nbsp &nbsp &nbsp
-						&nbsp &nbsp</font>
-				</button>
-
-				<button type="button" class="btn btn-white btn-primary" disabled>
-
-					<font color="black">Farouk Jomma &nbsp &nbsp &nbsp &nbsp
-						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</font>
-				</button>
-
-				<button type="button" class="btn btn-white btn-primary" disabled>
-
-					<font color="black">Khaled Ben Driss &nbsp &nbsp &nbsp &nbsp
-						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</font>
-				</button>
-				<button type="button" class="btn btn-white btn-primary" disabled>
-
-					<font color="black">Yassine Ben Naceur &nbsp &nbsp &nbsp
-						&nbsp &nbsp</font>
-				</button>
-
-
-
-
-				<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
-					<span class="btn btn-success"></span> <span class="btn btn-info"></span>
-
-					<span class="btn btn-warning"></span> <span class="btn btn-danger"></span>
-				</div>
 			</div>
 			<!-- /.sidebar-shortcuts -->
 
@@ -323,7 +276,7 @@
 												for="form-field-1"> Name </label>
 
 											<div class="col-sm-9">
-												<input type="text" id="form-field-1" value="${lg}"
+												<input type="text" id="form-field-1" value="${lg.name} ${lg.fluent} "
 													class="col-xs-10 col-sm-5" disabled>
 											</div>
 										</div>

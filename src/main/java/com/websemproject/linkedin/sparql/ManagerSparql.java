@@ -7,13 +7,14 @@ import java.util.List;
 import com.websemproject.linkedin.model.Professional;
 
 import fr.inria.acacia.corese.api.IDatatype;
+import fr.inria.acacia.corese.exceptions.EngineException;
 import fr.inria.edelweiss.kgram.core.Mapping;
 import fr.inria.edelweiss.kgram.core.Mappings;
-import fr.inria.edelweiss.kgraph.core.Graph;
+import fr.inria.edelweiss.kgraph.core.*;
 import fr.inria.edelweiss.kgraph.query.QueryProcess;
 import fr.inria.edelweiss.kgraph.rule.RuleEngine;
 import fr.inria.edelweiss.kgtool.load.Load;
-
+import fr.inria.edelweiss.kgtool.load.LoadException;
 
 public class ManagerSparql {
 
@@ -35,56 +36,61 @@ public class ManagerSparql {
 	}
 
 	public void initiate(ProfessionalDetails professionalDetails) {
+		 String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" +
+		 "\\workspace-sts-3.7.2.RELEASE"
+		 + "\\WebSemantic_Project";
 
-//		String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
-//				+ "\\WebSemantic_Project";
-		
-		 String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop" +
-		 "\\Cours" + "\\web semantique"
-		 + "\\WebSemantic_Project";	
-		 
+		//String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop" + "\\Cours" + "\\web semantique"
+			//	+ "\\WebSemantic_Project";
+
 		String fileSource = workingDir + "\\attached_files";
-		
+
 		gr = Graph.create(true);
 
 		Load ld = Load.create(gr);
 
 		try {
-			ld.loadWE(fileSource+"\\linkedin.rdfs");
-			ld.loadWE(fileSource+"\\certifications.rdf");
-			ld.loadWE(fileSource+"\\universities.rdf");
-			ld.loadWE(fileSource+"\\skills.rdf");
-			ld.loadWE(fileSource+"\\linkedin.rul");
-			ld.loadWE(fileSource+"\\Achraf Aouadi.rdf");
-			ld.loadWE(fileSource+"\\Ahmed REBAI.rdf");
-			ld.loadWE(fileSource+"\\Amen Ouali.rdf");
-			ld.loadWE(fileSource+"\\Hela Tajouri.rdf");
-			ld.loadWE(fileSource+"\\Jomaa Farouk.rdf");
-			ld.loadWE(fileSource+"\\Khaled Ben Driss.rdf");
-			ld.loadWE(fileSource+"\\Mounir Guizani.rdf");
-			ld.loadWE(fileSource+"\\Ramzi Zayene.rdf");
-			ld.loadWE(fileSource+"\\Syrine Tlili, PhD.rdf");
-			ld.loadWE(fileSource+"\\Yassin Ben Naceur.rdf");
+			ld.loadWE(fileSource + "\\linkedin.rdfs");
+			ld.loadWE(fileSource + "\\certifications.rdf");
+			ld.loadWE(fileSource + "\\universities.rdf");
+			ld.loadWE(fileSource + "\\skills.rdf");
+			ld.loadWE(fileSource + "\\linkedin.rul");
+			ld.loadWE(fileSource + "\\Achraf Aouadi.rdf");
+			ld.loadWE(fileSource + "\\Ahmed REBAI.rdf");
+			ld.loadWE(fileSource + "\\Amen Ouali.rdf");
+			ld.loadWE(fileSource + "\\Hela Tajouri.rdf");
+			ld.loadWE(fileSource + "\\Jomaa Farouk.rdf");
+			ld.loadWE(fileSource + "\\Khaled Ben Driss.rdf");
+			ld.loadWE(fileSource + "\\Mounir Guizani.rdf");
+			ld.loadWE(fileSource + "\\Ramzi Zayene.rdf");
+			ld.loadWE(fileSource + "\\Syrine Tlili, PhD.rdf");
+			ld.loadWE(fileSource + "\\Yassin Ben Naceur.rdf");
 		} catch (Exception e) {
 		}
 
-		RuleEngine re = ld.getRuleEngine();
+		RuleEngine re = new RuleEngine();
+		re = ld.getRuleEngine();
 		re.process();
 		gr.addEngine(re);
 		gr.process();
-		
-		professionalDetails.setHasSecondDegreeFriend(get_List_HasSecondDegreeFriend(professionalDetails.getProfessional().getName()));
-		professionalDetails.setHasThirdDegreeFriend(get_List_HasThirdDegreeFriend(professionalDetails.getProfessional().getName()));
-		professionalDetails.setWentSameUniversityAs(get_List_WentSameUniversityAs(professionalDetails.getProfessional().getName()));
-		professionalDetails.setWorkedInSameCompany(get_List_WorkedInSameCompany(professionalDetails.getProfessional().getName()));
+
+		professionalDetails.setHasSecondDegreeFriend(
+				get_List_HasSecondDegreeFriend(professionalDetails.getProfessional().getName()));
+		professionalDetails.setHasThirdDegreeFriend(
+				get_List_HasThirdDegreeFriend(professionalDetails.getProfessional().getName()));
+		professionalDetails.setWentSameUniversityAs(
+				get_List_WentSameUniversityAs(professionalDetails.getProfessional().getName()));
+		professionalDetails
+				.setWorkedInSameCompany(get_List_WorkedInSameCompany(professionalDetails.getProfessional().getName()));
 		professionalDetails.setIsColleagueOf(get_List_IsColleagueOf(professionalDetails.getProfessional().getName()));
 		professionalDetails.setIsFluentIn(get_List_IsFluentIn(professionalDetails.getProfessional().getName()));
-		professionalDetails.setHasBasicCommunicationSkillsIn(get_List_HasBasicCommunicationSkillsIn(professionalDetails.getProfessional().getName()));
+		professionalDetails.setHasBasicCommunicationSkillsIn(
+				get_List_HasBasicCommunicationSkillsIn(professionalDetails.getProfessional().getName()));
 		professionalDetails.setIsExpertIn(get_List_IsExpertIn(professionalDetails.getProfessional().getName()));
-		professionalDetails.setIsStillStudentAt(get_List_IsStillStudentAt(professionalDetails.getProfessional().getName()));
+		professionalDetails
+				.setIsStillStudentAt(get_List_IsStillStudentAt(professionalDetails.getProfessional().getName()));
 		professionalDetails.setIsGraduated(get_List_IsGraduated(professionalDetails.getProfessional().getName()));
-		
-		
+
 		transformList(professionalDetails.getHasSecondDegreeFriend());
 		transformList(professionalDetails.getHasThirdDegreeFriend());
 		transformList(professionalDetails.getWentSameUniversityAs());
@@ -95,17 +101,18 @@ public class ManagerSparql {
 		transformList(professionalDetails.getIsExpertIn());
 		transformList(professionalDetails.getIsStillStudentAt());
 		transformList(professionalDetails.getIsGraduated());
-		
-		System.out.println("Has Second Degree Friends : "+professionalDetails.getHasSecondDegreeFriend());
-		System.out.println("Has Third Degree Friends : "+professionalDetails.getHasThirdDegreeFriend());
-		System.out.println("Went Same University As : "+professionalDetails.getWentSameUniversityAs());
-		System.out.println("Worked In Same Company : "+professionalDetails.getWorkedInSameCompany());
-		System.out.println("Is Colleague Of : "+professionalDetails.getIsColleagueOf());
-		System.out.println("Is Fluent In : "+professionalDetails.getIsFluentIn());
-		System.out.println("Has Basic Communication Skills In : "+professionalDetails.getHasBasicCommunicationSkillsIn());
-		System.out.println("Is Expert In : "+professionalDetails.getIsExpertIn());
-		System.out.println("Is Still Student At : "+professionalDetails.getIsStillStudentAt());
-		System.out.println("Is Graduated : "+professionalDetails.getIsGraduated());
+
+		System.out.println("Has Second Degree Friends : " + professionalDetails.getHasSecondDegreeFriend());
+		System.out.println("Has Third Degree Friends : " + professionalDetails.getHasThirdDegreeFriend());
+		System.out.println("Went Same University As : " + professionalDetails.getWentSameUniversityAs());
+		System.out.println("Worked In Same Company : " + professionalDetails.getWorkedInSameCompany());
+		System.out.println("Is Colleague Of : " + professionalDetails.getIsColleagueOf());
+		System.out.println("Is Fluent In : " + professionalDetails.getIsFluentIn());
+		System.out.println(
+				"Has Basic Communication Skills In : " + professionalDetails.getHasBasicCommunicationSkillsIn());
+		System.out.println("Is Expert In : " + professionalDetails.getIsExpertIn());
+		System.out.println("Is Still Student At : " + professionalDetails.getIsStillStudentAt());
+		System.out.println("Is Graduated : " + professionalDetails.getIsGraduated());
 
 	}
 
@@ -123,7 +130,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (Exception e) {
+		} catch (EngineException e) {
 		}
 
 		for (Mapping m : map) {
@@ -148,7 +155,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (Exception e) {
+		} catch (EngineException e) {
 		}
 
 		for (Mapping m : map) {
@@ -173,7 +180,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (Exception e) {
+		} catch (EngineException e) {
 		}
 
 		for (Mapping m : map) {
@@ -198,7 +205,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (Exception e) {
+		} catch (EngineException e) {
 		}
 
 		for (Mapping m : map) {
@@ -223,7 +230,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (Exception e) {
+		} catch (EngineException e) {
 		}
 
 		for (Mapping m : map) {
@@ -248,7 +255,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (Exception e) {
+		} catch (EngineException e) {
 		}
 
 		for (Mapping m : map) {
@@ -273,7 +280,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (Exception e) {
+		} catch (EngineException e) {
 		}
 
 		for (Mapping m : map) {
@@ -298,7 +305,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (Exception e) {
+		} catch (EngineException e) {
 		}
 
 		for (Mapping m : map) {
@@ -323,7 +330,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (Exception e) {
+		} catch (EngineException e) {
 		}
 
 		for (Mapping m : map) {
@@ -348,7 +355,7 @@ public class ManagerSparql {
 
 		try {
 			map = exec.query(query);
-		} catch (Exception e) {
+		} catch (EngineException e) {
 		}
 
 		for (Mapping m : map) {
