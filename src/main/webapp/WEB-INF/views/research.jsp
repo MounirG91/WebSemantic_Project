@@ -2,6 +2,8 @@
 	pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="f"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,22 +131,21 @@
 				</script>
 
 			<div class="sidebar-shortcuts" id="sidebar-shortcuts">
-				<br> <img width=150 height=150 
-					src="${linkedinPicture}" /> <br>
-					<font color="Green" size="2">${situation}</font>
-					<br>
-					<br>
-					<font color="Black" size="4"><u>Relation with others</u></font>
+				<br> <img width=150 height=150 src="${linkedinPicture}" /> <br>
+				<font color="Green" size="2">${situation}</font> <br> <br>
+				<font color="Black" size="4"><u>Relation with others</u></font> <br>
 				<br>
-				<br>
-				<c:forEach items="${mentionedProfessionals}" var="mp"> 
-				<ul>
-					<li><font color="Grey" size="3">${mp.name}</font> <font color="Blue" size="2">${mp.degree}</font><font color="red" size="2"> ${mp.sameUniversity}</font> <font color="red" size="2"> ${mp.workedInSameCompany}</font> </li>
+				<c:forEach items="${mentionedProfessionals}" var="mp">
+					<ul>
+						<li><font color="Grey" size="3">${mp.name}</font> <font
+							color="Blue" size="2">${mp.degree}</font><font color="red"
+							size="2"> ${mp.sameUniversity}</font> <font color="red" size="2">
+								${mp.workedInSameCompany}</font></li>
 						</font>
 						<br>
 
 					</ul>
-						
+
 				</c:forEach>
 
 			</div>
@@ -161,7 +162,7 @@
 
 					<!-- /section:settings.box -->
 					<div class="page-header">
-						<h1>Skills of ${name}</h1>
+						<h1>Search engine</h1>
 					</div>
 					<!-- /.page-header -->
 
@@ -174,10 +175,11 @@
 									<ul class="nav nav-list">
 
 
-										 <li class="hover">
-												<a  href="<%=request.getContextPath()%>/research">
-														<h4>Establish a research</h4></a>
-											</li>
+										<li class="hover"><a
+											href="<%=request.getContextPath()%>/research">
+												<h4>Establish a research</h4>
+										</a></li>
+
 
 
 
@@ -261,142 +263,212 @@
 
 
 
-
 							<div class="col-xs-12">
 
 
-								<c:forEach items="${allSkills}" var="sk" varStatus="skill">
-									<form class="form-horizontal">
-										<!-- #section:elements.form -->
-										<div class="form-group">
 
-											<div class="form-group">
-												<label class="col-sm-3 control-label no-padding-right"
-													for="form-field-1"> Name </label>
+								<form class="form-horizontal">
+									<!-- #section:elements.form -->
 
-												<div class="col-sm-9">
-													<input type="text" id="form-field-1" value="${sk.name}"
-														class="col-xs-10 col-sm-5" disabled> &nbsp;&nbsp; <font color="Red" >${sk.level}</font>&nbsp;&nbsp;
-														
-														<c:if test="${not empty sk.firstAppeared}">
-														<a href="#" data-toggle="modal" data-target="#${skill.index}"><span
-														class="href">>>More</span></a>
-
-													<style>
-													.href {
-													background-color: linen;
-														}
-													</style>
-													</c:if>
-
-												</div>
-											</div>
-
-										</div>
-
-
-										<div class="modal fade" id="${skill.index}">
-											<div class="modal-dialog">
-												<div class="modal-content">
-													<div class="modal-header">
-														<button type="button" class="close" data-dismiss="modal">x</button><br>
-													</div>
-													<div class="modal-body">
 
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Paradigm </label>
 
-										<div class="col-sm-9">
-											<input type="text" id="form-field-1" value="${sk.paradigm}" class="col-xs-10 col-sm-8" disabled>
+										<label class="col-sm-3 control-label no-padding-top">Skills
+											: &nbsp </label>
+										<div class="col-sm-8">
+											<select name="skillName" required>
+												<c:forEach items="${allSkills}" var="sk">
+													<option>${sk}</option>
+												</c:forEach>
+											</select>
 										</div>
 									</div>
 
-														<div class="form-group">
-															<label class="col-sm-3 control-label no-padding-right"
-																for="form-field-1"> Date of first version </label>
-
-															<div class="col-sm-9">
-																<input type="text" id="form-field-1"
-																	value="${sk.firstAppeared}" class="col-xs-10 col-sm-8"
-																	disabled>
-															</div>
-														</div>
 
 
+									<div class="form-group">
 
-														<div class="form-group">
-															<label class="col-sm-3 control-label no-padding-right"
-																for="form-field-1"> Last version </label>
-
-															<div class="col-sm-9">
-																<input type="text" id="form-field-1"
-																	value="${sk.lastVersion}" class="col-xs-10 col-sm-8"
-																	disabled>
-															</div>
-														</div>
-
-														<div class="form-group">
-															<label class="col-sm-3 control-label no-padding-right"
-																for="form-field-1"> Author </label>
-
-															<div class="col-sm-9">
-																<input type="text" id="form-field-1"
-																	value="${sk.designedBy}" class="col-xs-10 col-sm-8"
-																	disabled>
-															</div>
-														</div>
-
-
-
-														<div class="form-group">
-															<label class="col-sm-3 control-label no-padding-right"
-																for="form-field-1"> Developer </label>
-
-															<div class="col-sm-9">
-																<input type="text" id="form-field-1"
-																	value="${sk.developer}" class="col-xs-10 col-sm-8"
-																	disabled>
-															</div>
-														</div>
-
-														<div class="form-group">
-															<label class="col-sm-3 control-label no-padding-right"
-																for="form-field-1"> Licence </label>
-
-															<div class="col-sm-9">
-																<input type="text" id="form-field-1"
-																	value="${sk.licence}" class="col-xs-10 col-sm-8"
-																	disabled>
-															</div>
-														</div>
-
-														<div class="form-group">
-															<label class="col-sm-3 control-label no-padding-right"
-																for="form-field-1"> Website </label>
-
-															<div class="col-sm-9">
-																<input type="text" id="form-field-1"
-																	value="${sk.website}" class="col-xs-10 col-sm-8"
-																	disabled>
-															</div>
-														</div>
-
-
-													</div>
-													<div class="modal-footer">
-														<button class="btn btn-info" data-dismiss="modal">Close</button>
-													</div>
-
-												</div>
-											</div>
+										<label class="col-sm-3 control-label no-padding-top">Languages
+											: &nbsp </label>
+										<div class="col-sm-8">
+											<select name="languageName" required>
+												<c:forEach items="${allLanguages}" var="lg">
+													<option>${lg}</option>
+												</c:forEach>
+											</select>
 										</div>
-
-									</form>
-
-								</c:forEach>
+									</div>
 
 
+									<div class="form-group">
 
+										<label class="col-sm-3 control-label no-padding-top">Countries
+											: &nbsp </label>
+										<div class="col-sm-8">
+											<select name="countryName" required>
+												<c:forEach items="${allCountries}" var="cr">
+													<option>${cr}</option>
+												</c:forEach>
+											</select>
+										</div>
+									</div>
+
+
+
+									<div class="form-group">
+
+										<label class="col-sm-3 control-label no-padding-top">Industries
+											: &nbsp </label>
+										<div class="col-sm-8">
+											<select name="industryName" required>
+												<c:forEach items="${allIndustries}" var="id">
+													<option>${id}</option>
+												</c:forEach>
+											</select>
+										</div>
+									</div>
+
+
+									<div class="form-group">
+
+										<label class="col-sm-3 control-label no-padding-top">Languages
+											certifications : <br>( &nbsp &nbsp<INPUT type="checkbox"
+											name="situationLanguageCertification" value="Fluent" required>
+											<font color="red">Fluent</font>&nbsp &nbsp<INPUT
+											type="checkbox" name="situationLanguageCertification"
+											value="Basic" required> <font color="red">Basic
+												skills</font>&nbsp &nbsp)
+										</label>
+										<div class="col-sm-8">
+											<select name="languageCertificationName" required>
+												<c:forEach items="${allLanguageCertifications}" var="lc">
+													<option>${lc}</option>
+												</c:forEach>
+											</select>
+										</div>
+									</div>
+
+
+
+
+									<div class="form-group">
+
+										<label class="col-sm-3 control-label no-padding-top">Educations
+											: &nbsp </label>
+										<div class="col-sm-8">
+											<select name="educationName" required>
+												<c:forEach items="${allEducations}" var="ed">
+													<option>${ed}</option>
+												</c:forEach>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+
+										<label class="col-sm-3 control-label no-padding-top">IT
+											Certifications &nbsp ( &nbsp &nbsp<INPUT type="checkbox"
+											name="situationCertification" value="Expert" required>
+											<font color="red">Expert</font>&nbsp &nbsp) :
+										</label>
+										<div class="col-sm-8">
+											<select name="ItCertificationName" required>
+												<c:forEach items="${allITCertifications}" var="it">
+													<option>${it}</option>
+												</c:forEach>
+											</select>
+										</div>
+									</div>
+
+
+
+
+
+									<div class="form-group">
+
+										<label class="col-sm-3 control-label no-padding-top">Current
+											Posts : &nbsp </label>
+										<div class="col-sm-8">
+											<select name="currentPostName" required>
+												<c:forEach items="${allCurrentPosts}" var="cp">
+													<option>${cp}</option>
+												</c:forEach>
+											</select>
+										</div>
+									</div>
+
+
+									<div class="form-group">
+
+										<label class="col-sm-3 control-label no-padding-top">Past
+											Posts : &nbsp </label>
+										<div class="col-sm-8">
+											<select name="pastPostName" required>
+												<c:forEach items="${allPastPosts}" var="cp">
+													<option>${cp}</option>
+												</c:forEach>
+											</select>
+										</div>
+									</div>
+
+
+									<div class="form-group">
+
+										<label class="col-sm-3 control-label no-padding-top">Universities
+											: &nbsp </label>
+										<div class="col-sm-8">
+											<select name="universityName" required>
+												<c:forEach items="${allUniversities}" var="un">
+													<option>${un}</option>
+												</c:forEach>
+											</select>
+										</div>
+									</div>
+
+
+									<div class="form-group">
+
+										<label class="col-sm-3 control-label no-padding-top">Companies
+											: &nbsp </label>
+										<div class="col-sm-8">
+											<select name="companyName" required>
+												<c:forEach items="${allCompanies}" var="cp">
+													<option>${cp}</option>
+												</c:forEach>
+											</select>
+										</div>
+									</div>
+
+
+
+
+									<div class="form-group">
+
+										<label class="col-sm-3 control-label no-padding-top">Graduated/Student
+											: &nbsp </label><font color="red"> <INPUT type="checkbox"
+											name="situation" value="Graduated" required>
+											Graduated &nbsp<INPUT type="checkbox" name="situation"
+											value="Student" required> Student
+										</font>
+									</div>
+									
+									<br>
+									<br>
+
+									<div class="col-md-offset-3 col-md-9">
+										<button class="btn btn-inverse" type="submit">
+											 Search
+										</button>
+
+										&nbsp; &nbsp; &nbsp;
+										<button class="btn" type="reset">
+											<i class="ace-icon fa fa-undo bigger-110"></i> Reset
+										</button>
+
+									</div>
+
+
+
+								</form>
 							</div>
 							<!-- /.col -->
 						</div>

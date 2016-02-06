@@ -173,15 +173,10 @@
 									class="sidebar h-sidebar navbar-collapse collapse">
 									<ul class="nav nav-list">
 
-
-										<li class="hover"><a class="dropdown-toggle"
-											href="<%=request.getContextPath()%>/research/"> <span
-												class="menu-text">
-													<h4>Establish a research</h4>
-											</span>
-
-
-										</a></li>
+ <li class="hover">
+												<a  href="<%=request.getContextPath()%>/research">
+														<h4>Establish a research</h4></a>
+											</li>
 
 
 

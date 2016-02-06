@@ -14,6 +14,7 @@ import com.websemproject.linkedin.model.Professional;
 import com.websemproject.linkedin.model.Skill;
 import com.websemproject.linkedin.parser.ParserRDF;
 import com.websemproject.linkedin.sparql.ManagerSparql;
+import com.websemproject.linkedin.sparql.ManagerSparqlEngine;
 import com.websemproject.linkedin.sparql.ProfessionalDetails;
 
 /**
@@ -22,11 +23,11 @@ import com.websemproject.linkedin.sparql.ProfessionalDetails;
 @Controller
 public class ManagerController {
 
-//	String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
-//			+ "\\WebSemantic_Project";
+     String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
+			+ "\\WebSemantic_Project";
 
-	 String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop"
-	 +"\\Cours" + "\\web semantique" + "\\WebSemantic_Project";
+	// String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop"
+	//+"\\Cours" + "\\web semantique" + "\\WebSemantic_Project";
 
 	String fileSource = workingDir + "\\attached_files";
 
@@ -171,6 +172,33 @@ public class ManagerController {
 		return "educations";
 	}
 
+	
+	@RequestMapping(value = "/research", method = RequestMethod.GET)
+	public String research(Model model) {
+		initiate(currentProfileName);
+		model.addAttribute("mentionedProfessionals", mentionedProfessionals);
+		this.mentionedProfessionals = new ArrayList<MentionedProfessional>();
+		this.mentionedLanguages=new ArrayList<MentionnedLanguage>();
+		ManagerSparqlEngine managerSparqlEngine=new ManagerSparqlEngine();
+		managerSparqlEngine.initiate();
+		model.addAttribute("allSkills",managerSparqlEngine.get_AllSkills());
+		model.addAttribute("allLanguages",managerSparqlEngine.get_AllLanguages());
+		model.addAttribute("allCountries",managerSparqlEngine.get_AllCountries());
+		model.addAttribute("allIndustries",managerSparqlEngine.get_AllIndustries());
+		model.addAttribute("allLanguageCertifications",managerSparqlEngine.get_AllLanguageCertifs());
+		model.addAttribute("allEducations",managerSparqlEngine.get_AllEducations());
+		model.addAttribute("allITCertifications",managerSparqlEngine.get_AllITCertifs());
+		model.addAttribute("allCurrentPosts",managerSparqlEngine.get_AllCurrentPositions());
+		model.addAttribute("allPastPosts",managerSparqlEngine.get_AllPastPositions());
+		model.addAttribute("allUniversities",managerSparqlEngine.get_AllIndustries());
+		model.addAttribute("allCompanies",managerSparqlEngine.get_AllCompanies());
+		model.addAttribute("name", currentProfessional.getName());
+		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
+		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
+		model.addAttribute("situation",currentProfessional.getGraduated());
+		return "research";
+	}
+	
 	@RequestMapping(value = "/projects", method = RequestMethod.GET)
 	public String projects(Model model) {
 		initiate(currentProfileName);
