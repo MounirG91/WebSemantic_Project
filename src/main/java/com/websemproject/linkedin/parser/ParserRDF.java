@@ -55,6 +55,8 @@ public class ParserRDF {
 		Property description = model.getProperty(lp + "description");
 		Property startDate = model.getProperty(lp + "startDate");
 		Property endDate = model.getProperty(lp + "endDate");
+		Property degree = model.getProperty(lp + "hasDegree");
+		Property major = model.getProperty(lp + "hasMajor");
 		Property duration = model.getProperty(lp + "duration");
 		Property hasHeadQuarters = model.getProperty(lp + "hasHeadQuarters");
 		Property hasEffective = model.getProperty(lp + "hasEffective");
@@ -169,6 +171,7 @@ public class ParserRDF {
 						.getResource("http://linkedin_project.com/profile.rdfs-instances/certificationInfoBox/#"
 								+ titleCertification);
 				String relatedSkillCertification = null;
+				String nameCertification = null;
 				String createdByCertification = null;
 				String administredByCertification = null;
 				String maximumScoreCertification = null;
@@ -182,10 +185,12 @@ public class ParserRDF {
 					maximumScoreCertification = resourceCertificationInfoBox.getProperty(hasMaximumScore).getObject()
 							.toString();
 					webSiteCertification = resourceCertificationInfoBox.getProperty(hasWebsite).getObject().toString();
+					nameCertification = resourceCertificationInfoBox.getProperty(hasName).getObject().toString();
+
 				}
-				certifications.add(new Certification(titleCertification, scoreCertification, relatedSkillCertification,
-						createdByCertification, administredByCertification, maximumScoreCertification,
-						webSiteCertification));
+				certifications.add(new Certification(titleCertification, scoreCertification, nameCertification,
+						relatedSkillCertification, createdByCertification, administredByCertification, 
+						maximumScoreCertification, webSiteCertification));
 			}
 
 			if ((lp + "hasEducation").equals(s.getPredicate().toString())) {
@@ -202,7 +207,13 @@ public class ParserRDF {
 				String endDateEducation = null;
 				if (resourceEducation .getProperty(endDate) != null)
 					endDateEducation = resourceEducation .getProperty(endDate).getObject().toString();
-				String durationEducation = null;
+				String degreeEducation = null;
+				if (resourceEducation .getProperty(degree) != null)
+					degreeEducation = resourceEducation .getProperty(degree).getObject().toString();
+				String majorEducation = null;
+				if (resourceEducation .getProperty(major) != null)
+					majorEducation = resourceEducation .getProperty(major).getObject().toString();
+			   String durationEducation = null;
 				if (resourceEducation .getProperty(duration) != null)
 					durationEducation = resourceEducation .getProperty(duration).getObject().toString();
 				Resource resourceEducationDetails = modelUniversities
@@ -228,8 +239,8 @@ public class ParserRDF {
 					hasAdressUniv = resourceEducationDetails.getProperty(hasAdressUniversity).getObject().toString();
 
 				}
-				Education education = new Education(titleEducation, descriptionEducation, descriptionEducation,
-						descriptionEducation, durationEducation, startDateEducation, endDateEducation);
+				Education education = new Education(titleEducation, descriptionEducation, degreeEducation,
+						majorEducation, durationEducation, startDateEducation, endDateEducation);
 				education.setUniversity(new University(nameUniv, foundedInUniv, typeUniv, websiteUniv, directorUniv,
 						numberOfStudentsUniv, numberOfTeachersUniv, hasLanguageRegimeUniv, hasAdressUniv));
 				educations.add(education);

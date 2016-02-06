@@ -316,14 +316,14 @@
       </rdf:Description>
     </lp:didProject>
     <lp:hasEducation>
-      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Yassin Ben Naceur/#ENSI">
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Yassin Ben Naceur/#École Nationale des Sciences de l'Informatique">
         <rdf:type>http://linkedin_project.com/profile.rdfs#engineeringStudies</rdf:type>
-        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#ENSI"/>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#École Nationale des Sciences de l'Informatique"/>
         <lp:description>Engineer's degree, Network and System Administration/Administrator</lp:description>
         <lp:duration>2011 – 2014</lp:duration>
         <lp:endDate>2014</lp:endDate>
         <lp:startDate>2011</lp:startDate>
-        <lp:hasTitle>ENSI</lp:hasTitle>
+        <lp:hasTitle>École Nationale des Sciences de l'Informatique</lp:hasTitle>
       </rdf:Description>
     </lp:hasEducation>
     <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Python"/>

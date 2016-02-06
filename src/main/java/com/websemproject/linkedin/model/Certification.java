@@ -4,7 +4,7 @@ package com.websemproject.linkedin.model;
 
 public class Certification {
 	private String title, score;
-	private String relatedSkill, createdBy, administredBy, maximumScore, website;
+	private String name, relatedSkill, createdBy, administredBy, maximumScore, website;
 
 	public Certification() {
 		super();
@@ -17,16 +17,25 @@ public class Certification {
 		this.score = score;
 	}
 
-	public Certification(String title, String score, String relatedSkill, String createdBy, String administredBy,
+	public Certification(String title, String score, String name, String relatedSkill, String createdBy, String administredBy,
 			String maximumScore, String website) {
 		super();
 		this.title = title;
 		this.score = score;
+		this.name = name;
 		this.relatedSkill = relatedSkill;
 		this.createdBy = createdBy;
 		this.administredBy = administredBy;
 		this.maximumScore = maximumScore;
 		this.website = website;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getRelatedSkill() {
@@ -87,9 +96,9 @@ public class Certification {
 
 	@Override
 	public String toString() {
-		return "Certification [title=" + title + ", score=" + score + ", relatedSkill=" + relatedSkill + ", createdBy="
-				+ createdBy + ", administredBy=" + administredBy + ", maximumScore=" + maximumScore + ", website="
-				+ website + "]";
+		return "Certification [title=" + title + ", score=" + score + ", name=" + name + ", relatedSkill="
+				+ relatedSkill + ", createdBy=" + createdBy + ", administredBy=" + administredBy + ", maximumScore="
+				+ maximumScore + ", website=" + website + "]";
 	}
 
 }

@@ -324,7 +324,15 @@
 										</div>
 									</div>
 
-									
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Description </label>
+
+										<div class="col-sm-9">
+										<textarea class="form-control" rows="3" disabled>${pr.description}</textarea>
+
+										</div>
+									</div>
+
 									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Link </label>
 

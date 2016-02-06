@@ -32,14 +32,14 @@
     </lp:belongToGroup>
     <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Linux"/>
     <lp:hasEducation>
-      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Syrine Tlili, PhD/#ENSI">
+      <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Education/Syrine Tlili, PhD/#École Nationale des Sciences de l'Informatique">
         <rdf:type>http://linkedin_project.com/profile.rdfs#engineeringStudies</rdf:type>
-        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#ENSI"/>
+        <lp:doneInUniversity rdf:resource="http://linkedin_project.com/profile.rdfs-instances/University/#École Nationale des Sciences de l'Informatique"/>
         <lp:description>Engineer Diploma, computer systems and networks</lp:description>
         <lp:duration>1996 – 1999</lp:duration>
         <lp:endDate>1999</lp:endDate>
         <lp:startDate>1996</lp:startDate>
-        <lp:hasTitle>ENSI</lp:hasTitle>
+        <lp:hasTitle>École Nationale des Sciences de l'Informatique</lp:hasTitle>
       </rdf:Description>
     </lp:hasEducation>
     <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Algorithms"/>

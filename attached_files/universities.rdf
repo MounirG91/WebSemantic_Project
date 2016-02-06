@@ -7,7 +7,7 @@ xmlns="http://linkedin_project.com/profile.rdfs#"
 xml:base="http://linkedin_project.com/profile.rdfs-instances/University/#">
 
 
-<University rdf:about="http://linkedin_project.com/profile.rdfs-instances/University/#ENSI">
+<University rdf:about="http://linkedin_project.com/profile.rdfs-instances/University/#École Nationale des Sciences de l'Informatique">
 	<hasName>École Nationale des Sciences de l'Informatique</hasName>
 	<foundedIn>1984</foundedIn>
 	<hasType>Engineering School</hasType>
@@ -89,18 +89,6 @@ xml:base="http://linkedin_project.com/profile.rdfs-instances/University/#">
 	<hasNumberOfTeachers></hasNumberOfTeachers>
 	<hasLanguageRegime>French</hasLanguageRegime>
 	<hasAdress>Montfleury, Tunisie</hasAdress>
-</University>
-
-<University rdf:about="http://linkedin_project.com/profile.rdfs-instances/University/#École Nationale des Sciences de l'Informatique">
-	<hasName>École Nationale des Sciences de l'Informatique</hasName>
-	<foundedIn>1984</foundedIn>
-	<hasType>Engineering School</hasType>
-	<hasWebsite>http://www.ensi.rnu.tn/</hasWebsite>
-	<hasDirector>Faouzi GHORBEL</hasDirector>
-	<hasNumberOfStudents>1200</hasNumberOfStudents>
-	<hasNumberOfTeachers>90</hasNumberOfTeachers>
-	<hasLanguageRegime>French and English</hasLanguageRegime>
-	<hasAdress>Campus Universitaire de la Manouba, Manouba 2010, Tunisie</hasAdress>
 </University>
 
 <University rdf:about="http://linkedin_project.com/profile.rdfs-instances/University/#Sup'Com">

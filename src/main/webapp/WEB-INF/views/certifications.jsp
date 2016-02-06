@@ -360,6 +360,15 @@
 													</div>
 													<div class="modal-body">
 																<form class="form-horizontal">
+
+																		<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Name </label>
+
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" value="${cr.name}" class="col-xs-10 col-sm-8" disabled>
+										</div>
+									</div>
+
 									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Related skill </label>
 

@@ -40,6 +40,7 @@
     </lp:hasCertification>
     <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Perl"/>
     <lp:numberOfConnections>500</lp:numberOfConnections>
+    <lp:hasFriend rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Jomaa Farouk"/>
     <lp:hasRecommandedVisitor>
       <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Achraf Aouadi/#Yassin Ben Naceur">
         <lp:linkedinUrl>https://de.linkedin.com/in/yassin-ben-naceur-73003226?trk=pub-pbmap</lp:linkedinUrl>

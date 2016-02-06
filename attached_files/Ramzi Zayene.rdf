@@ -5,7 +5,7 @@
     xmlns:lp="http://linkedin_project.com/profile.rdfs#">
   
 <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Professional/#Ramzi Zayene">
-    <lp:picture>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/000/125/2a5/0625e56.jpg</lp:picture>
+    <lp:picture>https://media.licdn.com/media/AAEAAQAAAAAAAAPSAAAAJGE1MGRjZTRmLWI1MTktNGMzNS1iNTcwLWE0YmQxYzJjY2YyYQ.jpg</lp:picture>
     <lp:hasPosition>
       <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Post/Ramzi Zayene/#Ingénieur en technologies de l'information">
         <lp:tookPlaceIn>

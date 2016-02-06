@@ -197,6 +197,7 @@
       </rdf:Description>
     </lp:hasEducation>
     <lp:hasFriend rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Syrine Tlili, PhD"/>
+    <lp:hasFriend rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Professional/#Achraf Aouadi"/>
     <lp:title>SAP ABAP Developer at Focus and Focus International</lp:title>
     <lp:hasCertification>
       <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/Certification/Jomaa Farouk/#TOEIC">
