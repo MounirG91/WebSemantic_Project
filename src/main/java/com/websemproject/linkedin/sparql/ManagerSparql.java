@@ -35,12 +35,12 @@ public class ManagerSparql {
 	}
 
 	public void initiate(ProfessionalDetails professionalDetails) {
-	 String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" +
-		 "\\workspace-sts-3.7.2.RELEASE"
-		 + "\\WebSemantic_Project";
+//	 String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" +
+//		 "\\workspace-sts-3.7.2.RELEASE"
+//		 + "\\WebSemantic_Project";
 
-		//String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop" + "\\Cours" + "\\web semantique"
-			//	+ "\\WebSemantic_Project";
+		String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop" + "\\Cours" + "\\web semantique"
+				+ "\\WebSemantic_Project";
 
 		String fileSource = workingDir + "\\attached_files";
 

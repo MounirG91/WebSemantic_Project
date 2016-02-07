@@ -1,9 +1,16 @@
 package com.websemproject.linkedin.sparql;
 
+import java.io.UnsupportedEncodingException;
+import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import org.apache.commons.lang.StringUtils;
 
 import fr.inria.acacia.corese.api.IDatatype;
 import fr.inria.acacia.corese.exceptions.EngineException;
@@ -41,12 +48,12 @@ public class ManagerSparqlEngine {
 	}
 
 	public void initiate() {
-		String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
-				+ "\\WebSemantic_Project";
+//		String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
+//				+ "\\WebSemantic_Project";
 
-		// String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop" +
-		// "\\Cours" + "\\web semantique"
-		// + "\\WebSemantic_Project";
+		 String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop" +
+		 "\\Cours" + "\\web semantique"
+		 + "\\WebSemantic_Project";
 
 		String fileSource = workingDir + "\\attached_files";
 
@@ -79,20 +86,10 @@ public class ManagerSparqlEngine {
 		gr.addEngine(re);
 		gr.process();
 
-		/*
-		 * System.out.println (get_AllSkills ()); System.out.println
-		 * (get_AllLanguages ()); System.out.println (get_AllIndustries ());
-		 * System.out.println (get_AllLanguageCertifs ()); System.out.println
-		 * (get_AllITCertifs ()); System.out.println (get_AllEducations ());
-		 * System.out.println (get_AllCurrentPositions ()); System.out.println
-		 * (get_AllPastPositions ()); System.out.println (get_AllCountries ());
-		 * System.out.println (get_AllUniversities ()); System.out.println
-		 * (get_AllCompanies ());
-		 */
-
+		
 		List<String> skills = new ArrayList<String>();
 		skills.add("Java");
-		skills.add("C++");
+		skills.add("Network Security");
 		skills.add("ABAP");
 
 		List<String> lang = new ArrayList<String>();
@@ -107,10 +104,33 @@ public class ManagerSparqlEngine {
 		langcertifs.add("TOEIC");
 
 		List<String> itcertifs = new ArrayList<String>();
-		itcertifs.add("LPIC1");
 		itcertifs.add("SCJP");
 
-		executeQuery(skills, lang, indus, langcertifs, itcertifs, null, null, null, null, null, null, null, null);
+		List<String> countries = new ArrayList<String>();
+		countries.add("Tunisia");
+		countries.add("France");
+		countries.add("Germany");
+
+		List<String> educs = new ArrayList<String>();
+		educs.add("engineeringStudies");
+		educs.add("others");
+
+		List<String> univs = new ArrayList<String>();
+		univs.add("École centrale de Lille");
+		univs.add("Concordia University, Montreal, Quebec");
+
+		List<String> companies = new ArrayList<String>();
+		companies.add("adhoc International");
+		companies.add("Agence Nationale de la Certification Electronique");
+		companies.add("TEKonsult");
+
+		String grad_or_student = "graduated"; //or "student"
+
+//		System.out.println(executeQuery(null, null, null, null, null, educs, 
+//				null, null, countries, univs, companies, null, null, null) );
+
+		System.out.println(executeQuery(skills, lang, indus, langcertifs, itcertifs, educs, 
+				null, null, countries, univs, companies, null, null, grad_or_student));
 
 	}
 
@@ -132,7 +152,18 @@ public class ManagerSparqlEngine {
 
 		for (Mapping m : map) {
 			IDatatype dt = (IDatatype) m.getValue("?y");
-			list.add(dt.stringValue().substring(dt.stringValue().indexOf("#") + 1, dt.stringValue().length()));
+			
+			byte ptext[] = dt.stringValue().substring(dt.stringValue().indexOf("#") + 1, dt.stringValue().length()).getBytes(); 
+			String value = "";
+			try {
+			 value = new String(ptext, "UTF8");
+			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+
+			list.add(value);
+
 		}
 
 		Set<String> hs = new HashSet<String>();
@@ -197,7 +228,16 @@ public class ManagerSparqlEngine {
 
 		for (Mapping m : map) {
 			IDatatype dt = (IDatatype) m.getValue("?y");
-			list.add(dt.stringValue());
+			byte ptext[] = dt.stringValue().getBytes(); 
+			String value = "";
+			try {
+			 value = new String(ptext, "UTF8");
+			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+
+			list.add(value);
 		}
 
 		Set<String> hs = new HashSet<String>();
@@ -441,7 +481,17 @@ public class ManagerSparqlEngine {
 
 		for (Mapping m : map) {
 			IDatatype dt = (IDatatype) m.getValue("?y");
-			list.add(dt.stringValue().substring(dt.stringValue().indexOf("#") + 1, dt.stringValue().length()));
+			
+			byte ptext[] = dt.stringValue().getBytes(); 
+			String value = "";
+			try {
+			 value = new String(ptext, "UTF8");
+			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+
+			list.add(value.substring(value.indexOf("#") + 1, value.length()));
 		}
 
 		Set<String> hs = new HashSet<String>();
@@ -472,9 +522,31 @@ public class ManagerSparqlEngine {
 
 		for (Mapping m : map) {
 			IDatatype dt = (IDatatype) m.getValue("?y");
-			list.add(dt.stringValue().substring(dt.stringValue().indexOf("#") + 1, dt.stringValue().length()));
+			
+			byte ptext[] = dt.stringValue().substring(dt.stringValue().indexOf("#") + 1, dt.stringValue().length()).getBytes(); 
+			String value = "";
+			try {
+			 value = new String(ptext, "UTF8");
+			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+
+			list.add(value);
+
 			dt = (IDatatype) m.getValue("?w");
-			list.add(dt.stringValue().substring(dt.stringValue().indexOf("#") + 1, dt.stringValue().length()));
+			
+			byte ptext2[] = dt.stringValue().substring(dt.stringValue().indexOf("#") + 1, dt.stringValue().length()).getBytes(); 
+			String value2 = "";
+			try {
+			 value2 = new String(ptext2, "UTF8");
+			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+
+			list.add(value2);
+
 
 		}
 
@@ -491,14 +563,14 @@ public class ManagerSparqlEngine {
 	public List<String> executeQuery(List<String> skills, List<String> languages, List<String> industries,
 			List<String> languagesCertifs, List<String> itCertifs, List<String> educations, List<String> currentPost,
 			List<String> pastPost, List<String> countries, List<String> universities, List<String> companies,
-			String fluentBasic, String expert) {
+			String fluentBasic, String expert, String graduatedOrStudent) {
 
 		List<String> list = new ArrayList<String>();
 		String uri = "http://linkedin_project.com/profile.rdfs-instances/";
 		String base = "http://linkedin_project.com/profile.rdfs#";
 
 		// Skills prepare query
-		String query_skills = "";
+		String query_skills = " ";
 
 		if (skills != null) {
 			String sub_query_skills = "";
@@ -509,12 +581,12 @@ public class ManagerSparqlEngine {
 					sub_query_skills += " || ";
 			}
 
-			query_skills = "PREFIX lp: <http://linkedin_project.com/profile.rdfs#> " + "select  ?x " + "where { "
+			query_skills = "select  ?x " + "where { "
 					+ "?x lp:hasSkill ?y" + " FILTER (" + sub_query_skills + ")" + " }";
 		}
 
 		// Languages prepare query
-		String query_lang = "";
+		String query_lang = " ";
 
 		if (languages != null) {
 			String sub_query_lang = "";
@@ -525,12 +597,12 @@ public class ManagerSparqlEngine {
 					sub_query_lang += " || ";
 			}
 
-			query_lang = "PREFIX lp: <http://linkedin_project.com/profile.rdfs#> " + "select  ?x " + "where { "
+			query_lang =  "select  ?x " + "where { "
 					+ "?x lp:speacksLanguage ?y" + " FILTER (" + sub_query_lang + ")" + " }";
 		}
 
 		// Industries prepare query
-		String query_ind = "";
+		String query_ind = " ";
 
 		if (industries != null) {
 			String sub_query_ind = "";
@@ -541,13 +613,13 @@ public class ManagerSparqlEngine {
 					sub_query_ind += " || ";
 			}
 
-			query_ind = "PREFIX lp: <http://linkedin_project.com/profile.rdfs#> " + "select  ?x " + "where { "
+			query_ind =  "select  ?x " + "where { "
 					+ "?x lp:industry ?y" + " FILTER (" + sub_query_ind + ")" + " }";
 
 		}
 
 		// langCertifs prepare query
-		String query_lang_certif = "";
+		String query_lang_certif = " ";
 
 		if (languagesCertifs != null) {
 			String sub_query_lang_certif = "";
@@ -559,14 +631,14 @@ public class ManagerSparqlEngine {
 					sub_query_lang_certif += " || ";
 			}
 
-			query_lang_certif = "PREFIX lp: <http://linkedin_project.com/profile.rdfs#> " + "select  ?x " + "where { "
+			query_lang_certif =  "select  ?x " + "where { "
 					+ "?x lp:hasCertification ?y " + "?y rdf:type \"" + base + "languageCertification\" "
 					+ "?y lp:hasInfoBox ?z " + " FILTER (" + sub_query_lang_certif + ")" + " }";
 
 		}
 
-		// langCertifs prepare query
-		String query_it_certif = "";
+		// itCertifs prepare query
+		String query_it_certif = " ";
 
 		if (itCertifs != null) {
 			String sub_query_it_certif = "";
@@ -577,19 +649,218 @@ public class ManagerSparqlEngine {
 					sub_query_it_certif += " || ";
 			}
 
-			query_it_certif = "PREFIX lp: <http://linkedin_project.com/profile.rdfs#> " + "select  ?x " + "where { "
+			query_it_certif = "select  ?x " + "where { "
 					+ "?x lp:hasCertification ?y " + "?y rdf:type \"" + base + "ITCertification\" "
 					+ "?y lp:hasInfoBox ?z " + " FILTER (" + sub_query_it_certif + ")" + " }";
 
 		}
 
-		System.out.println(query_skills);
-		System.out.println(query_lang);
-		System.out.println(query_ind);
-		System.out.println(query_lang_certif);
-		System.out.println(query_it_certif);
+		
+		// countries prepare query
+		String query_countries = " ";
 
+		if (countries != null) {
+			String sub_query_countries = "";
+
+			for (int i = 0; i < countries.size(); i++) {
+				String count = countries.get(i);
+				
+				if (count.equalsIgnoreCase("Germany"))
+				{
+				sub_query_countries += "str(?y) = \"" + uri + "Country/#Germany\"";
+				sub_query_countries += " || ";
+				sub_query_countries += "str(?y) = \"" + uri + "Country/#Allemagne\"";
+				sub_query_countries += " || ";
+				sub_query_countries += "str(?y) = \"" + uri + "Country/#Deutschland\"";
+
+				if (i != (countries.size() - 1))
+					sub_query_countries += " || ";
+				}
+				else if (count.equalsIgnoreCase("Tunisia"))
+				{
+					sub_query_countries += "str(?y) = \"" + uri + "Country/#Tunisia\"";
+					sub_query_countries += " || ";
+					sub_query_countries += "str(?y) = \"" + uri + "Country/#Tunisie\"";
+
+					if (i != (countries.size() - 1))
+					sub_query_countries += " || ";
+				}
+				else
+				{
+				sub_query_countries += "str(?y) = \"" + uri + "Country/#" + countries.get(i) + "\"";
+				if (i != (countries.size() - 1))
+					sub_query_countries += " || ";
+				}
+			}
+
+			query_countries =  "select  ?x " + "where { "
+					+ "?x lp:country ?y " + 
+					" FILTER (" + sub_query_countries + ")" + " }";
+
+		}
+		
+		
+		
+		// educations prepare query
+		String query_educ = " ";
+
+		if (educations != null) {
+			String sub_query_educ = "";
+
+			for (int i = 0; i < educations.size(); i++) {
+				if (educations.get(i).equalsIgnoreCase("others"))
+				{sub_query_educ += "{?y rdf:type \"" + base + "Education\"}";}
+				else {sub_query_educ += "{?y rdf:type \"" + base + educations.get(i) + "\"}";}
+				
+				if (i != (educations.size() - 1))
+					sub_query_educ += " UNION ";
+			}
+
+			query_educ =  "select  ?x " + "where { "
+					+ "?x lp:hasEducation ?y " + 
+					 sub_query_educ +  " }";
+
+		}
+		
+	
+		// universities prepare query
+		String query_univ = " ";
+
+		if (universities != null) {
+			String sub_query_univ = "";
+
+			for (int i = 0; i < universities.size(); i++) {
+				sub_query_univ += "str(?z) = \"" + uri + "University/#" + universities.get(i) + "\"";
+				if (i != (universities.size() - 1))
+					sub_query_univ += " || ";
+			}
+
+			query_univ =  "select  ?x " + "where { "
+					+ "?x lp:hasEducation ?y  ?y lp:doneInUniversity ?z" + 
+					" FILTER (" + sub_query_univ + ")" + " }";
+
+		}
+		
+		// grad_stud prepare query
+		String grad_stud = " ";
+
+		if (graduatedOrStudent != null) {
+			String sub_query_grad_stud = "";
+
+			if (graduatedOrStudent.equals("graduated"))
+			grad_stud =  "select  ?x " + "where { "
+					+ "?x lp:isGraduated \"true\" }";
+			else if (graduatedOrStudent.equals("student"))
+				grad_stud =  "select  ?x " + "where { "
+						+ "?x lp:isStillStudentAt ?z }";
+
+
+		}
+	
+		
+		// companies prepare query
+		String query_companies = " ";
+
+		if (companies != null) {
+			String sub_query_companies = "";
+
+			for (int i = 0; i < companies.size(); i++) {
+				sub_query_companies += "(str(?z) = \"" + uri + "Company/#" + companies.get(i) + "\" || "
+						+ "str(?w) = \"" + uri + "Company/#" + companies.get(i) + "\")";
+				if (i != (companies.size() - 1))
+					sub_query_companies += " || ";
+			}
+
+			query_companies =  "select  ?x " + "where { "
+					+ "?x lp:hasPosition ?y  ?y lp:tookPlaceIn ?z ?x lp:hadPosition ?t ?t lp:tookPlaceIn ?w" + 
+					" FILTER (" + sub_query_companies + ")" + " }";
+
+		}
+		
+		String first_query = "PREFIX lp: <http://linkedin_project.com/profile.rdfs#> ";
+		
+		if (skills != null)
+			first_query += query_skills;
+		else if (universities != null)
+			first_query += query_univ;
+		else if (languages != null)
+			first_query += query_lang;
+		else if (industries != null)
+			first_query += query_ind;
+		else if (countries != null)
+			first_query += query_countries;
+		else if (languagesCertifs != null)
+			first_query += query_lang_certif;
+		else if (itCertifs != null)
+			first_query += query_it_certif;
+		else if (grad_stud != null)
+			first_query += grad_stud;
+		else if (companies != null)
+			first_query += query_companies;
+		else if (educations != null)
+			first_query += query_educ;
+
+		System.out.println(first_query);
+		
+		
+		String query = first_query.substring(0,first_query.lastIndexOf("}"))+" { "+query_univ+"}}";
+		query = query.substring(0,query.lastIndexOf("}")-2)+" { "+query_lang+"}}}}";
+		query = query.substring(0,query.lastIndexOf("}")-4)+" { "+query_ind+"}}}}}}";
+		query = query.substring(0,query.lastIndexOf("}")-6)+" { "+query_countries+"}}}}}}}}";
+		query = query.substring(0,query.lastIndexOf("}")-8)+" { "+query_lang_certif+"}}}}}}}}}}";
+		query = query.substring(0,query.lastIndexOf("}")-10)+" { "+query_it_certif+"}}}}}}}}}}}}";
+		query = query.substring(0,query.lastIndexOf("}")-12)+" { "+grad_stud+"}}}}}}}}}}}}}}";
+		query = query.substring(0,query.lastIndexOf("}")-14)+" { "+query_companies+"}}}}}}}}}}}}}}}}";
+		query = query.substring(0,query.lastIndexOf("}")-16)+" { "+query_educ+"}}}}}}}}}}}}}}}}}}";
+
+		int count = StringUtils.countMatches(query, "{");
+		int diff = StringUtils.countMatches(query, "}")-count;
+
+		query = query.substring(0 , query.lastIndexOf("}")-(diff-1));
+
+//		System.out.println(grad_stud);
+//		System.out.println(query_skills);
+//		System.out.println(query_lang);
+//		System.out.println(query_ind);
+//		System.out.println(query_lang_certif);
+//		System.out.println(query_it_certif);
+//		System.out.println(query_countries);
+//		System.out.println(query_univ);
+//		System.out.println(query_educ);
+
+		//System.out.println(query);
+
+		try {
+			query = new String(query.getBytes("UTF-8"), "Windows-1252");
+		} catch (UnsupportedEncodingException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		System.out.println(query);
+		
+		QueryProcess exec = QueryProcess.create(gr);
+		Mappings map = null;
+		try {
+			map = exec.query(query);
+		} catch (EngineException e) {
+		}
+
+		for (Mapping m : map) {
+			IDatatype dt = (IDatatype) m.getValue("?x");
+			list.add(dt.stringValue().substring(dt.stringValue().indexOf("#") + 1, dt.stringValue().length()));
+			}
+			
+		Set<String> hs = new HashSet<String>();
+		hs.addAll(list);
+		list.clear();
+		list.addAll(hs);
+
+		java.util.Collections.sort(list, String.CASE_INSENSITIVE_ORDER);
+
+		
 		return list;
 	}
+
 
 }
