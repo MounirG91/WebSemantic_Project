@@ -1,9 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
-
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="f"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,7 +75,6 @@
 
 				<!-- #section:basics/navbar.layout.brand -->
 				<a href="${linkedinURL}" class="navbar-brand"> <small>
-
 						Redirect to Linkedin profile of ${name} </small>
 				</a>
 
@@ -162,7 +159,7 @@
 
 					<!-- /section:settings.box -->
 					<div class="page-header">
-						<h1>Search engine</h1>
+						<h1>Result of research</h1>
 					</div>
 					<!-- /.page-header -->
 
@@ -263,293 +260,47 @@
 
 
 
+
 							<div class="col-xs-12">
 
 
-
-								<form class="form-horizontal" role="form" action="<%=request.getContextPath()%>/makeResearch" method="POST">
+								<form class="form-horizontal">
 									<!-- #section:elements.form -->
+									<c:forEach items="${allProfiles}" var="pr">
+										<div class="form-group">
+											<label class="col-sm-3 control-label no-padding-right"
+												for="form-field-1"> Profile :</label>
 
+											<div class="col-sm-9">
+												<input type="text" id="form-field-1" value="${pr.name}"
+													class="col-xs-10 col-sm-5" disabled>
+											</div>
+											<label class="col-sm-3 control-label no-padding-right"
+												for="form-field-1"></label>
+											<div class="col-sm-9">
+												<input type="text" id="form-field-1"
+													value="${pr.linkedin_url}" class="col-xs-10 col-sm-5"
+													disabled>
+											</div>
+											<label class="col-sm-3 control-label no-padding-right"
+												for="form-field-1"> </label>
+											<div class="col-sm-9">
+												<img width=150 height=150 src="${pr.picture}" />
+											</div>
 
-									<div class="form-group" >
-										<label class="col-sm-3 control-label no-padding-top"
-											for="duallist"> Skills<br> <font color="orange">
-												(you must specify at least an element from the list below)</font></label>
-
-										<div class="col-sm-8">
-											<!-- #section:plugins/input.duallist -->
-											<select multiple="multiple" size="5" name="skills"
-												id="duallistbox_demo1[]" required>
-												<c:forEach items="${allSkills}" var="sk">
-													<option>${sk}</option>
-												</c:forEach>
-											</select>
-
-											<!-- /section:plugins/input.duallist -->
-											<div class="hr hr-16 hr-dotted"></div>
-										</div>
-									</div>
-
-
-
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-top"
-											for="duallist"> Languages<br> <font
-											color="orange"> (you must specify at least an element
-												from the list below)</font></label>
-
-										<div class="col-sm-8">
-											<!-- #section:plugins/input.duallist -->
-											<select multiple="multiple" size="5" name="languages"
-												id="duallistbox_demo1[]" required>
-												<c:forEach items="${allLanguages}" var="lg">
-													<option>${lg}</option>
-												</c:forEach>
-											</select>
-
-											<!-- /section:plugins/input.duallist -->
-											<div class="hr hr-16 hr-dotted"></div>
-										</div>
-									</div>
-
-
-
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-top"
-											for="duallist"> Countries<br> <font
-											color="orange"> (you must specify at least an element
-												from the list below)</font></label>
-
-										<div class="col-sm-8">
-											<!-- #section:plugins/input.duallist -->
-											<select multiple="multiple" size="5" name="countries"
-												id="duallistbox_demo1[]" required>
-												<c:forEach items="${allCountries}" var="cr">
-													<option>${cr}</option>
-												</c:forEach>
-											</select>
-
-											<!-- /section:plugins/input.duallist -->
-											<div class="hr hr-16 hr-dotted"></div>
-										</div>
-									</div>
-
-	                          <div class="form-group">
-										<label class="col-sm-3 control-label no-padding-top"
-											for="duallist"> Industries<br> <font
-											color="orange"> (you must specify at least an element
-												from the list below)</font></label>
-
-										<div class="col-sm-8">
-											<!-- #section:plugins/input.duallist -->
-											<select multiple="multiple" size="5" name="industries"
-												id="duallistbox_demo1[]" required>
-												<c:forEach items="${allIndustries}" var="id">
-													<option>${id}</option>
-												</c:forEach>
-											</select>
-
-											<!-- /section:plugins/input.duallist -->
-											<div class="hr hr-16 hr-dotted"></div>
-										</div>
-									</div>
-
-
-
-
-									<div class="form-group">
-
-										<label class="col-sm-3 control-label no-padding-top" for="duallist">Languages
-											certifications : <br> <font
-											color="orange"> (you must specify at least an element
-												from the list below)</font><br>( &nbsp &nbsp<INPUT type="radio"
-											name="situationLanguageCertification" value="Fluent" required>
-											<font color="red">Fluent</font>&nbsp &nbsp<INPUT
-											type="radio" name="situationLanguageCertification"
-											value="Basic" required> <font color="red">Basic
-												skills</font>&nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp<INPUT
-											type="radio" name="situationLanguageCertification"
-											value="NolanguageCondition" required> <font color="red">No Languages Condition
-												</font>&nbsp &nbsp)
-										</label>
-										<div class="col-sm-8">
-											<!-- #section:plugins/input.duallist -->
-											<select multiple="multiple" size="5" name="languageCertifications"
-												id="duallistbox_demo1[]" required>
-												<c:forEach items="${allLanguageCertifications}" var="id">
-													<option>${id}</option>
-												</c:forEach>
-											</select>
-
-											<!-- /section:plugins/input.duallist -->
-											<div class="hr hr-16 hr-dotted"></div>
-										</div>
-									</div>
-
-
-
-
-									<div class="form-group">
-
-										<label class="col-sm-3 control-label no-padding-top" for="duallist">Educations
-											: &nbsp <br> <font
-											color="orange"> (you must specify at least an element
-												from the list below)</font></label>
-										<div class="col-sm-8">
-											<!-- #section:plugins/input.duallist -->
-											<select multiple="multiple" size="5" name="educations"
-												id="duallistbox_demo1[]" required>
-												<c:forEach items="${allEducations}" var="id">
-													<option>${id}</option>
-												</c:forEach>
-											</select>
-
-											<!-- /section:plugins/input.duallist -->
-											<div class="hr hr-16 hr-dotted"></div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="form-group">
-
-										<label class="col-sm-3 control-label no-padding-top" for="duallist">IT
-											Certifications &nbsp ( &nbsp &nbsp<INPUT type="radio"
-											name="situationCertification" value="Expert" required>
-											<font color="red">Expert</font> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp  <INPUT type="radio"
-											name="situationCertification" value="NoCertificationCondition" required>
-											<font color="red">No Certifications Condition</font>&nbsp &nbsp) :<br> <font
-											color="orange"> (you must specify at least an element
-												from the list below)</font>
-										</label>
-										<div class="col-sm-8">
-											<!-- #section:plugins/input.duallist -->
-											<select multiple="multiple" size="5" name="ITCertifications"
-												id="duallistbox_demo1[]" required>
-												<c:forEach items="${allITCertifications}" var="it">
-													<option>${it}</option>
-												</c:forEach>
-											</select>
-											<!-- /section:plugins/input.duallist -->
-											<div class="hr hr-16 hr-dotted"></div>
-										</div>
-									</div>
-
-
-
-
-
-									<div class="form-group">
-
-										<label class="col-sm-3 control-label no-padding-top" for="duallist">Current
-											Posts : &nbsp<br> <font
-											color="orange"> (you must specify at least an element
-												from the list below)</font> </label>
-										<div class="col-sm-8">
-											<!-- #section:plugins/input.duallist -->
-											<select multiple="multiple" size="5" name="currentPosts"
-												id="duallistbox_demo1[]" required>
-												<c:forEach items="${allCurrentPosts}" var="it">
-													<option>${it}</option>
-												</c:forEach>
-											</select>
-											<!-- /section:plugins/input.duallist -->
-											<div class="hr hr-16 hr-dotted"></div>
 										</div>
 										
-									</div>
-
-
-									<div class="form-group">
-
-										<label class="col-sm-3 control-label no-padding-top" for="duallist">Past
-											Posts : &nbsp<br> <font
-											color="orange"> (you must specify at least an element
-												from the list below)</font> </label>
-										<div class="col-sm-8">
-											<!-- #section:plugins/input.duallist -->
-											<select multiple="multiple" size="5" name="pastPosts"
-												id="duallistbox_demo1[]" required>
-												<c:forEach items="${allPastPosts}" var="it">
-													<option>${it}</option>
-												</c:forEach>
-											</select>
-											<!-- /section:plugins/input.duallist -->
-											<div class="hr hr-16 hr-dotted"></div>
-										</div>
-										
-									</div>
-
-
-									<div class="form-group">
-
-										<label class="col-sm-3 control-label no-padding-top" for="duallist">Universities
-											: &nbsp <br> <font
-											color="orange"> (you must specify at least an element
-												from the list below)</font></label>
-										<div class="col-sm-8">
-											<!-- #section:plugins/input.duallist -->
-											<select multiple="multiple" size="5" name="universities"
-												id="duallistbox_demo1[]" required>
-												<c:forEach items="${allUniversities}" var="it">
-													<option>${it}</option>
-												</c:forEach>
-											</select>
-											<!-- /section:plugins/input.duallist -->
-											<div class="hr hr-16 hr-dotted"></div>
-										</div>
-									</div>
-
-
-									<div class="form-group">
-
-										<label class="col-sm-3 control-label no-padding-top" for="duallist">Companies
-											: &nbsp<br> <font
-											color="orange"> (you must specify at least an element
-												from the list below)</font> </label>
-										<div class="col-sm-8">
-											<!-- #section:plugins/input.duallist -->
-											<select multiple="multiple" size="5" name="companies"
-												id="duallistbox_demo1[]" required>
-												<c:forEach items="${allCompanies}" var="it">
-													<option>${it}</option>
-												</c:forEach>
-											</select>
-											<!-- /section:plugins/input.duallist -->
-											<div class="hr hr-16 hr-dotted"></div>
-										</div>
-									</div>
-
-
-
-
-									<div class="form-group">
-
-										<label class="col-sm-3 control-label no-padding-top">Graduated/Student
-											: &nbsp </label><font color="red"> <INPUT type="radio"
-											name="situation" value="graduated" required>
-											Graduated &nbsp<INPUT type="radio" name="situation"
-											value="student" required> Student&nbsp<INPUT type="radio" name="situation"
-											value="noSituation" required> No Situation
-										</font>
-									</div>
-
-									<br> <br>
-
-									<div class="col-md-offset-3 col-md-9">
-										<button class="btn btn-inverse" type="submit">Search
-										</button>
-
-										&nbsp; &nbsp; &nbsp;
-										<button class="btn" type="reset">
-											<i class="ace-icon fa fa-undo bigger-110"></i> Reset
-										</button>
-
-									</div>
-
-
-
+										<br><br><br><br><br>
+									</c:forEach>
 								</form>
+								<br> <br>
+
+
+
+
+
+
+
 							</div>
 							<!-- /.col -->
 						</div>
@@ -644,7 +395,7 @@
 		<!-- inline scripts related to this page -->
 		<script type="text/javascript">
 			jQuery(function($) {
-				var demo1 = $('select[id="duallistbox_demo1[]"]')
+				var demo1 = $('select[name="duallistbox_demo1[]"]')
 						.bootstrapDualListbox(
 								{
 									infoTextFiltered : '<span class="label label-purple label-lg">Filtered</span>'
@@ -751,7 +502,7 @@
 						'ajaxloadstart.page',
 						function(e) {
 							$('[class*=select2]').remove();
-							$('select[id="duallistbox_demo1[]"]')
+							$('select[name="duallistbox_demo1[]"]')
 									.bootstrapDualListbox('destroy');
 							$('.rating').raty('destroy');
 							$('.multiselect').multiselect('destroy');

@@ -1,6 +1,7 @@
 package com.websemproject.linkedin.controller;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -23,11 +24,11 @@ import com.websemproject.linkedin.sparql.ProfessionalDetails;
 @Controller
 public class ManagerController {
 
-//     String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
-//			+ "\\WebSemantic_Project";
+	String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
+			+ "\\WebSemantic_Project";
 
-	 String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop"
-	+"\\Cours" + "\\web semantique" + "\\WebSemantic_Project";
+	// String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop"
+	// +"\\Cours" + "\\web semantique" + "\\WebSemantic_Project";
 
 	String fileSource = workingDir + "\\attached_files";
 
@@ -72,7 +73,7 @@ public class ManagerController {
 		initiate(currentProfileName);
 		model.addAttribute("mentionedProfessionals", mentionedProfessionals);
 		this.mentionedProfessionals = new ArrayList<MentionedProfessional>();
-		this.mentionedLanguages=new ArrayList<MentionnedLanguage>();
+		this.mentionedLanguages = new ArrayList<MentionnedLanguage>();
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
@@ -84,8 +85,8 @@ public class ManagerController {
 		model.addAttribute("country", currentProfessional.getCountry());
 		model.addAttribute("industry", currentProfessional.getIndustry());
 		model.addAttribute("summary", currentProfessional.getSummary());
-		model.addAttribute("situation",currentProfessional.getGraduated());
-		model.addAttribute("country",currentProfessional.getCountry());
+		model.addAttribute("situation", currentProfessional.getGraduated());
+		model.addAttribute("country", currentProfessional.getCountry());
 		return "generalInformations";
 	}
 
@@ -101,14 +102,14 @@ public class ManagerController {
 		initiate(currentProfileName);
 		model.addAttribute("mentionedProfessionals", mentionedProfessionals);
 		this.mentionedProfessionals = new ArrayList<MentionedProfessional>();
-		this.mentionedLanguages=new ArrayList<MentionnedLanguage>();
+		this.mentionedLanguages = new ArrayList<MentionnedLanguage>();
 		if (currentProfessional.getCertifications() != null)
 			model.addAttribute("allCertifications", currentProfessional.getCertifications());
 		currentProfessional.showAllCertifications(currentProfessional.getCertifications());
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
-		model.addAttribute("situation",currentProfessional.getGraduated());
+		model.addAttribute("situation", currentProfessional.getGraduated());
 		return "certifications";
 	}
 
@@ -117,13 +118,13 @@ public class ManagerController {
 		initiate(currentProfileName);
 		model.addAttribute("mentionedProfessionals", mentionedProfessionals);
 		this.mentionedProfessionals = new ArrayList<MentionedProfessional>();
-		this.mentionedLanguages=new ArrayList<MentionnedLanguage>();
+		this.mentionedLanguages = new ArrayList<MentionnedLanguage>();
 		model.addAttribute("posts", currentProfessional.getCurrent_companies());
 		currentProfessional.showAllJobCompany(currentProfessional.getCurrent_companies());
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
-		model.addAttribute("situation",currentProfessional.getGraduated());
+		model.addAttribute("situation", currentProfessional.getGraduated());
 		return "currentPosts";
 	}
 
@@ -132,13 +133,13 @@ public class ManagerController {
 		initiate(currentProfileName);
 		model.addAttribute("mentionedProfessionals", mentionedProfessionals);
 		this.mentionedProfessionals = new ArrayList<MentionedProfessional>();
-		this.mentionedLanguages=new ArrayList<MentionnedLanguage>();
+		this.mentionedLanguages = new ArrayList<MentionnedLanguage>();
 		model.addAttribute("posts", currentProfessional.getPast_companies());
 		currentProfessional.showAllJobCompany(currentProfessional.getPast_companies());
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
-		model.addAttribute("situation",currentProfessional.getGraduated());
+		model.addAttribute("situation", currentProfessional.getGraduated());
 		return "pastPosts";
 	}
 
@@ -147,13 +148,13 @@ public class ManagerController {
 		initiate(currentProfileName);
 		model.addAttribute("mentionedProfessionals", mentionedProfessionals);
 		this.mentionedProfessionals = new ArrayList<MentionedProfessional>();
-		this.mentionedLanguages=new ArrayList<MentionnedLanguage>();
+		this.mentionedLanguages = new ArrayList<MentionnedLanguage>();
 		model.addAttribute("allGroups", currentProfessional.getGroups());
 		currentProfessional.showAllGroups(currentProfessional.getGroups());
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
-		model.addAttribute("situation",currentProfessional.getGraduated());
+		model.addAttribute("situation", currentProfessional.getGraduated());
 		return "groups";
 	}
 
@@ -162,55 +163,132 @@ public class ManagerController {
 		initiate(currentProfileName);
 		model.addAttribute("mentionedProfessionals", mentionedProfessionals);
 		this.mentionedProfessionals = new ArrayList<MentionedProfessional>();
-		this.mentionedLanguages=new ArrayList<MentionnedLanguage>();
+		this.mentionedLanguages = new ArrayList<MentionnedLanguage>();
 		model.addAttribute("allEducations", currentProfessional.getEducation());
 		currentProfessional.showAllEducations(currentProfessional.getEducation());
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
-		model.addAttribute("situation",currentProfessional.getGraduated());
+		model.addAttribute("situation", currentProfessional.getGraduated());
 		return "educations";
 	}
 
-	
+	@RequestMapping(value = "/makeResearch", method = RequestMethod.POST)
+	public String makeResearch(Model model, @RequestParam(value = "skills") String[] skills,
+			@RequestParam(value = "languages") String[] languages,
+			@RequestParam(value = "countries") String[] countries,
+			@RequestParam(value = "industries") String[] industries,
+			@RequestParam(value = "languageCertifications") String[] languageCertifications,
+			@RequestParam(value = "situationLanguageCertification") String situationLanguageCertification,
+			@RequestParam(value = "educations") String[] educations,
+			@RequestParam(value = "ITCertifications") String[] ITCertifications,
+			@RequestParam(value = "situationCertification") String situationCertification,
+			@RequestParam(value = "currentPosts") String[] currentPosts,
+			@RequestParam(value = "pastPosts") String[] pastPosts,
+			@RequestParam(value = "universities") String[] universities,
+			@RequestParam(value = "companies") String[] companies,
+			@RequestParam(value = "situation") String situation) {
+		initiate(currentProfileName);
+		model.addAttribute("mentionedProfessionals", mentionedProfessionals);
+		this.mentionedProfessionals = new ArrayList<MentionedProfessional>();
+		this.mentionedLanguages = new ArrayList<MentionnedLanguage>();
+		model.addAttribute("name", currentProfessional.getName());
+		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
+		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
+		model.addAttribute("situation", currentProfessional.getGraduated());
+		ManagerSparqlEngine managerSparqlEngine = new ManagerSparqlEngine();
+		managerSparqlEngine.initiate();
+		List<String> skillsList = Arrays.asList(skills);
+		List<String> languagesList = Arrays.asList(languages);
+		List<String> countriesList = Arrays.asList(countries);
+		List<String> industriesList = Arrays.asList(industries);
+		List<String> languageCertificationsList = Arrays.asList(languageCertifications);
+		List<String> educationsList = Arrays.asList(educations);
+		List<String> ITCertificationsList = Arrays.asList(ITCertifications);
+		List<String> currentPostsList = Arrays.asList(currentPosts);
+		List<String> pastPostsList = Arrays.asList(pastPosts);
+		List<String> universitiesList = Arrays.asList(universities);
+		List<String> companiesList = Arrays.asList(companies);
+
+		if (skills[0].equals("-- No Skills --"))
+			skillsList=null;
+		if (languages[0].equals("-- No Languages --"))
+			languagesList = null;
+		if (industries[0].equals("-- No Industries --"))
+			industriesList = null;
+		if (languageCertifications[0].equals("-- No Languages Certifications --"))
+			languageCertificationsList = null;
+		if (educations[0].equals("-- No Educations --"))
+			educationsList = null;
+		if (ITCertifications[0].equals("-- No Certifications --"))
+			ITCertificationsList = null;
+		if (currentPosts[0].equals("-- No Current Positions --"))
+			currentPostsList = null;
+		if (pastPosts[0].equals("-- No Past Positions --"))
+			pastPostsList = null;
+		if (universities[0].equals("-- No Universities --"))
+			universitiesList = null;
+		if (companies[0].equals("-- No Companies --"))
+			companiesList = null;
+		if (countries[0].equals("-- No Countries --"))
+			countriesList = null;
+
+		List<String> resultList = managerSparqlEngine.executeQuery(skillsList, languagesList, industriesList,
+				languageCertificationsList, ITCertificationsList, educationsList, null, null, countriesList,
+				universitiesList, companiesList, null, null, situation);
+		List<Professional> list = new ArrayList<Professional>();
+		Iterator<String> iterator = resultList.iterator();
+		while (iterator.hasNext()) {
+			String elem = iterator.next();
+			list.add(parser.fromRdfFileToProfessional(fileSource, elem));
+		}
+		Iterator<Professional> iteratorProfessional=list.iterator();
+		while (iteratorProfessional.hasNext()) {
+			Professional professional=iteratorProfessional.next();
+			professional.toString();
+		}
+		model.addAttribute("allProfiles", list);
+		return "result";
+	}
+
 	@RequestMapping(value = "/research", method = RequestMethod.GET)
 	public String research(Model model) {
 		initiate(currentProfileName);
 		model.addAttribute("mentionedProfessionals", mentionedProfessionals);
 		this.mentionedProfessionals = new ArrayList<MentionedProfessional>();
-		this.mentionedLanguages=new ArrayList<MentionnedLanguage>();
-		ManagerSparqlEngine managerSparqlEngine=new ManagerSparqlEngine();
+		this.mentionedLanguages = new ArrayList<MentionnedLanguage>();
+		ManagerSparqlEngine managerSparqlEngine = new ManagerSparqlEngine();
 		managerSparqlEngine.initiate();
-		model.addAttribute("allSkills",managerSparqlEngine.get_AllSkills());
-		model.addAttribute("allLanguages",managerSparqlEngine.get_AllLanguages());
-		model.addAttribute("allCountries",managerSparqlEngine.get_AllCountries());
-		model.addAttribute("allIndustries",managerSparqlEngine.get_AllIndustries());
-		model.addAttribute("allLanguageCertifications",managerSparqlEngine.get_AllLanguageCertifs());
-		model.addAttribute("allEducations",managerSparqlEngine.get_AllEducations());
-		model.addAttribute("allITCertifications",managerSparqlEngine.get_AllITCertifs());
-		model.addAttribute("allCurrentPosts",managerSparqlEngine.get_AllCurrentPositions());
-		model.addAttribute("allPastPosts",managerSparqlEngine.get_AllPastPositions());
-		model.addAttribute("allUniversities",managerSparqlEngine.get_AllIndustries());
-		model.addAttribute("allCompanies",managerSparqlEngine.get_AllCompanies());
+		model.addAttribute("allSkills", managerSparqlEngine.get_AllSkills());
+		model.addAttribute("allLanguages", managerSparqlEngine.get_AllLanguages());
+		model.addAttribute("allCountries", managerSparqlEngine.get_AllCountries());
+		model.addAttribute("allIndustries", managerSparqlEngine.get_AllIndustries());
+		model.addAttribute("allLanguageCertifications", managerSparqlEngine.get_AllLanguageCertifs());
+		model.addAttribute("allEducations", managerSparqlEngine.get_AllEducations());
+		model.addAttribute("allITCertifications", managerSparqlEngine.get_AllITCertifs());
+		model.addAttribute("allCurrentPosts", managerSparqlEngine.get_AllCurrentPositions());
+		model.addAttribute("allPastPosts", managerSparqlEngine.get_AllPastPositions());
+		model.addAttribute("allUniversities", managerSparqlEngine.get_AllUniversities());
+		model.addAttribute("allCompanies", managerSparqlEngine.get_AllCompanies());
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
-		model.addAttribute("situation",currentProfessional.getGraduated());
+		model.addAttribute("situation", currentProfessional.getGraduated());
 		return "research";
 	}
-	
+
 	@RequestMapping(value = "/projects", method = RequestMethod.GET)
 	public String projects(Model model) {
 		initiate(currentProfileName);
 		model.addAttribute("mentionedProfessionals", mentionedProfessionals);
 		this.mentionedProfessionals = new ArrayList<MentionedProfessional>();
-		this.mentionedLanguages=new ArrayList<MentionnedLanguage>();
+		this.mentionedLanguages = new ArrayList<MentionnedLanguage>();
 		model.addAttribute("allProjects", currentProfessional.getProjects());
 		currentProfessional.showAllProjects(currentProfessional.getProjects());
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
-		model.addAttribute("situation",currentProfessional.getGraduated());
+		model.addAttribute("situation", currentProfessional.getGraduated());
 		return "projects";
 	}
 
@@ -219,13 +297,13 @@ public class ManagerController {
 		initiate(currentProfileName);
 		model.addAttribute("mentionedProfessionals", mentionedProfessionals);
 		this.mentionedProfessionals = new ArrayList<MentionedProfessional>();
-		this.mentionedLanguages=new ArrayList<MentionnedLanguage>();
+		this.mentionedLanguages = new ArrayList<MentionnedLanguage>();
 		model.addAttribute("allRecommandedVisitors", currentProfessional.getRecommended_visitors());
 		currentProfessional.showAllRecommended_visitor(currentProfessional.getRecommended_visitors());
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
-		model.addAttribute("situation",currentProfessional.getGraduated());
+		model.addAttribute("situation", currentProfessional.getGraduated());
 		return "recommandedVisitors";
 	}
 
@@ -234,13 +312,13 @@ public class ManagerController {
 		initiate(currentProfileName);
 		model.addAttribute("mentionedProfessionals", mentionedProfessionals);
 		this.mentionedProfessionals = new ArrayList<MentionedProfessional>();
-		this.mentionedLanguages=new ArrayList<MentionnedLanguage>();
+		this.mentionedLanguages = new ArrayList<MentionnedLanguage>();
 		model.addAttribute("allSkills", currentProfessional.getSkillsAll());
 		currentProfessional.showAllSkills(currentProfessional.getSkillsAll());
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
-		model.addAttribute("situation",currentProfessional.getGraduated());
+		model.addAttribute("situation", currentProfessional.getGraduated());
 		return "skills";
 	}
 
@@ -249,13 +327,13 @@ public class ManagerController {
 		initiate(currentProfileName);
 		model.addAttribute("mentionedProfessionals", mentionedProfessionals);
 		this.mentionedProfessionals = new ArrayList<MentionedProfessional>();
-		this.mentionedLanguages=new ArrayList<MentionnedLanguage>();
+		this.mentionedLanguages = new ArrayList<MentionnedLanguage>();
 		model.addAttribute("allFriends", currentProfessional.getFriends());
 		currentProfessional.showAllFriends(currentProfessional.getFriends());
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
-		model.addAttribute("situation",currentProfessional.getGraduated());
+		model.addAttribute("situation", currentProfessional.getGraduated());
 		return "friends";
 	}
 
@@ -267,11 +345,11 @@ public class ManagerController {
 			model.addAttribute("allLanguages", mentionedLanguages);
 		currentProfessional.showAllStrings((currentProfessional.getLanguages()));
 		this.mentionedProfessionals = new ArrayList<MentionedProfessional>();
-		this.mentionedLanguages=new ArrayList<MentionnedLanguage>();
+		this.mentionedLanguages = new ArrayList<MentionnedLanguage>();
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
-		model.addAttribute("situation",currentProfessional.getGraduated());
+		model.addAttribute("situation", currentProfessional.getGraduated());
 		return "languages";
 	}
 
@@ -283,7 +361,7 @@ public class ManagerController {
 		initiate(profileName);
 		model.addAttribute("mentionedProfessionals", mentionedProfessionals);
 		this.mentionedProfessionals = new ArrayList<MentionedProfessional>();
-		this.mentionedLanguages=new ArrayList<MentionnedLanguage>();
+		this.mentionedLanguages = new ArrayList<MentionnedLanguage>();
 		model.addAttribute("name", currentProfessional.getName());
 		model.addAttribute("linkedinURL", currentProfessional.getLinkedin_url());
 		model.addAttribute("linkedinPicture", currentProfessional.getPicture());
@@ -295,8 +373,8 @@ public class ManagerController {
 		model.addAttribute("country", currentProfessional.getCountry());
 		model.addAttribute("industry", currentProfessional.getIndustry());
 		model.addAttribute("summary", currentProfessional.getSummary());
-		model.addAttribute("situation",currentProfessional.getGraduated());
-		model.addAttribute("country",currentProfessional.getCountry());
+		model.addAttribute("situation", currentProfessional.getGraduated());
+		model.addAttribute("country", currentProfessional.getCountry());
 		return "generalInformations";
 	}
 
@@ -321,7 +399,7 @@ public class ManagerController {
 				if (existInList(name, professionalDetails.getWorkedInSameCompany()) == true)
 					mentionedProfessional.setWorkedInSameCompany("(worked in same company)");
 				if (existInList(name, professionalDetails.getWentSameUniversityAs()) == true)
-					mentionedProfessional.setWorkedInSameCompany("(went same university)");
+					mentionedProfessional.setSameUniversity("(went same university)");
 				if (existInList(name, professionalDetails.getIsColleagueOf()) == true)
 					mentionedProfessional.setIsColleague("(colleague in company)");
 				mentionedProfessionals.add(mentionedProfessional);

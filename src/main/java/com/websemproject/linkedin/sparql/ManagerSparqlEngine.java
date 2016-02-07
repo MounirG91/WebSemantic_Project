@@ -45,47 +45,6 @@ public class ManagerSparqlEngine {
 		System.out.println(managerSparqlEngine.get_AllCountries());
 		System.out.println(managerSparqlEngine.get_AllUniversities());
 		System.out.println(managerSparqlEngine.get_AllCompanies());
-	}
-
-	public void initiate() {
-//		String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
-//				+ "\\WebSemantic_Project";
-
-		 String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop" +
-		 "\\Cours" + "\\web semantique"
-		 + "\\WebSemantic_Project";
-
-		String fileSource = workingDir + "\\attached_files";
-
-		gr = Graph.create(true);
-
-		Load ld = Load.create(gr);
-
-		try {
-			ld.loadWE(fileSource + "\\linkedin.rdfs");
-			ld.loadWE(fileSource + "\\certifications.rdf");
-			ld.loadWE(fileSource + "\\universities.rdf");
-			ld.loadWE(fileSource + "\\skills.rdf");
-			ld.loadWE(fileSource + "\\linkedin.rul");
-			ld.loadWE(fileSource + "\\Achraf Aouadi.rdf");
-			ld.loadWE(fileSource + "\\Ahmed REBAI.rdf");
-			ld.loadWE(fileSource + "\\Amen Ouali.rdf");
-			ld.loadWE(fileSource + "\\Hela Tajouri.rdf");
-			ld.loadWE(fileSource + "\\Jomaa Farouk.rdf");
-			ld.loadWE(fileSource + "\\Khaled Ben Driss.rdf");
-			ld.loadWE(fileSource + "\\Mounir Guizani.rdf");
-			ld.loadWE(fileSource + "\\Ramzi Zayene.rdf");
-			ld.loadWE(fileSource + "\\Syrine Tlili, PhD.rdf");
-			ld.loadWE(fileSource + "\\Yassin Ben Naceur.rdf");
-		} catch (Exception e) {
-		}
-
-		RuleEngine re = new RuleEngine();
-		re = ld.getRuleEngine();
-		re.process();
-		gr.addEngine(re);
-		gr.process();
-
 		
 		List<String> skills = new ArrayList<String>();
 		skills.add("Java");
@@ -129,8 +88,51 @@ public class ManagerSparqlEngine {
 //		System.out.println(executeQuery(null, null, null, null, null, educs, 
 //				null, null, countries, univs, companies, null, null, null) );
 
-		System.out.println(executeQuery(skills, lang, indus, langcertifs, itcertifs, educs, 
+		System.out.println(managerSparqlEngine.executeQuery(skills, lang, indus, langcertifs, itcertifs, educs, 
 				null, null, countries, univs, companies, null, null, grad_or_student));
+	}
+
+	public void initiate() {
+	String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
+				+ "\\WebSemantic_Project";
+
+		 //String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop" +
+		 //"\\Cours" + "\\web semantique"
+		 //+ "\\WebSemantic_Project";
+
+		String fileSource = workingDir + "\\attached_files";
+
+		gr = Graph.create(true);
+
+		Load ld = Load.create(gr);
+
+		try {
+			ld.loadWE(fileSource + "\\linkedin.rdfs");
+			ld.loadWE(fileSource + "\\certifications.rdf");
+			ld.loadWE(fileSource + "\\universities.rdf");
+			ld.loadWE(fileSource + "\\skills.rdf");
+			ld.loadWE(fileSource + "\\linkedin.rul");
+			ld.loadWE(fileSource + "\\Achraf Aouadi.rdf");
+			ld.loadWE(fileSource + "\\Ahmed REBAI.rdf");
+			ld.loadWE(fileSource + "\\Amen Ouali.rdf");
+			ld.loadWE(fileSource + "\\Hela Tajouri.rdf");
+			ld.loadWE(fileSource + "\\Jomaa Farouk.rdf");
+			ld.loadWE(fileSource + "\\Khaled Ben Driss.rdf");
+			ld.loadWE(fileSource + "\\Mounir Guizani.rdf");
+			ld.loadWE(fileSource + "\\Ramzi Zayene.rdf");
+			ld.loadWE(fileSource + "\\Syrine Tlili, PhD.rdf");
+			ld.loadWE(fileSource + "\\Yassin Ben Naceur.rdf");
+		} catch (Exception e) {
+		}
+
+		RuleEngine re = new RuleEngine();
+		re = ld.getRuleEngine();
+		re.process();
+		gr.addEngine(re);
+		gr.process();
+
+		
+	
 
 	}
 
@@ -170,7 +172,7 @@ public class ManagerSparqlEngine {
 		hs.addAll(list);
 		list.clear();
 		list.addAll(hs);
-		list.add(0, "");
+		list.add(0, "-- No Skills --");
 		java.util.Collections.sort(list, String.CASE_INSENSITIVE_ORDER);
 
 		return list;
@@ -203,7 +205,7 @@ public class ManagerSparqlEngine {
 		hs.addAll(list);
 		list.clear();
 		list.addAll(hs);
-		list.add(0, "");
+		list.add(0, "-- No Languages --");
 
 		java.util.Collections.sort(list, String.CASE_INSENSITIVE_ORDER);
 
@@ -244,7 +246,7 @@ public class ManagerSparqlEngine {
 		hs.addAll(list);
 		list.clear();
 		list.addAll(hs);
-		list.add(0, "");
+		list.add(0, "-- No Industries --");
 		java.util.Collections.sort(list, String.CASE_INSENSITIVE_ORDER);
 
 		return list;
@@ -276,7 +278,7 @@ public class ManagerSparqlEngine {
 		hs.addAll(list);
 		list.clear();
 		list.addAll(hs);
-		list.add(0, "");
+		list.add(0, "-- No Languages Certifications --");
 		java.util.Collections.sort(list, String.CASE_INSENSITIVE_ORDER);
 
 		return list;
@@ -308,7 +310,7 @@ public class ManagerSparqlEngine {
 		hs.addAll(list);
 		list.clear();
 		list.addAll(hs);
-		list.add(0, "");
+		list.add(0, "-- No Certifications --");
 		java.util.Collections.sort(list, String.CASE_INSENSITIVE_ORDER);
 
 		return list;
@@ -345,7 +347,7 @@ public class ManagerSparqlEngine {
 		java.util.Collections.sort(list, String.CASE_INSENSITIVE_ORDER);
 
 		list.remove(0);
-		list.add(0, "");
+		list.add(0, "-- No Educations --");
 
 		return list;
 	}
@@ -381,7 +383,7 @@ public class ManagerSparqlEngine {
 		java.util.Collections.sort(list, String.CASE_INSENSITIVE_ORDER);
 
 		list.remove(2);
-		list.add(0, "");
+		list.add(0, "-- No Current Positions --");
 
 		return list;
 	}
@@ -417,7 +419,7 @@ public class ManagerSparqlEngine {
 		java.util.Collections.sort(list, String.CASE_INSENSITIVE_ORDER);
 
 		list.remove(1);
-		list.add(0, "");
+		list.add(0, "-- No Past Positions --");
 
 		return list;
 	}
@@ -457,7 +459,7 @@ public class ManagerSparqlEngine {
 		hs.addAll(list);
 		list.clear();
 		list.addAll(hs);
-		list.add(0, "");
+		list.add(0, "-- No Countries --");
 		java.util.Collections.sort(list, String.CASE_INSENSITIVE_ORDER);
 
 		return list;
@@ -498,7 +500,7 @@ public class ManagerSparqlEngine {
 		hs.addAll(list);
 		list.clear();
 		list.addAll(hs);
-		list.add(0, "");
+		list.add(0, "-- No Universities --");
 		java.util.Collections.sort(list, String.CASE_INSENSITIVE_ORDER);
 
 		return list;
@@ -554,7 +556,7 @@ public class ManagerSparqlEngine {
 		hs.addAll(list);
 		list.clear();
 		list.addAll(hs);
-		list.add(0, "");
+		list.add(0, "-- No Companies --");
 		java.util.Collections.sort(list, String.CASE_INSENSITIVE_ORDER);
 
 		return list;
