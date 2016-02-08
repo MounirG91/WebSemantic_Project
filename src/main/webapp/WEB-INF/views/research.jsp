@@ -364,15 +364,7 @@
 										<label class="col-sm-3 control-label no-padding-top"
 											for="duallist">Languages certifications : <br> <font
 											color="orange"> (you must specify at least an element
-												from the list below)</font><br>( &nbsp &nbsp<INPUT
-											type="radio" name="situationLanguageCertification"
-											value="Fluent" required> <font color="red">Fluent</font>&nbsp
-											&nbsp<INPUT type="radio"
-											name="situationLanguageCertification" value="Basic" required>
-											<font color="red">Basic skills</font>&nbsp &nbsp &nbsp &nbsp<INPUT
-											type="radio" name="situationLanguageCertification"
-											value="NolanguageCondition" required checked="checked">
-											<font color="red">No Level </font>&nbsp &nbsp)
+												from the list below)</font>
 										</label>
 										<div class="col-sm-8">
 											<!-- #section:plugins/input.duallist -->
@@ -417,12 +409,7 @@
 									<div class="form-group">
 
 										<label class="col-sm-3 control-label no-padding-top"
-											for="duallist">IT Certifications &nbsp ( &nbsp &nbsp<INPUT
-											type="radio" name="situationCertification" value="Expert"
-											required> <font color="red">Expert</font> &nbsp &nbsp
-											&nbsp &nbsp<INPUT type="radio" name="situationCertification"
-											value="NoCertificationCondition" required checked="checked">
-											<font color="red">No Level</font>&nbsp &nbsp) :<br> <font
+											for="duallist">IT Certifications : &nbsp<br> <font
 											color="orange"> (you must specify at least an element
 												from the list below)</font>
 										</label>

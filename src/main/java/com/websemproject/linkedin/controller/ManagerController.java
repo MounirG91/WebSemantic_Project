@@ -179,10 +179,8 @@ public class ManagerController {
 			@RequestParam(value = "countries") String[] countries,
 			@RequestParam(value = "industries") String[] industries,
 			@RequestParam(value = "languageCertifications") String[] languageCertifications,
-			@RequestParam(value = "situationLanguageCertification") String situationLanguageCertification,
 			@RequestParam(value = "educations") String[] educations,
 			@RequestParam(value = "ITCertifications") String[] ITCertifications,
-			@RequestParam(value = "situationCertification") String situationCertification,
 			@RequestParam(value = "currentPosts") String[] currentPosts,
 			@RequestParam(value = "pastPosts") String[] pastPosts,
 			@RequestParam(value = "universities") String[] universities,
@@ -209,6 +207,7 @@ public class ManagerController {
 		List<String> pastPostsList = Arrays.asList(pastPosts);
 		List<String> universitiesList = Arrays.asList(universities);
 		List<String> companiesList = Arrays.asList(companies);
+		String situationToReturn=situation;
 
 		if (skills[0].equals("-- No Skills --"))
 			skillsList = null;
@@ -232,10 +231,9 @@ public class ManagerController {
 			companiesList = null;
 		if (countries[0].equals("-- No Countries --"))
 			countriesList = null;
+		if (situation.equals("noSituation")) situationToReturn=null;
 
-		List<String> resultList = managerSparqlEngine.executeQuery(skillsList, languagesList, industriesList,
-				languageCertificationsList, ITCertificationsList, educationsList, null, null, countriesList,
-				universitiesList, companiesList, null, null, situation);
+		List<String> resultList = managerSparqlEngine.executeQuery(skillsList, languagesList, industriesList, languageCertificationsList, ITCertificationsList, educationsList, currentPostsList, pastPostsList, countriesList, universitiesList, companiesList, null, null, situationToReturn);
 		List<Professional> list = new ArrayList<Professional>();
 		Iterator<String> iterator = resultList.iterator();
 		while (iterator.hasNext()) {
