@@ -83,13 +83,21 @@ public class ManagerSparqlEngine {
 		companies.add("Agence Nationale de la Certification Electronique");
 		companies.add("TEKonsult");
 
+		List<String> past_post = new ArrayList<String>();
+		past_post.add("Trainee");
+		past_post.add("securityEngineer");
+		
+		List<String> current_post = new ArrayList<String>();
+		current_post.add("Trainee");
+		current_post.add("softwareEngineer");
+
 		String grad_or_student = "student"; //or "student"
 
 //		System.out.println(executeQuery(null, null, null, null, null, educs, 
 //				null, null, countries, univs, companies, null, null, null) );
 
-		System.out.println(managerSparqlEngine.executeQuery(null, null, null, null, null, educs, 
-				null, null, null, null, null, null, null, grad_or_student));
+		System.out.println(managerSparqlEngine.executeQuery(null, null, null, null, null, null, 
+				null, null, null, null, null, null, null, null));
 	}
 
 	public void initiate() {
@@ -724,8 +732,57 @@ public class ManagerSparqlEngine {
 					 sub_query_educ +  " }";
 
 		}
+
 		
+		// past_post prepare query
+		String query_past_post = " ";
+
+		if (pastPost != null) {
+			String sub_query_past_post = "";
+
+			for (int i = 0; i < pastPost.size(); i++) {
+				if (pastPost.get(i).equalsIgnoreCase("others"))
+				{sub_query_past_post += "{?y rdf:type \"" + base + "Post\"}";}
+				else {sub_query_past_post += "{?y rdf:type \"" + base + pastPost.get(i) + "\"}";}
+				
+				if (i != (pastPost.size() - 1))
+					sub_query_past_post += " UNION ";
+			}
+
+			query_past_post =  "select  ?x " + "where { "
+					+ "?x lp:hadPosition ?y " + 
+					sub_query_past_post +  " }";
+
+		}
+		
+		System.out.println(query_past_post);
 		// universities prepare query
+		
+		
+		// current post query
+		String query_current_post = " ";
+
+		if (currentPost != null) {
+			String sub_query_current_post = "";
+
+			for (int i = 0; i < currentPost.size(); i++) {
+				if (currentPost.get(i).equalsIgnoreCase("others"))
+				{sub_query_current_post += "{?y rdf:type \"" + base + "Post\"}";}
+				else {sub_query_current_post += "{?y rdf:type \"" + base + currentPost.get(i) + "\"}";}
+				
+				if (i != (currentPost.size() - 1))
+					sub_query_current_post += " UNION ";
+			}
+
+			query_current_post =  "select  ?x " + "where { "
+					+ "?x lp:hasPosition ?y " + 
+					sub_query_current_post +  " }";
+
+		}
+		
+		System.out.println(query_current_post);
+		
+		
 		String query_univ = " ";
 
 		if (universities != null) {
@@ -784,46 +841,46 @@ public class ManagerSparqlEngine {
 		
 		if (skills != null)
 			{first_query += query_skills;
-			System.out.println("1");
+//			System.out.println("1");
 			}
 		else if (universities != null)
 			{first_query += query_univ;
-			System.out.println("2");
+			//System.out.println("2");
 			}
 		else if (languages != null)
 			{first_query += query_lang;
-			System.out.println("3");
+			//System.out.println("3");
 			}
 		else if (industries != null)
 			{first_query += query_ind;
-			System.out.println("4");}
+			//System.out.println("4");
+			}
 		else if (countries != null)
 			{first_query += query_countries;	
-			System.out.println("5");
+			//System.out.println("5");
 			}
 		else if (languagesCertifs != null)
 			{first_query += query_lang_certif;
-			System.out.println("6");
+			//System.out.println("6");
 			}
 		else if (itCertifs != null)
 			{first_query += query_it_certif;
-			System.out.println("7");
+			//System.out.println("7");
 			}
 		else if (graduatedOrStudent != null)
 			{first_query += grad_stud;
-			System.out.println("8");
+			//System.out.println("8");
 			}
 		
 		if (companies != null && (first_query.equals(test)))
 			first_query += query_companies;
 		if ( (educations != null) && (first_query.equals(test)))
-			{
-			System.out.println(first_query);
-			System.out.println(test);
-			System.out.println(test==first_query);
-
 			first_query += query_educ;
-			}
+		
+		if ( (currentPost != null) && (first_query.equals(test)))
+			first_query += query_current_post;
+		if ( (pastPost != null) && (first_query.equals(test)))
+			first_query += query_past_post;
 		
 		String query = "";
 		
@@ -838,6 +895,9 @@ public class ManagerSparqlEngine {
 		query = query.substring(0,query.lastIndexOf("}")-12)+" { "+grad_stud+"}}}}}}}}}}}}}}";
 		query = query.substring(0,query.lastIndexOf("}")-14)+" { "+query_companies+"}}}}}}}}}}}}}}}}";
 		query = query.substring(0,query.lastIndexOf("}")-16)+" { "+query_educ+"}}}}}}}}}}}}}}}}}}";
+
+		query = query.substring(0,query.lastIndexOf("}")-18)+" { "+query_current_post+"}}}}}}}}}}}}}}}}}}}}";
+		query = query.substring(0,query.lastIndexOf("}")-20)+" { "+query_past_post+"}}}}}}}}}}}}}}}}}}}}}}";
 
 		int count = StringUtils.countMatches(query, "{");
 		int diff = StringUtils.countMatches(query, "}")-count;
