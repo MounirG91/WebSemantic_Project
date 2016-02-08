@@ -24,11 +24,11 @@ import com.websemproject.linkedin.sparql.ProfessionalDetails;
 @Controller
 public class ManagerController {
 
-//	String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
-//			+ "\\WebSemantic_Project";
+	String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
+			+ "\\WebSemantic_Project";
 
-	 String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop"
-	 +"\\Cours" + "\\web semantique" + "\\WebSemantic_Project";
+	// String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop"
+	// +"\\Cours" + "\\web semantique" + "\\WebSemantic_Project";
 
 	String fileSource = workingDir + "\\attached_files";
 
@@ -211,7 +211,7 @@ public class ManagerController {
 		List<String> companiesList = Arrays.asList(companies);
 
 		if (skills[0].equals("-- No Skills --"))
-			skillsList=null;
+			skillsList = null;
 		if (languages[0].equals("-- No Languages --"))
 			languagesList = null;
 		if (industries[0].equals("-- No Industries --"))
@@ -242,9 +242,9 @@ public class ManagerController {
 			String elem = iterator.next();
 			list.add(parser.fromRdfFileToProfessional(fileSource, elem));
 		}
-		Iterator<Professional> iteratorProfessional=list.iterator();
+		Iterator<Professional> iteratorProfessional = list.iterator();
 		while (iteratorProfessional.hasNext()) {
-			Professional professional=iteratorProfessional.next();
+			Professional professional = iteratorProfessional.next();
 			professional.toString();
 		}
 		model.addAttribute("allProfiles", list);

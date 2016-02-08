@@ -267,11 +267,13 @@
 
 
 
-								<form class="form-horizontal" role="form" action="<%=request.getContextPath()%>/makeResearch" method="POST">
+								<form class="form-horizontal" role="form"
+									action="<%=request.getContextPath()%>/makeResearch"
+									method="POST">
 									<!-- #section:elements.form -->
 
 
-									<div class="form-group" >
+									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-top"
 											for="duallist"> Skills<br> <font color="orange">
 												(you must specify at least an element from the list below)</font></label>
@@ -334,7 +336,7 @@
 										</div>
 									</div>
 
-	                          <div class="form-group">
+									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-top"
 											for="duallist"> Industries<br> <font
 											color="orange"> (you must specify at least an element
@@ -359,23 +361,24 @@
 
 									<div class="form-group">
 
-										<label class="col-sm-3 control-label no-padding-top" for="duallist">Languages
-											certifications : <br> <font
+										<label class="col-sm-3 control-label no-padding-top"
+											for="duallist">Languages certifications : <br> <font
 											color="orange"> (you must specify at least an element
-												from the list below)</font><br>( &nbsp &nbsp<INPUT type="radio"
-											name="situationLanguageCertification" value="Fluent" required>
-											<font color="red">Fluent</font>&nbsp &nbsp<INPUT
+												from the list below)</font><br>( &nbsp &nbsp<INPUT
 											type="radio" name="situationLanguageCertification"
-											value="Basic" required> <font color="red">Basic
-												skills</font>&nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp<INPUT
+											value="Fluent" required> <font color="red">Fluent</font>&nbsp
+											&nbsp<INPUT type="radio"
+											name="situationLanguageCertification" value="Basic" required>
+											<font color="red">Basic skills</font>&nbsp &nbsp &nbsp &nbsp<INPUT
 											type="radio" name="situationLanguageCertification"
-											value="NolanguageCondition" required> <font color="red">No Languages Condition
-												</font>&nbsp &nbsp)
+											value="NolanguageCondition" required checked="checked">
+											<font color="red">No Level </font>&nbsp &nbsp)
 										</label>
 										<div class="col-sm-8">
 											<!-- #section:plugins/input.duallist -->
-											<select multiple="multiple" size="5" name="languageCertifications"
-												id="duallistbox_demo1[]" required>
+											<select multiple="multiple" size="5"
+												name="languageCertifications" id="duallistbox_demo1[]"
+												required>
 												<c:forEach items="${allLanguageCertifications}" var="id">
 													<option>${id}</option>
 												</c:forEach>
@@ -391,8 +394,8 @@
 
 									<div class="form-group">
 
-										<label class="col-sm-3 control-label no-padding-top" for="duallist">Educations
-											: &nbsp <br> <font
+										<label class="col-sm-3 control-label no-padding-top"
+											for="duallist">Educations : &nbsp <br> <font
 											color="orange"> (you must specify at least an element
 												from the list below)</font></label>
 										<div class="col-sm-8">
@@ -408,17 +411,18 @@
 											<div class="hr hr-16 hr-dotted"></div>
 										</div>
 									</div>
-									
-									
-									
+
+
+
 									<div class="form-group">
 
-										<label class="col-sm-3 control-label no-padding-top" for="duallist">IT
-											Certifications &nbsp ( &nbsp &nbsp<INPUT type="radio"
-											name="situationCertification" value="Expert" required>
-											<font color="red">Expert</font> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp  <INPUT type="radio"
-											name="situationCertification" value="NoCertificationCondition" required>
-											<font color="red">No Certifications Condition</font>&nbsp &nbsp) :<br> <font
+										<label class="col-sm-3 control-label no-padding-top"
+											for="duallist">IT Certifications &nbsp ( &nbsp &nbsp<INPUT
+											type="radio" name="situationCertification" value="Expert"
+											required> <font color="red">Expert</font> &nbsp &nbsp
+											&nbsp &nbsp<INPUT type="radio" name="situationCertification"
+											value="NoCertificationCondition" required checked="checked">
+											<font color="red">No Level</font>&nbsp &nbsp) :<br> <font
 											color="orange"> (you must specify at least an element
 												from the list below)</font>
 										</label>
@@ -441,10 +445,11 @@
 
 									<div class="form-group">
 
-										<label class="col-sm-3 control-label no-padding-top" for="duallist">Current
-											Posts : &nbsp<br> <font
+										<label class="col-sm-3 control-label no-padding-top"
+											for="duallist">Current Posts : &nbsp<br> <font
 											color="orange"> (you must specify at least an element
-												from the list below)</font> </label>
+												from the list below)</font>
+										</label>
 										<div class="col-sm-8">
 											<!-- #section:plugins/input.duallist -->
 											<select multiple="multiple" size="5" name="currentPosts"
@@ -456,16 +461,17 @@
 											<!-- /section:plugins/input.duallist -->
 											<div class="hr hr-16 hr-dotted"></div>
 										</div>
-										
+
 									</div>
 
 
 									<div class="form-group">
 
-										<label class="col-sm-3 control-label no-padding-top" for="duallist">Past
-											Posts : &nbsp<br> <font
+										<label class="col-sm-3 control-label no-padding-top"
+											for="duallist">Past Posts : &nbsp<br> <font
 											color="orange"> (you must specify at least an element
-												from the list below)</font> </label>
+												from the list below)</font>
+										</label>
 										<div class="col-sm-8">
 											<!-- #section:plugins/input.duallist -->
 											<select multiple="multiple" size="5" name="pastPosts"
@@ -477,14 +483,14 @@
 											<!-- /section:plugins/input.duallist -->
 											<div class="hr hr-16 hr-dotted"></div>
 										</div>
-										
+
 									</div>
 
 
 									<div class="form-group">
 
-										<label class="col-sm-3 control-label no-padding-top" for="duallist">Universities
-											: &nbsp <br> <font
+										<label class="col-sm-3 control-label no-padding-top"
+											for="duallist">Universities : &nbsp <br> <font
 											color="orange"> (you must specify at least an element
 												from the list below)</font></label>
 										<div class="col-sm-8">
@@ -503,10 +509,11 @@
 
 									<div class="form-group">
 
-										<label class="col-sm-3 control-label no-padding-top" for="duallist">Companies
-											: &nbsp<br> <font
+										<label class="col-sm-3 control-label no-padding-top"
+											for="duallist">Companies : &nbsp<br> <font
 											color="orange"> (you must specify at least an element
-												from the list below)</font> </label>
+												from the list below)</font>
+										</label>
 										<div class="col-sm-8">
 											<!-- #section:plugins/input.duallist -->
 											<select multiple="multiple" size="5" name="companies"
@@ -529,8 +536,9 @@
 											: &nbsp </label><font color="red"> <INPUT type="radio"
 											name="situation" value="graduated" required>
 											Graduated &nbsp<INPUT type="radio" name="situation"
-											value="student" required> Student&nbsp<INPUT type="radio" name="situation"
-											value="noSituation" required> No Situation
+											value="student" required> Student&nbsp<INPUT
+											type="radio" name="situation" value="noSituation" required
+											checked="checked"> No Situation
 										</font>
 									</div>
 
