@@ -262,7 +262,7 @@
         <lp:hasName>Club Jeunes Hommes d'Affaires Tunisie CJAT</lp:hasName>
       </rdf:Description>
     </lp:belongToGroup>
-    <lp:industry>Technologies et services de l’information</lp:industry>
+    <lp:industry>Technologies et services de l'information</lp:industry>
     <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#Integration"/>
     <lp:hasRecommandedVisitor>
       <rdf:Description rdf:about="http://linkedin_project.com/profile.rdfs-instances/recommandedVisitor/Khaled Ben Driss/#Chehin GHARSALLAH">

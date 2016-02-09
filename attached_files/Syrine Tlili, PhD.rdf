@@ -91,7 +91,7 @@
         <lp:hasName>TUNISIAN IT and TELECOM EXPERTS and CONSULTANTS in MEA</lp:hasName>
       </rdf:Description>
     </lp:belongToGroup>
-    <lp:industry>Technologies et services de l’information</lp:industry>
+    <lp:industry>Technologies et services de l'information</lp:industry>
     <lp:hasSkill rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Skill/#C"/>
     <rdf:type>http://linkedin_project.com/profile.rdfs#Professional</rdf:type>
     <lp:speacksLanguage rdf:resource="http://linkedin_project.com/profile.rdfs-instances/Language/#English"/>

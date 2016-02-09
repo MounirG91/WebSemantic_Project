@@ -101,12 +101,12 @@ public class ManagerSparqlEngine {
 	}
 
 	public void initiate() {
-		String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
-				+ "\\WebSemantic_Project";
+//		String workingDir = "C:" + "\\Users" + "\\MounirG" + "\\Documents" + "\\workspace-sts-3.7.2.RELEASE"
+//				+ "\\WebSemantic_Project";
 
-		// String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop" +
-		// "\\Cours" + "\\web semantique"
-		// + "\\WebSemantic_Project";
+		 String workingDir = "C:" + "\\Users" + "\\Farouk" + "\\Desktop" +
+		 "\\Cours" + "\\web semantique"
+		 + "\\WebSemantic_Project";
 
 		String fileSource = workingDir + "\\attached_files";
 
@@ -252,7 +252,7 @@ public class ManagerSparqlEngine {
 		list.addAll(hs);
 		list.add(0, "-- No Industries --");
 		java.util.Collections.sort(list, String.CASE_INSENSITIVE_ORDER);
-
+		
 		return list;
 	}
 
@@ -374,6 +374,7 @@ public class ManagerSparqlEngine {
 
 		for (Mapping m : map) {
 			IDatatype dt = (IDatatype) m.getValue("?y");
+			if (!(dt.stringValue().substring(dt.stringValue().indexOf("#") + 1, dt.stringValue().length()).equals("Engineer")))
 			list.add(dt.stringValue().substring(dt.stringValue().indexOf("#") + 1, dt.stringValue().length()));
 		}
 
